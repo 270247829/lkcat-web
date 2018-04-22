@@ -6,12 +6,12 @@
         font-size: 24px;
         text-shadow: 0 1px 1px rgba(0,0,0,.1);
     }
-    .index .ivu-card-shadow{
+    .index .lkui-card-shadow{
         box-shadow: 0 2px 2px rgba(0,0,0,.2);
     }
 </style>
 <style>
-    .index-version .ivu-badge-count{
+    .index-version .lkui-badge-count{
         box-shadow: none;
         right: 0;
         top: -3px;

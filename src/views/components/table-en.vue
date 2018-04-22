@@ -1,25 +1,25 @@
 <style>
-    .ivu-table .demo-table-info-row td{
+    .lkui-table .demo-table-info-row td{
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-error-row td{
+    .lkui-table .demo-table-error-row td{
         background-color: #ff6600;
         color: #fff;
     }
-    .ivu-table td.demo-table-info-column{
+    .lkui-table td.demo-table-info-column{
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-name {
+    .lkui-table .demo-table-info-cell-name {
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-age {
+    .lkui-table .demo-table-info-cell-age {
         background-color: #ff6600;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-address {
+    .lkui-table .demo-table-info-cell-address {
         background-color: #187;
         color: #fff;
     }
@@ -696,7 +696,7 @@
         </i-article>
         <Modal v-model="table1" title="Complex Table with Paging" width="1000" :styles="{top: '20px'}">
             <div v-if="table1">
-                <div class="ivu-article">
+                <div class="lkui-article">
                     <blockquote>
                         <p>The table comes from LANKEGP's <a href="" target="_blank">MarketingCloud</a> product. It shows the list of the crowd portrait. The data is fake. The paging effect is simulated in the front end, not got from the server side.</p>
                     </blockquote>
@@ -712,7 +712,7 @@
         </Modal>
         <Modal v-model="table2" title="Table with Multi-cols Filter" width="1000" :styles="{top: '20px'}">
             <div v-if="table2">
-                <div class="ivu-article">
+                <div class="lkui-article">
                     <blockquote>
                         <p>The table comes from LANKEGP's <a href="">Ad Tracking</a> product. It shows different metrics of different kinds of promotion activities. The data is fake.</p>
                         <p>The demo mainly shows fixed columns, custom column count and sorting.</p>
@@ -738,7 +738,7 @@
         </Modal>
         <Modal v-model="table3" title="Table with Many Styles" width="1000" :styles="{top: '20px'}">
             <div v-if="table3">
-                <div class="ivu-article">
+                <div class="lkui-article">
                     <blockquote>
                         <p>The demo shows many different styles on Table.</p>
                     </blockquote>

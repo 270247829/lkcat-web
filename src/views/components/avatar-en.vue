@@ -1,9 +1,9 @@
 <style>
-    .demo-avatar .ivu-avatar{
+    .demo-avatar .lkui-avatar{
         margin-top: 16px;
         margin-right: 16px;
     }
-    .demo-avatar-badge .ivu-badge{
+    .demo-avatar-badge .lkui-badge{
         margin-right: 16px;
     }
 </style>

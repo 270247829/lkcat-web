@@ -2,7 +2,7 @@
     @import "../styles/index-2018.less";
 </style>
 <style>
-    .index-version .ivu-badge-count {
+    .index-version .lkui-badge-count {
         box-shadow: none;
         right: 0;
         top: -3px;

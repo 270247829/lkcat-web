@@ -46,7 +46,7 @@
             </ul>
             <Anchor title="其它" h3></Anchor>
             <ul>
-                <li>css前缀使用<code>ivu-</code></li>
+                <li>css前缀使用<code>lkui-</code></li>
             </ul>
         </article>
     </i-article>

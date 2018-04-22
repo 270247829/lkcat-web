@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-var config = require('./webpack.base.config');
+var webpackBaseConfig = require('./webpack.base.config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const merge = require('webpack-merge');
@@ -12,6 +12,8 @@ fs.open('./src/config/env.js', 'w', function (err, fd) {
     var buf = 'export default "development";';
     fs.write(fd, buf, 0, buf.length, 0, function (err, written, buffer){});
 });
+var config = {};
+config.output = {};
 config.devtool = '#source-map';                             // source-map
 config.output.publicPath = '/';                        // 资源路径
 config.output.filename = '[name].js';                       // 入口js命名

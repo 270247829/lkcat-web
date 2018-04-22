@@ -1,29 +1,29 @@
 <style>
-    .demo-tabs-style1 > .ivu-tabs-card > .ivu-tabs-content {
+    .demo-tabs-style1 > .lkui-tabs-card > .lkui-tabs-content {
         height: 120px;
         margin-top: -16px;
     }
 
-    .demo-tabs-style1 > .ivu-tabs-card > .ivu-tabs-content > .ivu-tabs-tabpane {
+    .demo-tabs-style1 > .lkui-tabs-card > .lkui-tabs-content > .lkui-tabs-tabpane {
         background: #fff;
         padding: 16px;
     }
 
-    .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+    .demo-tabs-style1 > .lkui-tabs.lkui-tabs-card > .lkui-tabs-bar .lkui-tabs-tab {
         border-color: transparent;
     }
 
-    .demo-tabs-style1 > .ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+    .demo-tabs-style1 > .lkui-tabs-card > .lkui-tabs-bar .lkui-tabs-tab-active {
         border-color: #fff;
     }
-    .demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab{
+    .demo-tabs-style2 > .lkui-tabs.lkui-tabs-card > .lkui-tabs-bar .lkui-tabs-tab{
         border-radius: 0;
         background: #fff;
     }
-    .demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active{
+    .demo-tabs-style2 > .lkui-tabs.lkui-tabs-card > .lkui-tabs-bar .lkui-tabs-tab-active{
         border-top: 1px solid #3399ff;
     }
-    .demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active:before{
+    .demo-tabs-style2 > .lkui-tabs.lkui-tabs-card > .lkui-tabs-bar .lkui-tabs-tab-active:before{
         content: '';
         display: block;
         width: 100%;

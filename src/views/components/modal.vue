@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
 
-        .ivu-modal{
+        .lkui-modal{
             top: 0;
         }
     }
@@ -267,13 +267,13 @@
                         </tr>
                         <tr>
                             <td>styles</td>
-                            <td>设置浮层样式，调整浮层位置等，该属性设置的是<code>.ivu-modal</code>的样式</td>
+                            <td>设置浮层样式，调整浮层位置等，该属性设置的是<code>.lkui-modal</code>的样式</td>
                             <td>Object</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>class-name</td>
-                            <td>设置对话框容器<code>.ivu-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td>
+                            <td>设置对话框容器<code>.lkui-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>

@@ -1,5 +1,5 @@
 <style scoped>
-    .ivu-icon{
+    .lkui-icon{
         font-size: 14px;
     }
 </style>

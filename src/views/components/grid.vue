@@ -21,16 +21,16 @@
         background: rgba(0, 153, 229, .3);
     }
 
-    .example-demo .ivu-col, .example-demo .ivu-col div{
+    .example-demo .lkui-col, .example-demo .lkui-col div{
         color: #fff;
         padding: 10px 0;
         text-align: center;
         background: rgba(0, 153, 229, .9);
     }
-    .example-demo .gutter .ivu-col{
+    .example-demo .gutter .lkui-col{
         background: transparent !important;
     }
-    .example-demo  .ivu-col:nth-child(odd), .example-demo  .ivu-col:nth-child(odd) div{
+    .example-demo  .lkui-col:nth-child(odd), .example-demo  .lkui-col:nth-child(odd) div{
         background: rgba(0, 153, 229, .7);
     }
 

@@ -1,5 +1,5 @@
 <style scoped>
-    .ivu-cascader{
+    .lkui-cascader{
         width: 200px;
     }
 </style>

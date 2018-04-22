@@ -5,7 +5,7 @@ code.demo = `
 `;
 
 code.render = `
-<i class="ivu-icon ivu-icon-checkmark"></i>
+<i class="lkui-icon lkui-icon-checkmark"></i>
 `;
 
 export default code;

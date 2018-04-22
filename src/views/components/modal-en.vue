@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
 
-        .ivu-modal{
+        .lkui-modal{
             top: 0;
         }
     }
@@ -266,13 +266,13 @@
                         </tr>
                         <tr>
                             <td>styles</td>
-                            <td>Set layer's style or adjust its position. The prop sets <code>.ivu-modal</code>'s style.</td>
+                            <td>Set layer's style or adjust its position. The prop sets <code>.lkui-modal</code>'s style.</td>
                             <td>Object</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>class-name</td>
-                            <td>Set Modal's wrapper - <code>.ivu-modal-wrap</code>'s class name. It can be used to assist to realise custom styles like vertical center.</td>
+                            <td>Set Modal's wrapper - <code>.lkui-modal-wrap</code>'s class name. It can be used to assist to realise custom styles like vertical center.</td>
                             <td>String</td>
                             <td>-</td>
                         </tr>

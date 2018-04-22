@@ -26,7 +26,7 @@
     }
 </style>
 <style>
-    .code-scale-modal .ivu-modal-body{
+    .code-scale-modal .lkui-modal-body{
         background-color: #f7f7f7;
     }
     .code-scale-modal pre{

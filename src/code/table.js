@@ -164,27 +164,27 @@ code.border = `
 
 code.class = `
 <style>
-    .ivu-table .demo-table-info-row td{
+    .lkui-table .demo-table-info-row td{
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-error-row td{
+    .lkui-table .demo-table-error-row td{
         background-color: #ff6600;
         color: #fff;
     }
-    .ivu-table td.demo-table-info-column{
+    .lkui-table td.demo-table-info-column{
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-name {
+    .lkui-table .demo-table-info-cell-name {
         background-color: #2db7f5;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-age {
+    .lkui-table .demo-table-info-cell-age {
         background-color: #ff6600;
         color: #fff;
     }
-    .ivu-table .demo-table-info-cell-address {
+    .lkui-table .demo-table-info-cell-address {
         background-color: #187;
         color: #fff;
     }

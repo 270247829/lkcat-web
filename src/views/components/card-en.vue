@@ -1,9 +1,9 @@
 <style lang="less">
-    .ivu-article{
-        .ivu-card p{
+    .lkui-article{
+        .lkui-card p{
             margin: 0;
         }
-        .ivu-card ul{
+        .lkui-card ul{
             padding: 0 !important;
             li{
                 list-style: none;
@@ -16,7 +16,7 @@
                 }
             }
         }
-        .ivu-card img{
+        .lkui-card img{
             height: 85px;
         }
 

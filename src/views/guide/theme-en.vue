@@ -9,7 +9,7 @@
         <article>
             <h1>Customize Theme</h1>
             <p>LKCat provides a default theme, and allows to customize some basic aspects in order to meet the needs of UI diversity from business and brand.</p>
-            <p>LKCat uses <a href="http://lesscss.org/" target="_blank">Less</a> as developing language of styles. We use <code>.ivu-</code> as prefix, and have defined a set of variables which can be customized.</p>
+            <p>LKCat uses <a href="http://lesscss.org/" target="_blank">Less</a> as developing language of styles. We use <code>.lkui-</code> as prefix, and have defined a set of variables which can be customized.</p>
             <img src="../../images/theme-demo.png" class="demo-theme-img">
             <Anchor title="By overriding variables (Recommend)" h2></Anchor>
             <p>If you are using webpack in your project, we recommend you to override default values of the variables for customization.</p>

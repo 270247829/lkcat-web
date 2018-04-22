@@ -97,7 +97,7 @@
             </div>
             <div class="icons">
                 <div class="icons-item" v-for="item in filterIcons" @click="clip(item)">
-                    <i class="ivu-icon" :class="[`ivu-icon-${item.name}`]" style="font-size:32px"></i>
+                    <i class="lkui-icon" :class="[`lkui-icon-${item.name}`]" style="font-size:32px"></i>
                     <p>
                         {{ item.name }}
                     </p>

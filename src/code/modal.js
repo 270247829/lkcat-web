@@ -168,7 +168,7 @@ code.position = `
         align-items: center;
         justify-content: center;
 
-        .ivu-modal{
+        .lkui-modal{
             top: 0;
         }
     }

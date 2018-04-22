@@ -148,7 +148,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="ivu-article demo-date-type">
+        <div class="lkui-article demo-date-type">
             <p>以上是 LKCat 支持的日期格式，你可以自由组合出你需要的类型，例如：</p>
             <ul>
                 <li><strong>yyyy年M月d日</strong>：2016年1月1日</li>

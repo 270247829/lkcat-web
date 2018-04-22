@@ -1,8 +1,8 @@
 <style>
-    .wrapper-header-nav .ivu-menu-item i{
+    .wrapper-header-nav .lkui-menu-item i{
         margin-right: 6px;
     }
-    .wrapper-header .ivu-menu{
+    .wrapper-header .lkui-menu{
         z-index: 901;
         box-shadow: 0 1px 1px rgba(0,0,0,.08);
     }

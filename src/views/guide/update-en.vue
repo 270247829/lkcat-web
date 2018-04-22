@@ -1,5 +1,5 @@
 <style>
-    .doc-update .ivu-timeline .ivu-timeline-item-content{
+    .doc-update .lkui-timeline .lkui-timeline-item-content{
         top: -14px;
     }
     .doc-update h2{
@@ -15,7 +15,7 @@
     .doc-update-important{
         color: #3399ff;
     }
-    .doc-update-loop.ivu-load-loop{
+    .doc-update-loop.lkui-load-loop{
         animation-duration: 3s;
     }
 </style>
@@ -185,7 +185,7 @@
                     </ul>
                 </Timeline-item>
                 <Timeline-item>
-                    <Icon type="ios-snowy" class="ivu-load-loop doc-update-loop" style="font-size: 32px;color: rgb(220,50,51)" slot="dot"></Icon>
+                    <Icon type="ios-snowy" class="lkui-load-loop doc-update-loop" style="font-size: 32px;color: rgb(220,50,51)" slot="dot"></Icon>
                     <Anchor title="2.8.0 Oceanhorn" h2>
                         <span class="doc-update-important">Merry Christmas</span>
                     </Anchor>

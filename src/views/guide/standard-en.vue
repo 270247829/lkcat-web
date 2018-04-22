@@ -47,7 +47,7 @@
             </ul>
             <Anchor title="Other" h3></Anchor>
             <ul>
-                <li>CSS prefix is<code>ivu-</code></li>
+                <li>CSS prefix is<code>lkui-</code></li>
             </ul>
         </article>
     </i-article>

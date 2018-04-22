@@ -1,8 +1,8 @@
 <style lang="less">
-    .ivu-article .ivu-select li{
+    .lkui-article .lkui-select li{
         margin-bottom: 0;
     }
-    .ivu-article .ivu-select ul{
+    .lkui-article .lkui-select ul{
         padding-left: 0 !important;
         list-style-type: none;
     }

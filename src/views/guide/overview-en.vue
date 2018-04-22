@@ -3,7 +3,7 @@
         a, a:hover{
             color: #666;
         }
-        .ivu-card{
+        .lkui-card{
             margin: 10px;
         }
 

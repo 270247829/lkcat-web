@@ -1,5 +1,5 @@
 <style scoped>
-    .ivu-slider{
+    .lkui-slider{
         position: relative;
         z-index: 1;
     }
