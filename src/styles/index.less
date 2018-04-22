@@ -1,0 +1,115 @@
+.index{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color:rgba(0,0,0,.85);
+    h1{
+        font-family: Futura,Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 54px;
+        margin: 12px 0;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .img-logo{
+            width: 90px;
+            height: 90px;
+        }
+        .img-name{
+            width: 90px;
+            height: 40px;
+            position: relative;
+            left: 0;
+        }
+    }
+    h2{
+        color: #697b8c;
+        font-weight: normal;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .list{
+        margin: 40px 0 200px;
+        a{
+            color: #333;
+            font-size: 16px;
+            display: inline-block;
+            min-width: 110px;
+            position: relative;
+            transition: color 0.3s;
+            &:before, &:after{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                content: '';
+                opacity: 0;
+                transition: opacity 0.3s, transform 0.3s;
+                transform: translateY(-10px);
+            }
+            &:before{
+                top: 0;
+                transform: translateY(-10px);
+            }
+            &:after{
+                bottom: 0;
+                transform: translateY(10px);
+            }
+
+            &:hover{
+                color: #40a9ff
+            }
+
+        }
+    }
+    .lkui-row-flex{
+        height: 100%;
+    }
+    &-lang{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        & span{
+            display: inline-block;
+            color: #314659;
+            cursor: pointer;
+        }
+    }
+}
+
+#indexLizi{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.lkui-btn-primary{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 110px;
+}
+.lkui-btn-ghost{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 110px;
+    color: #40a9ff;
+    background-color: transparent;
+    border-color: #40a9ff;
+
+    &:hover{
+        color: #3b8bcc
+    }
+    
+}
