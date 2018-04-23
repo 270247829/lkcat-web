@@ -15,9 +15,7 @@
             <Anchor title="字体预览" h3></Anchor>
             <ul>
                 <li>中文字体</li>
-                <img class="demo-font-img" src="../../images/font-zh.png">
                 <li>英文字体</li>
-                <img class="demo-font-img" src="../../images/font-en.png">
             </ul>
             <Anchor title="字体代码" h3></Anchor>
             <i-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>

@@ -53,9 +53,7 @@
                 <template v-else>中文</template>
             </span>
         </div>
-        <!--<div class="index-logo-new-year">-->
-        <!--<img src="../images/logo-doc-2018.png">-->
-        <!--</div>-->
+
     </div>
 </template>
 <script>

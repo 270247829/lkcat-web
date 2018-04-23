@@ -3,7 +3,6 @@
         <article>
             <h1>参与贡献</h1>
             <Anchor title="开发规范" h2></Anchor>
-            <p>贡献组件代码前请务必先与作者联系 <a href="mailto:admin@aresn.com">admin@aresn.com</a>，确定好开发内容和 API，以免产生不必要或重复的工作。</p>
             <Anchor title="使用之前" h3></Anchor>
             <ul>
                 <li>使用最新ES2015语法，具体如下：</li>

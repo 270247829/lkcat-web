@@ -12,9 +12,12 @@
 </style>
 <template>
     <div>
-        <div class="index">
+        
+        <div class="index"><cat ></cat>
             <Row   type="flex" justify="center" align="middle" style="position: relative;z-index: 3">
                 <i-col span="24" >
+                     
+
                     <h1>LK Cat</h1>
                     <h2>{{ $t('index.title') }}</h2>
                     <div class="list">
@@ -26,8 +29,10 @@
                             <Button type="ghost" shape="circle">{{ $t('index.component') }}</Button>
                         </router-link>
                         <a href="https://github.com/270247829/lkcat" target="_blank">
+                            <Button  shape="circle">
                             <Icon type="social-github"></Icon>
                             GitHub
+                            </Button>
                         </a>
                     </div>
                 </i-col>
@@ -43,10 +48,11 @@
     </div>
 </template>
 <script>
-    import THREE from '../libs/three/three';
     import bus from '../../src/components/bus';
+    import cat from './components/cat';
 
     export default {
+        components: { cat },
         data () {
             return {
                 lang: this.$lang

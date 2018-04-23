@@ -1,6 +1,3 @@
-/**
- * Created by aresn on 16/8/22.
- */
 const routers = [
     {
         path: '/',

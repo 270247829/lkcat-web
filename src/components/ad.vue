@@ -2,25 +2,7 @@
     <div v-if="lang === 'zh-CN'">
 
         <div class="advertisement">
-            <row :gutter="32">
-                <i-col span="12">
-                    <div class="advertisement-main">
-                        <a href="https://item.jd.com/12215519.html" target="_blank" @click="handleAd('ad-vuebook')">
-                            <img src="../images/ad-vuebook.png">
-                        </a>
-                        <ad-send></ad-send>
-                    </div>
-                </i-col>
-                <i-col span="12">
-                    <div class="advertisement-main">
-                        <a href="https://segmentfault.com/ls/1650000011074057" target="_blank" @click="handleAd('ad-vuelearning')">
-                            <img src="../images/ad-learning-vue.png">
-                        </a>
 
-                        <ad-send></ad-send>
-                    </div>
-                </i-col>
-            </row>
         </div>
     </div>
 </template>

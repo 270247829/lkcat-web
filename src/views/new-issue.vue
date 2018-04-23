@@ -55,7 +55,6 @@
     <div class="issue">
         <div class="issue-menu">
             <div class="issue-menu-main">
-                <Avatar :src="LKCatLogo" size="large" shape="square"/>
                 <h1>Issue Helper</h1>
                 <Button type="ghost" size="small" @click="handleChangeLang">
                     <template v-if="lang === 'zh-CN'">EN</template>
@@ -405,7 +404,6 @@
     </div>
 </template>
 <script>
-    import LKCatLogo from '../images/logo.png';
     import bus from '../components/bus';
 
     import marked from 'marked';
@@ -430,7 +428,6 @@
     export default {
         data () {
             return {
-                LKCatLogo: LKCatLogo,
                 lang: this.$lang,
                 isStrict: false,
                 isMin: false,

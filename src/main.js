@@ -1,6 +1,3 @@
-/**
- * Created by aresn on 16/6/20.
- */
 import 'babel-polyfill';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -54,7 +51,7 @@ const RouterConfig = {
     routes: Routers
 };
 if (Env != 'local') {
-    RouterConfig.mode = 'history';
+    RouterConfig.mode = '';
 }
 const router = new VueRouter(RouterConfig);
 

@@ -1,6 +1,3 @@
-/**
- * Created by aresn on 16/7/18.
- */
 let util = {
 
 };
@@ -9,7 +6,7 @@ util.alert = function(content) {
 };
 
 util.title = function (title) {
-    title = title ? title + ' - LKCat' : 'LKCat - A high quality UI Toolkit based on Vue.js';
+    title = title ? title + ' - LKCat' : 'LKCat - 兰科集团 Vue.js UI 组件';
     window.document.title = title;
 };
 const SPECIAL_CHARS_REGEXP = /([\:\-\_]+(.))/g;

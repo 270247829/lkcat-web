@@ -10,9 +10,7 @@
 <template>
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
         <div class="wrapper-header-nav">
-            <router-link to="/" class="wrapper-header-nav-logo">
-                <img src="../images/logo-doc.png">
-            </router-link>
+
             <div class="wrapper-header-nav-search">
                 <i-select
                     ref="select"
@@ -36,40 +34,7 @@
                     <Icon type="ios-keypad"></Icon>
                     {{ $t('index.component') }}
                 </Menu-item>
-                <Menu-item name="live" v-if="lang === 'zh-CN'">
-                    <Badge :dot="liveDot">
-                        <Icon type="ios-videocam"></Icon>
-                        {{ $t('index.live') }}
-                    </Badge>
-                </Menu-item>
-                <Menu-item name="practice">
-                    <Icon type="ios-analytics"></Icon>
-                    {{ $t('index.practice') }}
-                </Menu-item>
-                <Submenu name="ecosystem">
-                    <template slot="title">
-                        <Icon type="ios-infinite"></Icon>
-                        {{ $t('index.ecosystem') }}
-                    </template>
-                    <Menu-item name="cli">
-                        <!--<Icon type="settings"></Icon>-->
-                        {{ $t('index.cli') }}
-                    </Menu-item>
-                    <Menu-item name="lkcat-loader">
-                        <!--<Icon type="settings"></Icon>-->
-                        LKCat Loader
-                    </Menu-item>
-                    <Menu-item name="lkcat-admin">
-                        LKCat Admin
-                    </Menu-item>
-                    <Menu-item name="lkcat-area">
-                        LKCat Area
-                    </Menu-item>
-                </Submenu>
-                <!--<Select size="small" value="2" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">-->
-                    <!--<Option value="2">2.x</Option>-->
-                    <!--<Option value="1">1.x</Option>-->
-                <!--</Select>-->
+
                 <ButtonGroup>
                     <Button type="ghost" size="small" icon="social-github" @click="handleGoToGitHub"></Button>
                     <Button type="ghost" size="small" @click="handleChangeLang" >
@@ -180,7 +145,7 @@
             },
             handleGoToGitHub () {
                 _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
-                window.open('https://github.com/lkcat/lkcat');
+                window.open('https://github.com/270247829/lkcat');
             },
             handleGoToTwitter () {
                 _hmt.push(['_trackEvent', 'menu-go-twitter', 'click']);

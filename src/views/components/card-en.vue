@@ -128,8 +128,7 @@
                 <div slot="demo">
                     <Card style="width:320px">
                         <div style="text-align:center">
-                            <img src="../../images/logo.png">
-                            <h3>A high quality UI Toolkit based on Vue.js</h3>
+                            <h3>兰科集团 Vue.js UI 组件</h3>
                         </div>
                     </Card>
                 </div>

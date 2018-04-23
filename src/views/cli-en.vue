@@ -12,7 +12,6 @@
             <Row type="flex" justify="center" align="middle">
                 <i-col span="12">
                     <div class="cli-info">
-                        <img src="../images/cli-logo.png">
                         <p class="cli-info-title">LKCat Cli</p>
                         <div class="cli-info-desc">Create LKCat project with a visual way.</div>
                         <div class="cli-download">
@@ -52,22 +51,19 @@
                         <Carousel dots="outside" :height="height">
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-1.png">
+                                  
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-2.png">
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-3.png">
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-4.png">
                                 </div>
                             </Carousel-item>
                         </Carousel>

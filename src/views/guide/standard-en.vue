@@ -4,7 +4,6 @@
             <h1>Contributing Guide</h1>
             <p>We welcome any contribution to LKCat. But before submitting your contribution though, please take a moment and read through the guidelines.</p>
             <Anchor title="PR Guidelines" h2></Anchor>
-            <p>Make sure you have got in touch with the author before writing any code, we want to avoid wasteful duplication of effort. You can contact by email <a href="mailto:admin@aresn.com">admin@aresn.com</a>.</p>
             <Anchor title="Syntax" h3></Anchor>
             <ul>
                 <li>Use ES2015 syntax as the followings:</li>

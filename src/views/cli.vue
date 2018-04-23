@@ -12,7 +12,6 @@
             <Row type="flex" justify="center" align="middle">
                 <Col span="12">
                     <div class="cli-info">
-                        <img src="../images/cli-logo.png">
                         <p class="cli-info-title">LKCat Cli</p>
                         <div class="cli-info-desc">用可视化的方式来创建你的 LKCat 工程</div>
                         <div class="cli-download">
@@ -52,22 +51,18 @@
                         <Carousel dots="outside" :height="height">
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-1.png">
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-2.png">
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-3.png">
                                 </div>
                             </Carousel-item>
                             <Carousel-item class="cli-item">
                                 <div class="cli-carousel" :style="{height: height + 'px'}">
-                                    <img src="../images/cli-4.png">
                                 </div>
                             </Carousel-item>
                         </Carousel>

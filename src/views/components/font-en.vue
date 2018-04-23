@@ -15,9 +15,7 @@
             <Anchor title="Typography Preview" h3></Anchor>
             <ul>
                 <li>Chinese Characters</li>
-                <img class="demo-font-img" src="../../images/font-zh.png">
                 <li>English Characters</li>
-                <img class="demo-font-img" src="../../images/font-en.png">
             </ul>
             <Anchor title="Code" h3></Anchor>
             <i-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>

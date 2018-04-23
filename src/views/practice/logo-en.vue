@@ -11,7 +11,7 @@
         <article>
             <h1>LKCat Logo Design</h1>
             <div class="case-logo">
-                <img src="../../images/case-logo.png">
+                <img src="">
             </div>
         </article>
     </i-article>

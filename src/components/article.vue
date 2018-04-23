@@ -120,86 +120,29 @@
                     </i-col>
                     <i-col span="5" offset="2">
                         <div class="footer-aside">
-                            <div class="footer-logo">
-                                <img src="../images/logo.png">
-                            </div>
-                            <div class="footer-author">
-                                <a href="https://www.LANKEGP.com/">
-                                    <img src="../images/logo-td.png">
-                                </a>
-                            </div>
-                            <!--<div class="footer-version">-->
-                                <!--<p>{{ $t('index.current_version') }}</p>-->
-                                <!--<p>Vue.js 2.5.13, LKCat 2.9.0</p>-->
-                            <!--</div>-->
+
                         </div>
                     </i-col>
                 </Row>
             </div>
         </div>
-        <!--<Modal v-model="donate" v-if="lang === 'zh-CN'" title="支持 LKCat 的开发" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
-            <!--<div class="lkui-article">-->
-                <!--<p>LKCat 是采用 MIT 许可的开源项目，您可以在个人或企业项目中免费使用。不过，如果您觉得 LKCat 对您的项目带来了帮助，提高开发效率，可以用捐助来表示您的谢意：)</p>-->
-                <!--<p>您可以用公司的名义进行赞助，赞助信息将在文档页展示。联系邮箱 <a href="mailto:admin@aresn.com">admin@aresn.com</a></p>-->
-                <!--<h3>个人可使用 微信 或 支付宝 捐助：</h3>-->
-                <!--<div>-->
-                    <!--<img src="../images/pay.png" style="width: 100%">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</Modal>-->
+
         <Modal v-model="donate" title="与 LKCat 合作，有效触达技术人群" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
             <div class="lkui-article">
-                <p>如果您有品牌推广、活动推广、招聘推广、社区合作的需求，欢迎联系我们。</p>
-                <p>联系邮箱 <a href="mailto:admin@aresn.com">admin@aresn.com</a> 咨询。</p>
-                <p>广告位如下图所示：</p>
-                <div>
-                    <Carousel v-if="donate" v-model="adCarousel" autoplay :autoplay-speed="5000" dots="outside">
-                        <CarouselItem>
-                            <div class="demo-carousel" style="height: 300px">
-                                <img src="../images/ad-demo1.png" style="width: 100%">
-                            </div>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <div class="demo-carousel" style="height: 300px;">
-                                <img src="../images/ad-demo3.png" style="width: 100%">
-                            </div>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <div class="demo-carousel" style="height: 300px;">
-                                <img src="../images/ad-demo2.png" style="width: 100%">
-                            </div>
-                        </CarouselItem>
-                    </Carousel>
-                </div>
+
             </div>
         </Modal>
-        <!--<Modal v-model="donate" v-if="lang !== 'zh-CN'" title="Donate LKCat project" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
-            <!--<div class="lkui-article">-->
-                <!--<p>LKCat is an open source project with MIT licenses that you can use for free in your personal or business projects. However, if you feel that LKCat has helped your project to improve development efficiency, you can use donations to express your gratitude: )</p>-->
-                <!--<h3>Use Wechat or Alipay to donate：</h3>-->
-                <!--<div>-->
-                    <!--<img src="../images/pay.png" style="width: 100%">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</Modal>-->
+
         <Modal v-model="ask" title="免费加入 LKCat 官方QQ群参与讨论" class-name="vertical-center-modal">
             <div class="lkui-article">
                 <p>免费加入官方QQ讨论群，交流 LKCat 技术问题。</p>
-                <p>群号：<strong>71434987</strong></p>
-                <p>二维码：</p>
-                <p>
-                    <img src="../images/qqgroup3.png" style="display: block;width: 50%;margin: 0 auto;">
-                </p>
+                <p>群号：<strong>270247829</strong></p>
                 <p>
                     <Alert show-icon>仅限开发者加入，请勿讨论与技术无关的问题，比如发招聘信息等。</Alert>
                 </p>
             </div>
         </Modal>
-        <!-- todo 提问 -->
-        <!--<div class="ask-question" @click="ask = true" v-if="lang === 'zh-CN'">-->
-            <!--<Icon type="ios-people" size="20"></Icon>-->
-            <!--<p>QQ群</p>-->
-        <!--</div>-->
+
     </div>
 </template>
 <script>

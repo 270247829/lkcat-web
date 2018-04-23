@@ -10,7 +10,6 @@
             <h1>定制主题</h1>
             <p>LKCat 默认提供了一套 UI 主题，并且可以在一定程度上定制新主题，以满足业务和品牌上的多样化视觉需求。</p>
             <p>LKCat 的样式是基于 <a href="http://lesscss.org/" target="_blank">Less</a> 进行开发的，默认以前缀 <code>.lkui-</code> 作为命名空间，并且定义了一套样式变量，定制主题，就是编辑这个变量列表。</p>
-            <img src="../../images/theme-demo.png" class="demo-theme-img">
             <Anchor title="变量覆盖（推荐）" h2></Anchor>
             <p>如果你的项目使用了 webpack 工程，可以通过变量覆盖的方式来实现主题定制。</p>
             <p>首先在项目中先建一个目录，比如 <code>my-theme</code>，然后在 my-theme 下建立一个 less 文件 <code>index.less</code>，并写入下面内容：</p>

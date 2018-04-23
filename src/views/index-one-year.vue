@@ -26,8 +26,7 @@
             <Row type="flex" justify="center" align="middle" style="position: relative;z-index: 3">
                 <i-col span="24">
                     <h1>
-                        <img src="../images/logo.png" class="img-logo">
-                        <img src="../images/name.png" class="img-name">
+
                     </h1>
                     <div class="list">
                         <div class="list-a">
@@ -56,15 +55,7 @@
                         <div style="text-align: center;padding-top: 12px;">
                             <a style="text-decoration: underline" href="https://zhuanlan.zhihu.com/p/28090879" target="_blank">阅读 LKCat 一周年专题文章</a>
                         </div>
-                        <!--<div class="index-card">-->
-                            <!--<Tooltip content="阅读 LKCat 一周年专题文章">-->
-                                <!--<Card :padding="0" :bordered="false" shadow>-->
-                                    <!--<a class="card" href="#" target="_blank">-->
-                                        <!--<img src="../images/one-year-logo.png">-->
-                                    <!--</a>-->
-                                <!--</Card>-->
-                            <!--</Tooltip>-->
-                        <!--</div>-->
+
                     </div>
                 </i-col>
             </Row>
