@@ -155,7 +155,6 @@
                 <li><code>Content</code>：内容部分，自带默认样式，其下可嵌套任何元素，只能放在 <code>Layout</code> 中。</li>
                 <li><code>Footer</code>：底部布局，自带默认样式，其下可嵌套任何元素，只能放在 <code>Layout</code> 中。</li>
             </ul>
-            <Alert show-icon style="margin-top: 16px">注意：采用 flex 布局实现，请注意<a href="https://caniuse.com/#search=flex" target="_blank" title="can i use">浏览器兼容性</a>问题。</Alert>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本结构" vertical hide-code>
                 <div slot="demo">
@@ -408,18 +407,7 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.topSiderFooter }}</i-code>
             </Demo>
-            <Demo title="侧边布局" vertical hide-code>
-                <div slot="demo">
-                    <div class="layout">
-                        <iframe src="https://file.lkcatui.com/layout-page2/sider.html" height="360"></iframe>
-                    </div>
-                </div>
-                <div slot="desc">
-                    <p>侧边两列式布局。页面横向空间有限时，侧边导航可收起。</p>
-                    <p>侧边导航在页面布局上采用的是左右的结构，一般主导航放置于页面的左侧固定位置，辅助菜单放置于工作区顶部。内容根据浏览器终端进行自适应，能提高横向空间的使用率，但是整个页面排版不稳定。侧边导航的模式层级扩展性强，一、二、三级导航项目可以更为顺畅且具关联性的被展示，同时侧边导航可以固定，使得用户在操作和浏览中可以快速的定位和切换当前位置，有很高的操作效率。但这类导航横向页面内容的空间会被牺牲一部份。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.left }}</i-code>
-            </Demo>
+
             <Demo title="自定义触发器" vertical hide-code>
                 <div slot="demo">
                     <div :class="['layout', isCollapsed ? 'layout-hide-text' : '']">
@@ -492,34 +480,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.media }}</i-code>
             </Demo>
-            <Demo title="固定头部" vertical hide-code>
-                <div slot="demo">
-                    <div class="layout">
-                        <div class="layout">
-                            <iframe src="https://file.lkcatui.com/layout-page2/header-fixed.html" height="360"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div slot="desc">
-                    <p>一般用于固定顶部导航，方便页面切换。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.headerFixed }}</i-code>
-            </Demo>
-            <Demo title="固定侧边栏" vertical hide-code>
-                <div slot="demo">
-                    <div class="layout">
-                        <div class="layout">
-                            <iframe src="https://file.lkcatui.com/layout-page2/sider-fixed.html" height="360"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div slot="desc">
-                    <p>当内容较长时，使用固定侧边栏可以提供更好的体验。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.siderFixed }}</i-code>
-            </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

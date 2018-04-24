@@ -42,11 +42,11 @@
             },
             vertical: {
                 type: Boolean,
-                default: false
+                default: true
             },
             hideCode: {
                 type: Boolean,
-                default: false
+                default: true
             }
         },
         data () {

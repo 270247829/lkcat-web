@@ -46,102 +46,27 @@
                 </Row>
             </div>
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="footer-main">
                 <Row>
-                    <i-col span="5">
+                    <i-col span="8">
                         <h4>
                             <Icon type="social-github"></Icon>
                             GitHub
                         </h4>
                         <ul>
                             <li>
-                                <a href="https://github.com/lkcat/lkcat" target="_blank">LKCat</a>
+                                <a href="https://github.com/270247829/lkcat" target="_blank">LKCat</a>
                             </li>
                             <li>
-                                <a href="https://github.com/lkcat/lkcat-cli" target="_blank">LKCat Cli</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/lkcat/lkcat-admin" target="_blank">LKCat Admin</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/lkcat/lkcat-doc" target="_blank">LKCat Doc</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/lkcat/lkcat-project" target="_blank">LKCat Project</a>
+                                <a href="https://github.com/270247829/lkcat-pro" target="_blank">LKCat-Pro</a>
                             </li>
                         </ul>
-                    </i-col>
-                    <i-col span="5">
-                        <h4>
-                            <Icon type="link"></Icon>
-                            {{ $t('index.links') }}
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="https://www.LANKEGP.com/" target="_blank">LANKEGP</a> - {{ $t('index.td') }}
-                            </li>
-                            <li>
-                                <a href="http://mi.LANKEGP.com/" target="_blank">Marketing Intelligence</a> - {{ $t('index.td_mi') }}
-                            </li>
-                            <li>
-                                <a href="https://github.com/LANKEGP/inmap/" target="_blank">inMap</a> - {{ $t('index.inmap') }}
-                            </li>
-                            <li>
-                                <a href="https://github.com/LANKEGP/Fregata" target="_blank">Fregata</a> - {{ $t('index.Fregata') }}
-                            </li>
-                            <li>
-                                <a href="https://github.com/LANKEGP/Myna" target="_blank">Myna</a> - {{ $t('index.Myna') }}
-                            </li>
-                            <li>
-                                <a href="https://github.com/LANKEGP/owl" target="_blank">OWL</a> - {{ $t('index.OWL') }}
-                            </li>
-                        </ul>
-                    </i-col>
-                    <i-col span="5" offset="2">
-                        <h4>
-                            <Icon type="chatbubbles"></Icon>
-                            {{ $t('index.community') }}
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/lkcat/lkcat/issues" target="_blank">{{ $t('index.feedback') }}</a>
-                            </li>
-                            <li>
-                                <a href="https://www.lkcatui.com/new-issue" target="_blank">{{ $t('index.bug') }}</a>
-                            </li>
-                            <li>
-                                <a href="https://gitter.im/lkcat/lkcat" target="_blank">{{ $t('index.chat') }}</a>
-                            </li>
-                            <li>
-                                <a href="https://segmentfault.com/t/lkcat" target="_blank">SegmentFault</a>
-                            </li>
-                        </ul>
-                    </i-col>
-                    <i-col span="5" offset="2">
-                        <div class="footer-aside">
-
-                        </div>
                     </i-col>
                 </Row>
             </div>
-        </div>
+        </div> -->
 
-        <Modal v-model="donate" title="与 LKCat 合作，有效触达技术人群" @on-ok="handleModalClose" @on-cancel="handleModalClose" width="600" class-name="vertical-center-modal">
-            <div class="lkui-article">
-
-            </div>
-        </Modal>
-
-        <Modal v-model="ask" title="免费加入 LKCat 官方QQ群参与讨论" class-name="vertical-center-modal">
-            <div class="lkui-article">
-                <p>免费加入官方QQ讨论群，交流 LKCat 技术问题。</p>
-                <p>群号：<strong>270247829</strong></p>
-                <p>
-                    <Alert show-icon>仅限开发者加入，请勿讨论与技术无关的问题，比如发招聘信息等。</Alert>
-                </p>
-            </div>
-        </Modal>
 
     </div>
 </template>
@@ -165,7 +90,7 @@
                 activeKey: '',
                 lang: this.$lang,
                 adCarousel: 0,
-                ad_index: 1  // 随机广告索引，更好地显示一类广告
+                ad_index: 1  
             }
         },
         methods: {
@@ -226,7 +151,6 @@
             this.lang = this.$lang;
         },
         mounted () {
-            // 随机广告索引
             this.ad_index = Math.floor(Math.random () * 2 + 1);
 
 

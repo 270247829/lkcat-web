@@ -33,31 +33,6 @@ const list = {
             title: '快速上手',
             titleEn: 'Quick Start',
             path: '/docs/guide/start'
-        },
-        {
-            title: '国际化',
-            titleEn: 'Internationalization',
-            path: '/docs/guide/i18n'
-        },
-        {
-            title: '定制主题',
-            titleEn: 'Customize Theme',
-            path: '/docs/guide/theme'
-        },
-        {
-            title: 'LKCat Loader',
-            titleEn: 'LKCat Loader',
-            path: '/docs/guide/lkcat-loader'
-        },
-        {
-            title: '概览',
-            titleEn: 'Overview',
-            path: '/overview'
-        },
-        {
-            title: '更新日志',
-            titleEn: 'Change Log',
-            path: '/docs/guide/update'
         }
     ],
     components: [
