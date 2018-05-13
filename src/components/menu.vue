@@ -26,9 +26,9 @@
                 </i-select>
             </div>
             <div class="wrapper-header-nav-list">
-                <Menu-item name="guide">
+                <Menu-item name="help">
                     <Icon type="ios-navigate"></Icon>
-                    {{ $t('index.guide') }}
+                    {{ $t('index.help') }}
                 </Menu-item>
                 <Menu-item name="component">
                     <Icon type="ios-keypad"></Icon>
@@ -59,7 +59,6 @@
             return {
                 search: '',
                 navigateList: [],
-                liveDot: false,
                 currentActiveKey: this.activeKey,
                 searchText: this.$t('index.search'),
                 notFoundText: this.$t('index.notFound'),
@@ -92,18 +91,10 @@
                     bus.$emit('on-donate-show');
                 } else if (type === 'github') {
                     window.open('https://github.com/270247829/lkcat');
-                } else if (type === 'guide') {
+                } else if (type === 'help') {
                     this.$router.push(navigate.guide[0].path + pathSuffix);
                 } else if (type === 'component') {
                     this.$router.push(navigate.beforeComponents[0].path + pathSuffix);
-                } else if (type === 'practice') {
-                    this.$router.push(navigate.practice[0].path + pathSuffix);
-                } else if (type === 'cli') {
-                    this.$router.push('/cli' + pathSuffix);
-                } else if (type === 'live') {
-                    this.$router.push('/live');
-                } else if (type === 'lkcat-loader') {
-                    this.$router.push('/docs/guide/lkcat-loader' + pathSuffix);
                 } else if (type === 'lkcat-admin') {
                     window.open('https://github.com/lkcat/lkcat-pro');
                 } 
@@ -136,20 +127,11 @@
             handleChangeLang () {
                 const lang = this.lang === 'zh-CN' ? 'en-US' : 'zh-CN';
                 const path = this.$route.path.indexOf('-en') > -1 ? this.$route.path.split('-en')[0] : this.$route.path + '-en';
-                bus.$emit('on-change-lang', lang, path);
-            },
-            handleVersion (v) {
-                if (v == 1) {
-                    window.location.href = 'http://v1.lkcatui.com';
-                }
+                bus.$emit('on-change-lang', lang, '/#'+ path);
             },
             handleGoToGitHub () {
                 _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
                 window.open('https://github.com/270247829/lkcat');
-            },
-            handleGoToTwitter () {
-                _hmt.push(['_trackEvent', 'menu-go-twitter', 'click']);
-                window.open('https://twitter.com/LKCatUI');
             }
         },
         created () {
@@ -161,13 +143,6 @@
                 }
             }
             this.navigateList = list;
-            // 设置直播 dot
-            const liveDotVersion = window.localStorage.getItem('liveVersion');
-            if (liveDotVersion) {
-                this.liveDot = liveDotVersion < Config.liveVersion;
-            } else {
-                this.liveDot = true;
-            }
         }
     };
 </script>

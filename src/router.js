@@ -7,48 +7,6 @@ const routers = [
         component: (resolve) => require(['./views/index.vue'], resolve)
     },
     {
-        path: '/vue-book',
-        meta: {
-            title: '《Vue.js 实战》预购'
-        },
-        component: (resolve) => require(['./views/vue-book.vue'], resolve)
-    },
-    {
-        path: '/vue-book/check',
-        meta: {
-            title: '《Vue.js 实战》预购查询'
-        },
-        component: (resolve) => require(['./views/vue-book-check.vue'], resolve)
-    },
-    {
-        path: '/new-issue',
-        meta: {
-            title: 'LKCat Issue Helper'
-        },
-        component: (resolve) => require(['./views/new-issue.vue'], resolve)
-    },
-    {
-        path: '/cli',
-        meta: {
-            title: 'LKCat Cli 可视化脚手架'
-        },
-        component: (resolve) => require(['./views/cli.vue'], resolve)
-    },
-    {
-        path: '/cli-en',
-        meta: {
-            title: 'LKCat Cli'
-        },
-        component: (resolve) => require(['./views/cli-en.vue'], resolve)
-    },
-    {
-        path: '/live',
-        meta: {
-            title: '讲堂'
-        },
-        component: (resolve) => require(['./views/live.vue'], resolve)
-    },
-    {
         path: '/overview',
         meta: {
             title: '概览'

@@ -13,11 +13,11 @@
 <template>
     <div>
         
-        <div class="index"><cat ></cat>
+        <div class="index">
+            <img :src="logoPath" class="logo"/>
+            <cat ></cat>
             <Row   type="flex" justify="center" align="middle" style="position: relative;z-index: 3">
                 <i-col span="24" >
-                     
-
                     <h1>LK Cat</h1>
                     <h2>{{ $t('index.title') }}</h2>
                     <div class="list">
@@ -50,12 +50,13 @@
 <script>
     import bus from '../../src/components/bus';
     import cat from './components/cat';
-
+    import logo from '../images/logo.svg';
     export default {
         components: { cat },
         data () {
             return {
-                lang: this.$lang
+                lang: this.$lang,
+                logoPath : logo
             }
         },
         computed: {

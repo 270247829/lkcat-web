@@ -16,11 +16,64 @@ module.exports = {
     },
     // 输出
     output: {
-        path: path.join(__dirname, './dist')
+        path: path.join(__dirname, './dist/dist')
     },
     // 加载器
     module: {
         rules: [
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+                        css: 'vue-style-loader!css-loader',
+                        less: 'vue-style-loader!css-loader!less-loader'
+                    },
+                    postLoaders: {
+                        html: 'babel-loader'
+                    }
+                }
+            },
+            {
+                test: /lkcat\/.*?js$/,
+                loader: 'happypack/loader?id=happybabel',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.js$/,
+                loader: 'happypack/loader?id=happybabel',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.js[x]?$/,
+                include: [resolve('src')],
+                exclude: /node_modules/,
+                loader: 'happypack/loader?id=happybabel'
+            },
+            {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: ['css-loader?minimize', 'autoprefixer-loader'],
+                    fallback: 'style-loader'
+                })
+            },
+            {
+                test: /\.less$/,
+                use: ExtractTextPlugin.extract({
+                    use: ['css-loader?minimize','autoprefixer-loader', 'less-loader'],
+                    fallback: 'style-loader'
+                }),
+            },
+            {
+                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+                loader: 'url-loader?limit=1024'
+            },
+            {
+                test: /\.(html|tpl)$/,
+                loader: 'html-loader'
+            }
+        ]
+        // rules: [
             // {
             //     test: /\.vue$/,
             //     use: [
@@ -50,59 +103,59 @@ module.exports = {
             //         }
             //     ]
             // },
-            {
-                test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    loaders: {
-                        css: 'vue-style-loader!css-loader',
-                        less: 'vue-style-loader!css-loader!less-loader'
-                    },
-                    postLoaders: {
-                        html: 'babel-loader'
-                    }
-                }
-            },
-            {
-                test: /lkcat\/.*?js$/,
-                loader: 'happypack/loader?id=happybabel'
-            },
-            {
-                test: /\.js$/,
-                loader: 'happypack/loader?id=happybabel',
-                exclude: /node_modules/
-            },
-            {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    use: 'css-loader?minimize',
-                    fallback: 'style-loader'
-                })
-            },
-            {
-                test: /\.less/,
-                use: ExtractTextPlugin.extract({
-                    use: ['css-loader?minimize', 'autoprefixer-loader', 'less-loader'],
-                    fallback: 'style-loader'
-                })
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader?sourceMap'
-                ]
-            },
-            {
-                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=1024'
-            },
-            {
-                test: /\.(html|tpl)$/,
-                loader: 'html-loader'
-            }
-        ]
+        //     {
+        //         test: /\.vue$/,
+        //         loader: 'vue-loader',
+        //         options: {
+        //             loaders: {
+        //                 css: 'vue-style-loader!css-loader',
+        //                 less: 'vue-style-loader!css-loader!less-loader'
+        //             },
+        //             postLoaders: {
+        //                 html: 'babel-loader'
+        //             }
+        //         }
+        //     },
+        //     {
+        //         test: /lkcat\/.*?js$/,
+        //         loader: 'happypack/loader?id=happybabel'
+        //     },
+        //     {
+        //         test: /\.js$/,
+        //         loader: 'happypack/loader?id=happybabel',
+        //         exclude: /node_modules/
+        //     },
+        //     {
+        //         test: /\.css$/,
+        //         use: ExtractTextPlugin.extract({
+        //             use: 'css-loader?minimize',
+        //             fallback: 'style-loader'
+        //         })
+        //     },
+        //     {
+        //         test: /\.less/,
+        //         use: ExtractTextPlugin.extract({
+        //             use: ['css-loader?minimize', 'autoprefixer-loader', 'less-loader'],
+        //             fallback: 'style-loader'
+        //         })
+        //     },
+        //     {
+        //         test: /\.scss$/,
+        //         use: [
+        //             'style-loader',
+        //             'css-loader',
+        //             'sass-loader?sourceMap'
+        //         ]
+        //     },
+        //     {
+        //         test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+        //         loader: 'url-loader?limit=1024'
+        //     },
+        //     {
+        //         test: /\.(html|tpl)$/,
+        //         loader: 'html-loader'
+        //     }
+        // ]
     },
     plugins: [
         new HappyPack({
@@ -117,9 +170,9 @@ module.exports = {
         alias: {
             'hljs': 'highlightjs/highlight.pack.js',
             'iCode': '../../components/code.vue',
-            // 'vue': 'vue/dist/vue.esm.js',
-            'vue': 'vue/dist/vue.runtime.js'
-            // '@': resolve('src')
+            'vue': 'vue/dist/vue.esm.js',
+            // 'vue': 'vue/dist/vue.runtime.js'
+            '@': resolve('./src')
         }
     }
 };

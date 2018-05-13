@@ -15,19 +15,28 @@ fs.open('./src/config/env.js', 'w', function (err, fd) {
 var config = {};
 config.output = {};
 config.devtool = '#source-map';                             // source-map
-config.output.publicPath = '/';                        // 资源路径
+config.output.publicPath = '/dist/';                        // 资源路径
 config.output.filename = '[name].js';                       // 入口js命名
 config.output.chunkFilename = '[name].chunk.js';            // 路由js命名
 
 config.plugins = [
     new ExtractTextPlugin({
         filename: '[name].css',
-        allChunks: true,
-        // disable: true
+        allChunks: true
     }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //     name: ['vender-exten', 'vender-base'],
+    //     minChunks: Infinity
+    // }),
+    // new ExtractTextPlugin({
+    //     filename: '[name].css',
+    //     allChunks: true,
+    //     // disable: true
+    // }),
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vendors',
-        filename: 'vendors.js'
+        filename: 'vendors.js',
+        minChunks: Infinity
     }),
     new HtmlWebpackPlugin({
         filename: './index.html',
