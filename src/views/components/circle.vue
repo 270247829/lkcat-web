@@ -35,7 +35,7 @@
 <template>
     <i-article>
         <article>
-            <h1>Circle 进度环</h1>
+            <h1>i-circle 进度环</h1>
             <Anchor title="概述" h2></Anchor>
             <p>图表类组件。一般有两种用途：</p>
             <ul>
@@ -48,21 +48,21 @@
                 <div slot="demo">
                     <Row>
                         <Col span="8">
-                            <Circle :percent="80">
+                            <i-circle :percent="80">
                                 <span class="demo-circle-inner" style="font-size:24px">80%</span>
-                            </Circle>
+                            </i-circle>
                         </Col>
                         <Col span="8">
-                            <Circle :percent="100" stroke-color="#5cb85c">
+                            <i-circle :percent="100" stroke-color="#5cb85c">
                                 <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
-                            </Circle>
+                            </i-circle>
                         </Col>
                         <Col span="8">
-                            <Circle :percent="35" stroke-color="#ff5500">
+                            <i-circle :percent="35" stroke-color="#ff5500">
                         <span class="demo-circle-inner">
                             <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
                         </span>
-                            </Circle>
+                            </i-circle>
                         </Col>
                     </Row>
                 </div>
@@ -73,10 +73,10 @@
             </Demo>
             <Demo title="配合外部组件使用">
                 <div slot="demo">
-                    <Circle :percent="percent" :stroke-color="color">
+                    <i-circle :percent="percent" :stroke-color="color">
                         <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
                         <span v-else style="font-size:24px">{{ percent }}%</span>
-                    </Circle>
+                    </i-circle>
                     <ButtonGroup size="large">
                         <Button icon="ios-plus-empty" @click="add"></Button>
                         <Button icon="ios-minus-empty" @click="minus"></Button>
@@ -89,7 +89,7 @@
             </Demo>
             <Demo title="自定义更多样式">
                 <div slot="demo">
-                    <Circle
+                    <i-circle
                         :size="250"
                         :trail-width="4"
                         :stroke-width="5"
@@ -104,7 +104,7 @@
                                 <i>75%</i>
                             </span>
                         </div>
-                    </Circle>
+                    </i-circle>
                 </div>
                 <div slot="desc">
                     <p>通过自定义<code>slot</code>和丰富的配置，可以组合出很多统计效果。</p>
@@ -116,7 +116,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <Anchor title="i-circle props" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -171,7 +171,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Circle slot" h3></Anchor>
+                <Anchor title="i-circle slot" h3></Anchor>
                 <table>
                     <thead>
                         <tr>

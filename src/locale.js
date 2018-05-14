@@ -2,7 +2,7 @@ export default {
     'zh-CN': {
         index: {
             title: '兰科集团 Vue.js UI 组件',
-            guide: '预览',
+            guide: '指南',
             component: '组件',
             practice: '实践',
             cli: 'LKCat Cli',
@@ -32,7 +32,7 @@ export default {
     'en-US': {
         index: {
             title: 'LK UI on Vue.js',
-            guide: 'preview',
+            guide: 'guide',
             component: 'Components',
             practice: 'Practice',
             cli: 'LKCat Cli',

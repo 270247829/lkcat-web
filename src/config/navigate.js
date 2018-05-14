@@ -3,19 +3,9 @@
 const list = {
     guide: [
         {
-            title: '介绍',
+            title: 'LKCat Pro',
             titleEn: 'Introduction',
             path: '/docs/guide/introduce'
-        },
-        {
-            title: '设计原则',
-            titleEn: 'Design Principles',
-            path: '/docs/guide/design'
-        },
-        {
-            title: '布局',
-            titleEn: 'Navigation Examples',
-            path: '/docs/guide/layout'
         },
         {
             title: '参与贡献',
@@ -111,6 +101,12 @@ const list = {
                     path: '/components/table',
                     img: 'table.png',
                     icon: 'ios-grid-view'
+                },
+                {
+                    title: 'List 列表',
+                    path: '/components/list',
+                    img: 'list.png',
+                    icon: 'ios-list'
                 },
                 {
                     title: 'Select 选择器',

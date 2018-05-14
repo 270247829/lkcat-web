@@ -1,14 +1,14 @@
 <template>
     <i-article>
         <article>
-            <h1>Switch 开关</h1>
+            <h1>i-switch 开关</h1>
             <Anchor title="概述" h2></Anchor>
             <p>在两种状态间切换时用到的开关选择器。</p>
             <Alert show-icon style="margin-top: 16px" type="warning">注意：没有使用 <router-link to="/docs/guide/lkcat-loader">lkcat-loader</router-link> 时，必须使用 <code>i-switch</code> 标签。</Alert>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本">
                 <div slot="demo">
-                    <Switch v-model="switch1" @on-change="change"></Switch>
+                    <i-switch v-model="switch1" @on-change="change"></i-switch>
                 </div>
                 <div slot="desc">
                     <p>基本用法，状态切换时会触发事件。</p>
@@ -17,9 +17,9 @@
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
-                    <Switch size="large"></Switch>
-                    <Switch></Switch>
-                    <Switch size="small"></Switch>
+                    <i-switch size="large"></i-switch>
+                    <i-switch></i-switch>
+                    <i-switch size="small"></i-switch>
                 </div>
                 <div slot="desc">
                     <p>设置<code>size</code>为 <code>large</code> 或 <code>small</code> 使用大号和小号的开关。</p>
@@ -28,23 +28,23 @@
             </Demo>
             <Demo title="文字和图标">
                 <div slot="demo">
-                    <Switch>
+                    <i-switch>
                         <span slot="open">开</span>
                         <span slot="close">关</span>
-                    </Switch>
-                    <Switch>
+                    </i-switch>
+                    <i-switch>
                         <Icon type="android-done" slot="open"></Icon>
                         <Icon type="android-close" slot="close"></Icon>
-                    </Switch>
+                    </i-switch>
                     <br><br>
-                    <Switch size="large">
+                    <i-switch size="large">
                         <span slot="open">开启</span>
                         <span slot="close">关闭</span>
-                    </Switch>
-                    <Switch size="large">
+                    </i-switch>
+                    <i-switch size="large">
                         <span slot="open">ON</span>
                         <span slot="close">OFF</span>
-                    </Switch>
+                    </i-switch>
                 </div>
                 <div slot="desc">
                     <p>自定义内容，建议如果使用2个汉字，将开关尺寸设置为 large。</p>
@@ -53,7 +53,7 @@
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
-                    <Switch :disabled="disabled"></Switch>
+                    <i-switch :disabled="disabled"></i-switch>
                     <Button type="primary" @click="disabled = !disabled">Toggle Disabled</Button>
                 </div>
                 <div slot="desc">
@@ -66,7 +66,7 @@
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="Switch props" h3></Anchor>
+                <Anchor title="i-switch props" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -109,7 +109,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Switch events" h3></Anchor>
+                <Anchor title="i-switch events" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
@@ -126,7 +126,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <Anchor title="Switch slot" h3></Anchor>
+                <Anchor title="i-switch slot" h3></Anchor>
                 <table>
                     <thead>
                         <tr>

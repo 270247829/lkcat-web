@@ -10,7 +10,9 @@
 <template>
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
         <div class="wrapper-header-nav">
-
+            <a href="/" class="wrapper-header-nav-logo router-link-active">
+                <img :src="logoPath">
+            </a>
             <div class="wrapper-header-nav-search">
                 <i-select
                     ref="select"
@@ -26,9 +28,9 @@
                 </i-select>
             </div>
             <div class="wrapper-header-nav-list">
-                <Menu-item name="help">
+                <Menu-item name="guide">
                     <Icon type="ios-navigate"></Icon>
-                    {{ $t('index.help') }}
+                    {{ $t('index.guide') }}
                 </Menu-item>
                 <Menu-item name="component">
                     <Icon type="ios-keypad"></Icon>
@@ -37,10 +39,10 @@
 
                 <ButtonGroup>
                     <Button type="ghost" size="small" icon="social-github" @click="handleGoToGitHub"></Button>
-                    <Button type="ghost" size="small" @click="handleChangeLang" >
+                    <!-- <Button type="ghost" size="small" @click="handleChangeLang" >
                         <template v-if="lang === 'zh-CN'">EN</template>
                         <template v-else>中文</template>
-                    </Button>
+                    </Button> -->
                 </ButtonGroup>
             </div>
         </div>
@@ -50,7 +52,7 @@
     import navigate from '../config/navigate';
     import Config from '../config/config';
     import bus from './bus';
-
+    import logo from '../images/logo.svg';
     export default {
         props: {
             activeKey: String
@@ -62,11 +64,13 @@
                 currentActiveKey: this.activeKey,
                 searchText: this.$t('index.search'),
                 notFoundText: this.$t('index.notFound'),
-                lang: this.$lang
+                lang: this.$lang,
+                logoPath:logo
             };
         },
         watch: {
             activeKey (val) {
+                 console.log(val);
                 this.currentActiveKey = val;
             },
             currentActiveKey (val) {
@@ -91,7 +95,7 @@
                     bus.$emit('on-donate-show');
                 } else if (type === 'github') {
                     window.open('https://github.com/270247829/lkcat');
-                } else if (type === 'help') {
+                } else if (type === 'guide') {
                     this.$router.push(navigate.guide[0].path + pathSuffix);
                 } else if (type === 'component') {
                     this.$router.push(navigate.beforeComponents[0].path + pathSuffix);
@@ -116,13 +120,10 @@
                 const route = this.$route.path;
                 if (route.indexOf('component') > -1 || componentList.indexOf(route) > -1) {
                     this.currentActiveKey = 'component';
-                } else if (route.indexOf('practice') > -1) {
-                    this.currentActiveKey = 'practice';
-                } else if (route.indexOf('live') > -1) {
-                    this.currentActiveKey = 'live';
                 } else {
                     this.currentActiveKey = 'guide';
                 }
+               
             },
             handleChangeLang () {
                 const lang = this.lang === 'zh-CN' ? 'en-US' : 'zh-CN';

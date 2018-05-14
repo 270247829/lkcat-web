@@ -15,7 +15,7 @@ fs.open('./src/config/env.js', 'w', function (err, fd) {
 var config = {};
 config.output = {};
 config.devtool = '#source-map';                             // source-map
-config.output.publicPath = '/dist/';                        // 资源路径
+config.output.publicPath = '/';                        // 资源路径
 config.output.filename = '[name].js';                       // 入口js命名
 config.output.chunkFilename = '[name].chunk.js';            // 路由js命名
 

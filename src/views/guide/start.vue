@@ -39,14 +39,12 @@
     import iCode from 'iCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
-    import Study from '../../components/study.vue';
 
     export default {
         components: {
             iArticle,
             iCode,
-            Anchor,
-            Study
+            Anchor
         },
         data () {
             return {

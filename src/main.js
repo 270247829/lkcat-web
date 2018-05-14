@@ -55,21 +55,21 @@ if (Env != 'local') {
 }
 const router = new VueRouter(RouterConfig);
 
-router.beforeEach((to, from, next) => {
-    LKCat.LoadingBar.start();
-    bus.loading = true;
-    Util.title(to.meta.title);
-    next();
-});
+// router.beforeEach((to, from, next) => {
+//     LKCat.LoadingBar.start();
+//     bus.loading = true;
+//     Util.title(to.meta.title);
+//     next();
+// });
 
-router.afterEach((to, from, next) => {
-    LKCat.LoadingBar.finish();
-    bus.loading = false;
-    window.scrollTo(0, 0);
-    if (_hmt) {
-        _hmt.push(['_trackEvent', 'page', to.path]);
-    }
-});
+// router.afterEach((to, from, next) => {
+//     LKCat.LoadingBar.finish();
+//     bus.loading = false;
+//     window.scrollTo(0, 0);
+//     if (_hmt) {
+//         _hmt.push(['_trackEvent', 'page', to.path]);
+//     }
+// });
 
 new Vue({
     el: '#app',
