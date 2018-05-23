@@ -2,7 +2,7 @@
     <i-article>
         <article style="min-height:800px">
             <h1>关于 LKCat Pro</h1>
-            <p>LKCat Pro 是一套基于 LKCat UI 组件库开发的后台管理系统。</p>
+            <p>LKCat Pro 是一套基于 LKCat UI 组件库开发的后台管理系统。  <a href="/lkcat-pro" target="_blank">Demo</a></p>
             <Anchor title="下载项目" h2></Anchor>
             <ul>
                 <li>

@@ -53,7 +53,7 @@
                 </div>
                 <div slot="desc">
                     <p>自定义标题、额外操作和主体内容，可以完全自由控制各个部分，也可以结合其它组件一起使用，较为灵活。</p>
-                    <p><blockquote>2.12.0 版本开始，可以通过设置属性 <code>title</code> 和 <code>icon</code> 快速设置标题栏。</blockquote></p>
+                    <p><blockquote>可以通过设置属性 <code>title</code> 和 <code>icon</code> 快速设置标题栏。</blockquote></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
