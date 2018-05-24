@@ -39,12 +39,12 @@
             </Row>
         </div>
         <div id="indexLizi"></div>
-        <div class="index-lang">
+        <!-- <div class="index-lang">
             <span @click="handleChangeLang">
                 <template v-if="lang === 'zh-CN'">EN</template>
                 <template v-else>中文</template>
             </span>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
