@@ -7,11 +7,11 @@ var fs = require('fs');
 
 
 
-// 写入环境变量
-fs.open('./src/config/env.js', 'w', function (err, fd) {
-    var buf = 'export default "development";';
-    fs.write(fd, buf, 0, buf.length, 0, function (err, written, buffer){});
-});
+// // 写入环境变量
+// fs.open('./src/config/env.js', 'w', function (err, fd) {
+//     var buf = 'export default "development";';
+//     fs.write(fd, buf, 0, buf.length, 0, function (err, written, buffer){});
+// });
 var config = {};
 config.output = {};
 config.devtool = '#source-map';                             // source-map

@@ -1,10 +1,36 @@
-<style>
+<style scoped>
     .wrapper-header-nav .lkui-menu-item i{
         margin-right: 6px;
     }
     .wrapper-header .lkui-menu{
         z-index: 901;
-        box-shadow: 0 1px 1px rgba(0,0,0,.08);
+        box-shadow: 0 3px 1px rgba(0,0,0,.08);
+    }
+
+    .lkui-menu-light.lkui-menu-horizontal .lkui-menu-item, .lkui-menu-light.lkui-menu-horizontal .lkui-menu-submenu {
+        height: inherit;
+        line-height: inherit;
+        border-top: 2px solid transparent;
+        border-bottom: none;
+        color: #495060;
+    }
+    .lkui-menu-light.lkui-menu-horizontal .lkui-menu-item-active, .lkui-menu-light.lkui-menu-horizontal .lkui-menu-item:hover, .lkui-menu-light.lkui-menu-horizontal .lkui-menu-submenu-active, .lkui-menu-light.lkui-menu-horizontal .lkui-menu-submenu:hover {
+        color: #2d8cf0;
+        border-top: 2px solid #2d8cf0;
+        border-bottom: none;
+    }
+    .wrapper-header .lkui-menu-horizontal {
+        height: 70px;
+        line-height: 70px;
+    }
+    .wrapper-header-nav-list {
+        height: inherit;
+        float: left;
+        margin-left: 150px;
+    }
+    .wrapper-header-nav-search {
+        float: right;
+        margin-left: 100px;
     }
 </style>
 <template>
@@ -26,16 +52,6 @@
                         <template v-else>{{ item.title.split(' ')[0] }}</template>
                     </i-option>
                 </i-select>
-            </div>
-            <div class="wrapper-header-nav-list">
-                <Menu-item name="guide">
-                    <Icon type="ios-navigate"></Icon>
-                    {{ $t('index.guide') }}
-                </Menu-item>
-                <Menu-item name="component">
-                    <Icon type="ios-keypad"></Icon>
-                    {{ $t('index.component') }}
-                </Menu-item>
 
                 <ButtonGroup>
                     <Button type="ghost" size="small" icon="social-github" @click="handleGoToGitHub"></Button>
@@ -44,6 +60,14 @@
                         <template v-else>中文</template>
                     </Button> -->
                 </ButtonGroup>
+            </div>
+            <div class="wrapper-header-nav-list">
+                <Menu-item name="guide">
+                    {{ $t('index.guide') }}
+                </Menu-item>
+                <Menu-item name="component">
+                    {{ $t('index.component') }}
+                </Menu-item>
             </div>
         </div>
     </Menu>
