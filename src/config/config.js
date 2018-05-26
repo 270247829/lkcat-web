@@ -2,7 +2,7 @@ import Env from './env';
 
 let config = {
     env: Env,
-    filePath: 'https://file.lkcatui.com/file/',
+    filePath: 'https://www.lkcat.com/file/',
     version: 45,
     liveVersion: 1
 };

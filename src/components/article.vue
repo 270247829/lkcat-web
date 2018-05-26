@@ -7,15 +7,21 @@
             <div class="wrapper-header">
                 <nav-menu :active-key="activeKey" @on-change="handleNavMenuChange"></nav-menu>
             </div>
+            
             <div class="wrapper-container">
                 <Row>
                     <i-col span="4" class="wrapper-navigate">
+                                  
+
                         <Navigate :type="activeKey"></Navigate>
+                       
                     </i-col>
                     <i-col span="17">
+                        
                         <div class="wrapper-content lkui-article">
                             <slot></slot>
                         </div>
+                        
                     </i-col>
                     <i-col span="3">
                         <Affix :offset-top="75">

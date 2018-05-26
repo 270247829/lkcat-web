@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script>
+	var client = algoliasearch('Y1RWZD3XP4', '290489a124895c691699bd38f9bb9cf0');
+    var contact_index = client.initIndex('nav');
+
+    var search_input_string = 'ta';
+
+    contact_index.search(search_input_string, function (err, contacts) {
+       for (var i = 0; i < contacts.hits.length; i++) {
+           console.log(contacts.hits[i]);
+       }
+    });
+</script>

@@ -45,6 +45,16 @@
                 float: left;
                 margin-left: 100px;
 
+                .lkui-input-wrapper{
+                    width: 185px;
+                    font-size: 14px;
+                }
+                .lkui-input{
+                    border: none
+                }
+                .lkui-input:focus{
+                    box-shadow: none;
+                }
                 .lkui-select{
                     width: 185px;
                     font-size: 14px;
@@ -248,7 +258,18 @@
     bottom: 30px;
     right: 80px;
 }
-
+.algolia-highlight {
+    color: #409eff;
+    font-weight: 700;
+}
+.algolia-search-empty{
+    margin: 5px 0;
+    text-align: center;
+    color: #999;
+}
+.wrapper-header-nav-search .lkui-poptip-body{
+    padding: 8px 0px;
+}
 // 太小时，隐藏搜索
 @media screen and (max-width: 1245px) {
     .wrapper-header-nav-search{

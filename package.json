@@ -16,6 +16,7 @@
   "author": "LGR",
   "license": "MIT",
   "dependencies": {
+    "algoliasearch": "^3.27.1",
     "axios": "^0.16.2",
     "clipboard": "^1.7.1",
     "highlightjs": "^8.7.0",
@@ -24,7 +25,8 @@
     "marked": "^0.3.12",
     "vue": "^2.5.16",
     "vue-i18n": "^5.0.3",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuescroll": "^4.5.23"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
@@ -51,10 +53,11 @@
     "vue-loader": "^13.7.1",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.16",
+    "vue-template-es2015-compiler": "^1.6.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1",
     "webpack-merge": "^4.1.1",
-    "webpack-uglify-parallel": "^0.1.4"    ,
+    "webpack-uglify-parallel": "^0.1.4",
     "happypack": "^4.0.0"
   }
 }

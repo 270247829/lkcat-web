@@ -12,14 +12,13 @@ import enLocale from 'lkcat/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
 import 'lkcat/dist/styles/lkcat.css';
-// import './styles/theme-christmas/index.less';
+
+import algoliasearch from 'algoliasearch'
 
 import ad from './components/ad.vue';
-
 Vue.use(VueRouter);
 Vue.use(VueI18n);
 Vue.use(LKCat);
-
 Vue.component('ad', ad);
 
 // 开启debug模式
