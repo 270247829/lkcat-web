@@ -9,6 +9,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
     color: #525252;
     padding: 15px;
     -webkit-text-size-adjust: none;
+    padding-bottom: 5px;
 }
 
 .hljs-doctype{

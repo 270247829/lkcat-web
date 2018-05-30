@@ -1,5 +1,20 @@
 <style lang="less">
     @import '../styles/demo.less';
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade-leave-active {
+//   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+   
 </style>
 <template>
     <Row class="example" :class="{'example-vertical': vertical}" :id="title">
@@ -17,16 +32,24 @@
                 <slot name="desc"></slot>
             </div>
         </i-col>
-        <div class="example-split"></div>
+        <!-- <div class="example-split"></div> -->
         <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12">
             <div :style="style"><slot name="code"></slot></div>
-            <div class="example-code-more" v-if="showMore" @click="showCode = !showCode">
-                <Icon type="ios-arrow-down" v-show="!showCode"></Icon>
-                <Icon type="ios-arrow-up" v-show="showCode"></Icon>
-                <i-button type="text" v-show="hideCode && !showCode">
-                    <template v-if="lang === 'zh-CN'">显示代码</template>
-                    <template v-else>Show Code</template>
+            <div class="example-code-more" v-if="showMore" @click="showCode = !showCode" >
+                <Icon type="ios-arrow-down" v-show="!showCode&&!show"></Icon>
+
+                <Icon type="ios-arrow-up" v-show="showCode&&!show"></Icon>
+                 
+                <!-- <i-button type="text" v-show="hideCode && !showCode">
+                    <transition name="slide-fade">
+                        <span v-if="show">显示代码</span>
+                    </transition>
                 </i-button>
+                <i-button type="text" v-show=" showCode">
+                    <transition name="slide-fade">
+                        <span v-if="show">隐藏代码</span>
+                    </transition>
+                </i-button> -->
             </div>
         </i-col>
     </Row>
@@ -56,7 +79,8 @@
                 demo_height: 0,
                 code_height: 0,
                 ready: false,
-                lang: this.$lang
+                lang: this.$lang,
+                show: false
             }
         },
         computed: {

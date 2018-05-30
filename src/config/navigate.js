@@ -27,7 +27,25 @@ const list = {
     ],
     components: [
         {
-            type: 'Basic',
+            type: 'General',
+            title: '基础',
+            list: [
+                {
+                    title: 'Button 按钮',
+                    path: '/components/button',
+                    img: 'button.png',
+                    icon: 'social-youtube-outline'
+                },
+                {
+                    title: 'Icon 图标',
+                    path: '/components/icon',
+                    img: 'icon.png',
+                    icon: 'ios-heart-outline'
+                }
+            ]
+        },
+        {
+            type: 'Layout',
             title: '基础',
             list: [
                 {
@@ -41,30 +59,73 @@ const list = {
                     path: '/components/layout',
                     img: 'layout-new.png',
                     icon: 'ios-browsers-outline'
+                }
+                // ,
+                // {
+                //     title: 'Color 色彩',
+                //     path: '/components/color',
+                //     img: 'color.png',
+                //     icon: 'android-color-palette'
+                // },
+                // {
+                //     title: 'Font 字体',
+                //     path: '/components/font',
+                //     img: 'font.png',
+                //     icon: 'at'
+                // }
+            ]
+        },
+        {
+            type: 'Navigation',
+            title: '导航',
+            list: [
+                {
+                    title: 'Affix 图钉',
+                    path: '/components/affix',
+                    img: 'affix.png',
+                    icon: 'pin'
                 },
                 {
-                    title: 'Color 色彩',
-                    path: '/components/color',
-                    img: 'color.png',
-                    icon: 'android-color-palette'
+                    title: 'Breadcrumb 面包屑',
+                    path: '/components/breadcrumb',
+                    img: 'breadcrumb.png',
+                    icon: 'ios-arrow-right'
                 },
                 {
-                    title: 'Font 字体',
-                    path: '/components/font',
-                    img: 'font.png',
-                    icon: 'at'
+                    title: 'Dropdown 下拉菜单',
+                    path: '/components/dropdown',
+                    img: 'dropdown.png',
+                    icon: 'arrow-down-b'
                 },
                 {
-                    title: 'Button 按钮',
-                    path: '/components/button',
-                    img: 'button.png',
-                    icon: 'social-youtube-outline'
+                    title: 'LoadingBar 加载进度条',
+                    path: '/components/loading-bar',
+                    img: 'loading-bar.png',
+                    icon: 'ios-minus-empty'
                 },
                 {
-                    title: 'Icon 图标',
-                    path: '/components/icon',
-                    img: 'icon.png',
-                    icon: 'ios-heart-outline'
+                    title: 'Menu 导航菜单',
+                    path: '/components/menu',
+                    img: 'menu.png',
+                    icon: 'navicon-round'
+                },
+                {
+                    title: 'Page 分页',
+                    path: '/components/page',
+                    img: 'page.png',
+                    icon: 'ios-book-outline'
+                },
+                {
+                    title: 'Tabs 标签页',
+                    path: '/components/tabs',
+                    img: 'tabs.png',
+                    icon: 'social-windows-outline'
+                },
+                {
+                    title: 'Steps 步骤条',
+                    path: '/components/steps',
+                    img: 'steps.png',
+                    icon: 'ios-checkmark-outline'
                 }
             ]
         },
@@ -278,54 +339,7 @@ const list = {
                 }
             ]
         },
-        {
-            type: 'Navigation',
-            title: '导航',
-            list: [
-                {
-                    title: 'Menu 导航菜单',
-                    path: '/components/menu',
-                    img: 'menu.png',
-                    icon: 'navicon-round'
-                },
-                {
-                    title: 'Tabs 标签页',
-                    path: '/components/tabs',
-                    img: 'tabs.png',
-                    icon: 'social-windows-outline'
-                },
-                {
-                    title: 'Dropdown 下拉菜单',
-                    path: '/components/dropdown',
-                    img: 'dropdown.png',
-                    icon: 'arrow-down-b'
-                },
-                {
-                    title: 'Page 分页',
-                    path: '/components/page',
-                    img: 'page.png',
-                    icon: 'ios-book-outline'
-                },
-                {
-                    title: 'Breadcrumb 面包屑',
-                    path: '/components/breadcrumb',
-                    img: 'breadcrumb.png',
-                    icon: 'ios-arrow-right'
-                },
-                {
-                    title: 'Steps 步骤条',
-                    path: '/components/steps',
-                    img: 'steps.png',
-                    icon: 'ios-checkmark-outline'
-                },
-                {
-                    title: 'LoadingBar 加载进度条',
-                    path: '/components/loading-bar',
-                    img: 'loading-bar.png',
-                    icon: 'ios-minus-empty'
-                }
-            ]
-        },
+        
         {
             type: 'Chart',
             title: '图表',
@@ -342,12 +356,7 @@ const list = {
             type: 'Other',
             title: '其它',
             list: [
-                {
-                    title: 'Affix 图钉',
-                    path: '/components/affix',
-                    img: 'affix.png',
-                    icon: 'pin'
-                },
+
                 {
                     title: 'BackTop 返回顶部',
                     path: '/components/back-top',

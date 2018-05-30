@@ -83,21 +83,24 @@
     }
 
     &-code{
-        padding: 0 10px;
+        // padding: 0 10px;
         position: relative;
         overflow: hidden;
         transition: height .2s ease-in-out;
-
+        background: #fafafa;
+        border-radius: 6px;
+        
         &-more{
+            border-top: 1px solid #eee;
             position: absolute;
             bottom: 0;
-            left: 4px;
-            right: 4px;
+            left: 0px;
+            right: 0px;
             text-align: center;
             cursor: pointer;
             padding: 5px 0;
             /*transition: background .1s ease-in-out;*/
-
+            background: #fff;
             &:after{
                 content: '';
                 width: 100%;
@@ -106,7 +109,7 @@
                 bottom: 0;
                 left: 0;
                 z-index: 1;
-                box-shadow: 0 -15px 30px #fff inset;
+                // box-shadow: 0 -15px 30px #fff inset;
             }
 
             i{
@@ -120,11 +123,16 @@
                 top: 4px;
                 z-index: 2;
             }
-
+            .code-text{
+                display: none
+            }
             &:hover{
                 /*background: #fff;*/
                 i{
                     color: #5cb85c;
+                }
+                .code-text{
+                    display: block
                 }
             }
         }
