@@ -48,13 +48,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/guide/design-en.vue'], resolve)
     // },
-    // {
-    //     path: '/docs/guide/layout',
-    //     meta: {
-    //         title: '布局'
-    //     },
-    //     component: (resolve) => require(['./views/guide/layout.vue'], resolve)
-    // },
+    {
+        path: '/docs/guide/layout',
+        meta: {
+            title: '布局'
+        },
+        component: (resolve) => require(['./views/guide/layout.vue'], resolve)
+    },
     // {
     //     path: '/docs/guide/layout-en',
     //     meta: {
@@ -188,13 +188,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/guide/update-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/grid',
-    //     meta: {
-    //         title: '栅格 Grid'
-    //     },
-    //     component: (resolve) => require(['./views/components/grid.vue'], resolve)
-    // },
+    {
+        path: '/components/grid',
+        meta: {
+            title: '栅格 Grid'
+        },
+        component: (resolve) => require(['./views/components/grid.vue'], resolve)
+    },
     // {
     //     path: '/components/grid-en',
     //     meta: {
@@ -258,13 +258,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/button-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/icon',
-    //     meta: {
-    //         title: '图标 Icon'
-    //     },
-    //     component: (resolve) => require(['./views/components/icon.vue'], resolve)
-    // },
+    {
+        path: '/components/icon',
+        meta: {
+            title: '图标 Icon'
+        },
+        component: (resolve) => require(['./views/components/icon.vue'], resolve)
+    },
     // {
     //     path: '/components/icon-en',
     //     meta: {

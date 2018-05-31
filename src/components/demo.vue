@@ -18,10 +18,6 @@
 </style>
 <template>
     <Row class="example" :class="{'example-vertical': vertical}" :id="title">
-        <i-col class="example-demo" :span="vertical ? 24 : 12">
-            <div class="example-case">
-                <slot name="demo"></slot>
-            </div>
             <header class="example-header">
                 <span>
                     {{ title }}
@@ -31,11 +27,15 @@
             <div class="example-desc">
                 <slot name="desc"></slot>
             </div>
+        <i-col class="example-demo" :span="vertical ? 24 : 12">
+            <div class="example-case">
+                <slot name="demo"></slot>
+            </div>
         </i-col>
         <!-- <div class="example-split"></div> -->
-        <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12">
+        <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12" >
             <div :style="style"><slot name="code"></slot></div>
-            <div class="example-code-more" v-if="showMore" @click="showCode = !showCode" >
+            <div class="example-code-more" v-if="showMore" @click="showCode = !showCode" v-show="false">
                 <Icon type="ios-arrow-down" v-show="!showCode&&!show"></Icon>
 
                 <Icon type="ios-arrow-up" v-show="showCode&&!show"></Icon>
@@ -74,7 +74,7 @@
         },
         data () {
             return {
-                showCode: false,
+                showCode: true,
                 showMore: true,
                 demo_height: 0,
                 code_height: 0,

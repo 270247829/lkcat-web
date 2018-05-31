@@ -6,7 +6,7 @@
     }
     .demo-col{
         color: #fff;
-        padding: 30px 0;
+        padding: 35px 0;
         text-align: center;
         font-size: 18px;
         background: rgba(0, 153, 229, .7);
@@ -42,39 +42,40 @@
     <i-article>
         <article>
             <h1>Grid 栅格</h1>
+            <p>24 栅格系统。</p>
+            <Anchor title="设计理念" h2></Anchor>
+            <Row class-name="demo-row">
+                <Col :span="24" class-name="demo-col">100%</Col>
+            </Row>
+            <Row class-name="demo-row light">
+                <Col :span="12" class-name="demo-col">50%</Col>
+                <Col :span="12" class-name="demo-col light">50%</Col>
+            </Row>
+            <Row class-name="demo-row">
+                <Col :span="8" class-name="demo-col">33.33%</Col>
+                <Col :span="8" class-name="demo-col light">33.33%</Col>
+                <Col :span="8" class-name="demo-col">33.33%</Col>
+            </Row>
+            <Row class-name="demo-row light">
+                <Col :span="6" class-name="demo-col">25%</Col>
+                <Col :span="6" class-name="demo-col light">25%</Col>
+                <Col :span="6" class-name="demo-col">25%</Col>
+                <Col :span="6" class-name="demo-col light">25%</Col>
+            </Row>
+            <Row class-name="demo-row">
+                <Col :span="16" class-name="demo-col">66.66%</Col>
+                <Col :span="8" class-name="demo-col light">33.33%</Col>
+            </Row>
+            <p>在多数业务情况下，需要在设计区域内解决大量信息收纳的问题，因此在 12 栅格系统的基础上，我们将整个设计建议区域按照 24 等分的原则进行划分。</p>
+            <p>划分之后的信息区块我们称之为『盒子』。建议横向排列的盒子数量最多四个，最少一个。『盒子』在整个屏幕上占比见上图。设计部分基于盒子的单位定制盒子内部的排版规则，以保证视觉层面的舒适感。</p>
             <Anchor title="概述" h2></Anchor>
-            <Row class-name="demo-row">
-                <Col :span="24" class-name="demo-col">24：100%</Col>
-            </Row>
-            <Row class-name="demo-row light">
-                <Col :span="12" class-name="demo-col">12：50%</Col>
-                <Col :span="12" class-name="demo-col light">12：50%</Col>
-            </Row>
-            <Row class-name="demo-row">
-                <Col :span="8" class-name="demo-col">8：33.33%</Col>
-                <Col :span="8" class-name="demo-col light">8：33.33%</Col>
-                <Col :span="8" class-name="demo-col">8：33.33%</Col>
-            </Row>
-            <Row class-name="demo-row light">
-                <Col :span="6" class-name="demo-col">6：25%</Col>
-                <Col :span="6" class-name="demo-col light">6：25%</Col>
-                <Col :span="6" class-name="demo-col">6：25%</Col>
-                <Col :span="6" class-name="demo-col light">6：25%</Col>
-            </Row>
-            <Row class-name="demo-row">
-                <Col :span="16" class-name="demo-col">16：66.66%</Col>
-                <Col :span="8" class-name="demo-col light">8：33.33%</Col>
-            </Row>
-            <p>我们采用了24栅格系统，将区域进行24等分，这样可以轻松应对大部分布局问题。使用栅格系统进行网页布局，可以使页面排版美观、舒适。</p>
-            <p>我们定义了两个概念，行<code>row</code>和列<code>col</code>，具体使用方法如下：</p>
+            <p>布局的栅格化系统，我们是基于行（row）和列（col）来定义信息区块的外部框架，以保证页面的每个区域能够稳健地排布起来。下面简单介绍一下它的工作原理：</p>
             <ul>
-                <li>使用<code>row</code>在水平方向创建一行</li>
-                <li>将一组<code>col</code>插入在<code>row</code>中</li>
-                <li>在每个<code>col</code>中，键入自己的内容</li>
-                <li>通过设置<code>col</code>的<code>span</code>参数，指定跨越的范围，其范围是1到24</li>
-                <li>每个<code>row</code>中的<code>col</code>总和应该为24</li>
+                <li>通过<code>row</code>在水平方向建立一组<code>column</code>（简写col）</li>
+                <li>你的内容应当放置于<code>col</code>内，并且，只有<code>col</code>可以作为<code>row</code>的直接元素</li>
+                <li>栅格系统中的列是指1到24的值来表示其跨越的范围。例如，三个等宽的列可以使用<code>span="8"</code>来创建</li>
+                <li>如果一个<code>row</code>中的<code>col</code>总和超过 24，那么多余的<code>col</code>会作为一个整体另起一行排列</li>
             </ul>
-            <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-col</code>。</Alert>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">

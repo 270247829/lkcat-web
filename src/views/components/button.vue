@@ -6,97 +6,44 @@
             <Anchor title="何时使用" h2></Anchor>
             <p>标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。</p>
             <Anchor title="代码示例" h2></Anchor>
-            <Row gutter="16">
-                <Col span="12">
-                    <Demo title="按钮类型" >
+            <!-- <Row gutter="16">
+                <Col span="12"> -->
+                    <Demo title="按钮样式" >
                         <div slot="demo">
-                            <Button>Default</Button>
-                            <Button type="primary">Primary</Button>
-                            <Button type="ghost">Ghost</Button>
-                            <Button type="dashed">Dashed</Button>
-                            <Button type="text">Text</Button>
-                            <br><br>
-                            <Button type="info">Info</Button>
-                            <Button type="success">Success</Button>
-                            <Button type="warning">Warning</Button>
-                            <Button type="error">Error</Button>
+                            <Row>
+                                <Button>默认按钮</Button>
+                                <Button type="primary">主要按钮</Button>
+                                <Button type="info">信息按钮</Button>
+                                <Button type="success">成功按钮</Button>
+                                <Button type="warning">警告按钮</Button>
+                                <Button type="error">危险按钮</Button>
+                                <Button type="ghost">幽灵按钮</Button>
+                                <Button type="dashed">虚线按钮</Button>
+                            </Row>
+                            <Row>
+                                <Button type="primary" shape="circle" icon="ios-search"></Button>
+                                <Button type="primary" shape="circle">圆角按钮</Button>
+                                <Button type="primary" icon="ios-search">图标带文字按钮</Button>
+                                <Button type="primary" shape="circle" icon="ios-search">圆角图标带文字按钮</Button>
+                            </Row>
+                            <Row>
+                                <Button type="primary" size="large">大尺寸</Button>
+                                <Button type="primary">默认尺寸</Button>
+                                <Button type="primary" size="small">小尺寸</Button>
+                            </Row>
+                            <Row>
+                                 <Button type="primary" disabled>禁用状态</Button>
+                            </Row>
                         </div>
                         <div slot="desc">
-                            <p>按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
-                            <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                            <p><span class="info">按钮类型</span>：通过设置<code>type</code>为<code>primary</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>、<code>ghost</code>、<code>dashed</code>
+                            定义按钮样式，不设置为默认样式。</p>
+                            <p><span class="info">按钮图标</span>：通过设置<code>icon</code> 属性，或者直接在 Button 内使用 Icon 组件。如果想控制 Icon 具体的位置，只能直接使用 Icon 组件，而非 <code>icon</code> 属性。</p>
+                            <p><span class="info">按钮形状</span>：通过设置<code>shape</code>属性为<code>circle</code>，可将按钮置为圆的形状。</p>
+                            <p><span class="info">按钮尺寸</span>：通过设置<code>size</code>为<code>large</code>和<code>small</code>将按钮设置为大和小尺寸，不设置为默认（中）尺寸。</p>
+                            <p><span class="info">按钮状态</span>：通过添加<code>disabled</code>属性可将按钮设置为不可用状态。</p>
                         </div>
                         <i-code lang="html" slot="code">{{ code.type }}</i-code>
-                    </Demo>
-                    <Demo title="图标按钮及按钮形状">
-                        <div slot="demo">
-                            <Button type="primary" shape="circle" icon="ios-search"></Button>
-                            <Button type="primary" icon="ios-search">Search</Button>
-                            <Button type="primary" shape="circle" icon="ios-search">Search</Button>
-                            <Button type="primary" shape="circle">Circle</Button>
-                            <br><br>
-                            <Button type="ghost" shape="circle" icon="ios-search"></Button>
-                            <Button type="ghost" icon="ios-search">Search</Button>
-                            <Button type="ghost" shape="circle" icon="ios-search">Search</Button>
-                            <Button type="ghost" shape="circle">Circle</Button>
-                        </div>
-                        <div slot="desc">
-                            <p>通过设置<code>icon</code>属性在<code>Button</code>内嵌入一个<code>Icon</code>，或者直接在<code>Button</code>内使用<code>Icon</code>组件。</p>
-                            <p>使用<code>Button</code>的<code>icon</code>属性，图标位置将在最左边，如果需要自定义位置，需使用<code>Icon</code>组件。</p>
-                            <p>通过设置<code>shape</code>属性为<code>circle</code>，可将按钮置为圆的形状。</p>
-                        </div>
-                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
-                    </Demo>
-                    <Demo title="按钮尺寸">
-                        <div slot="demo">
-                            <Button type="primary" size="large">Large</Button>
-                            <Button type="primary">Default</Button>
-                            <Button type="primary" size="small">Small</Button>
-                            <br><br>
-                            <Button type="primary" shape="circle" size="large">Large</Button>
-                            <Button type="primary" shape="circle">Default</Button>
-                            <Button type="primary" shape="circle" size="small">Small</Button>
-                        </div>
-                        <div slot="desc">
-                            <p>按钮有三种尺寸：大、默认（中）、小</p>
-                            <p>通过设置<code>size</code>为<code>large</code>和<code>small</code>将按钮设置为大和小尺寸，不设置为默认（中）尺寸。</p>
-                        </div>
-                        <i-code lang="html" slot="code">{{ code.size }}</i-code>
-                    </Demo>
-                    <Demo title="长按钮">
-                        <div slot="demo">
-                            <Button type="success" long>SUBMIT</Button>
-                            <br><br>
-                            <Button type="error" long>DELETE</Button>
-                        </div>
-                        <div slot="desc">
-                            <p>通过设置属性 <code>long</code> 可将按钮宽度设置为 100%，常用于弹窗内操作按钮。</p>
-                            <p>使用者也可以直接通过给组件添加 <code>style</code> 来设置更细节的样式，比如定宽。</p>
-                        </div>
-                        <i-code lang="html" slot="code">{{ code.long }}</i-code>
-                    </Demo>
-                </Col>
-                <Col span="12">
-                    <Demo title="不可用状态">
-                        <div slot="demo">
-                            <Button>Default</Button>
-                            <Button disabled>Default(Disabled)</Button>
-                            <br><br>
-                            <Button type="primary">Primary</Button>
-                            <Button type="primary" disabled>Primary(Disabled)</Button>
-                            <br><br>
-                            <Button type="ghost">Ghost</Button>
-                            <Button type="ghost" disabled>Ghost(Disabled)</Button>
-                            <br><br>
-                            <Button type="dashed">Dashed</Button>
-                            <Button type="dashed" disabled>Dashed(Disabled)</Button>
-                            <br><br>
-                            <Button type="text">Text</Button>
-                            <Button type="text" disabled>Text(Disabled)</Button>
-                        </div>
-                        <div slot="desc">
-                            <p>通过添加<code>disabled</code>属性可将按钮设置为不可用状态。</p>
-                        </div>
-                        <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
                     </Demo>
                     <Demo title="加载中状态">
                         <div slot="demo">
@@ -230,8 +177,8 @@
                         </div>
                         <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
                     </Demo>
-                </Col>
-            </Row>
+                <!-- </Col> -->
+            <!-- </Row> -->
             <div class="api">
                 <Anchor title="API" h2></Anchor>
                 <Anchor title="Button props" h3></Anchor>

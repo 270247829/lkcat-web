@@ -2,16 +2,30 @@ let code = {};
 
 code.type = `
 <template>
-    <Button>Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="ghost">Ghost</Button>
-    <Button type="dashed">Dashed</Button>
-    <Button type="text">Text</Button>
-    <br><br>
-    <Button type="info">Info</Button>
-    <Button type="success">Success</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="error">Error</Button>
+    <Row>
+        <Button>默认按钮</Button>
+        <Button type="primary">主要按钮</Button>
+        <Button type="info">信息按钮</Button>
+        <Button type="success">成功按钮</Button>
+        <Button type="warning">警告按钮</Button>
+        <Button type="error">危险按钮</Button>
+        <Button type="ghost">幽灵按钮</Button>
+        <Button type="dashed">虚线按钮</Button>
+    </Row>
+    <Row>
+        <Button type="primary" shape="circle" icon="ios-search"></Button>
+        <Button type="primary" shape="circle">圆角按钮</Button>
+        <Button type="primary" icon="ios-search">图标带文字按钮</Button>
+        <Button type="primary" shape="circle" icon="ios-search">圆角图标带文字按钮</Button>
+    </Row>
+    <Row>
+        <Button type="primary" size="large">大尺寸</Button>
+        <Button type="primary">默认尺寸</Button>
+        <Button type="primary" size="small">小尺寸</Button>
+    </Row>
+    <Row>
+        <Button type="primary" disabled>禁用状态</Button>
+    </Row>
 </template>
 <script>
     export default {

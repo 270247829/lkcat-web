@@ -1,18 +1,26 @@
 .example{
     border: 1px solid #ebedf0;
     border-radius: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
     position: relative;
     transition: all .2s ease-in-out;
-    &:target {
+    &:target  {
         border: 1px solid #1890ff;
+    }
+    &:target &-header:before{
+        background: #1890ff;
     }
     &:hover{
         box-shadow: 0 2px 7px rgba(0,0,0,.15);
         border-color: transparent;
         position: relative;
     }
-
+    &:hover &-header:before{
+        transition: all 0.2s ease-in-out;
+        background: #eee;
+        border-color: transparent;
+    }
     &-split{
         display: block;
         position: absolute;
@@ -31,16 +39,23 @@
     &-demo{
         padding: 20px 0;
         position: relative;
+        border-top: 1px solid #ebedf0;
+        border-bottom: 1px solid #ebedf0;
     }
 
     &-case{
         padding: 0 20px;
+        .lkui-btn{
+            margin-right: 8px;
+            margin-bottom: 12px;
+        }
     }
 
     &-header{
         font-weight: 500;
-        margin: 30px 0 10px;
+        // margin: 30px 0 10px;
         position: relative;
+        top: -11px;
         span{
             display: inline-block;
             background: #fff;
@@ -72,6 +87,13 @@
     &-desc{
         font-size: 12px;
         padding: 0 20px;
+        padding-bottom: 15px;
+        .info{
+            color: #3e484c;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        
         p{
             font-size: 12px !important;
             text-align: justify;
