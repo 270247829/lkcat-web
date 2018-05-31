@@ -16,14 +16,14 @@
                         <Navigate :type="activeKey"></Navigate>
                        
                     </i-col>
-                    <i-col span="17">
+                    <i-col span="18">
                         
                         <div class="wrapper-content lkui-article">
                             <slot></slot>
                         </div>
                         
                     </i-col>
-                    <i-col span="3">
+                    <i-col span="2">
                         <Affix :offset-top="75">
                             <div class="catalogue" v-show="list.length">
                                 <card dis-hover>
