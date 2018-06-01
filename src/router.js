@@ -13,13 +13,27 @@ const routers = [
         },
         component: (resolve) => require(['./views/guide/overview.vue'], resolve)
     },
-    // {
-    //     path: '/overview-en',
-    //     meta: {
-    //         title: 'Overview'
-    //     },
-    //     component: (resolve) => require(['./views/guide/overview-en.vue'], resolve)
-    // },
+    {
+        path: '/source/software',
+        meta: {
+            title: '资源'
+        },
+        component: (resolve) => require(['./views/source/software.vue'], resolve)
+    },
+    {
+        path: '/source/web',
+        meta: {
+            title: '前端源码'
+        },
+        component: (resolve) => require(['./views/source/web.vue'], resolve)
+    },
+    {
+        path: '/source/java',
+        meta: {
+            title: '后端源码'
+        },
+        component: (resolve) => require(['./views/source/java.vue'], resolve)
+    },
     {
         path: '/docs/guide/introduce',
         meta: {

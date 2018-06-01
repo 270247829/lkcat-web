@@ -390,10 +390,18 @@ const list = {
             path: '/docs/practice/logo'
         }
     ],
-    live: [
+    source: [
         {
-            title: '最新课程',
-            path: '/live'
+            title: '软件',
+            path: '/source/software'
+        },
+        {
+            title: '前端源码',
+            path: '/source/web'
+        },
+        {
+            title: '后端源码',
+            path: '/source/java'
         }
     ]
 };

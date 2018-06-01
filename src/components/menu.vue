@@ -133,6 +133,9 @@
                 <Menu-item name="component">
                     {{ $t('index.component') }}
                 </Menu-item>
+                <Menu-item name="source">
+                    资源
+                </Menu-item>
             </div>
         </div>
     </Menu>
@@ -185,8 +188,8 @@
             handleSelect (type) {
                 const pathSuffix = this.lang === 'zh-CN' ? '' : '-en';
 
-                if (type === 'donate') {
-                    bus.$emit('on-donate-show');
+                if (type === 'source') {
+                    this.$router.push('/source/software');
                 } else if (type === 'github') {
                     window.open('https://github.com/270247829/lkcat');
                 } else if (type === 'guide') {
@@ -214,6 +217,8 @@
                 const route = this.$route.path;
                 if (route.indexOf('component') > -1 || componentList.indexOf(route) > -1) {
                     this.currentActiveKey = 'component';
+                }else if(route.indexOf('source') > -1){
+                    this.currentActiveKey = 'source';
                 } else {
                     this.currentActiveKey = 'guide';
                 }
@@ -225,7 +230,7 @@
                 bus.$emit('on-change-lang', lang, '/#'+ path);
             },
             handleGoToGitHub () {
-                _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
+                // _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
                 window.open('https://github.com/270247829/lkcat');
             },
             search(){

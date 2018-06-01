@@ -127,11 +127,9 @@
                 const route = this.$route.path;
                 if (route.indexOf('component') > -1 || componentList.indexOf(route) > -1) {
                     this.activeKey = 'component';
-                } else if (route.indexOf('practice') > -1) {
-                    this.activeKey = 'practice';
-                } else if (route.indexOf('live') > -1) {
-                    this.activeKey = 'live';
-                }  else {
+                } else if (route.indexOf('source') > -1) {
+                    this.activeKey = 'source';
+                }  else if (route.indexOf('guide') > -1){
                     this.activeKey = 'guide';
                 }
             },

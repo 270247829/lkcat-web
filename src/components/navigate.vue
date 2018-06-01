@@ -35,19 +35,11 @@
                 </Menu-item>
             </Menu-group>
         </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'practice'">
-            <Menu-item v-for="item in navigate.practice" :key="item.path" :name="item.path">
-                <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
-                <template v-else>{{ item.titleEn }}</template>
+        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'source'">
+            <Menu-item v-for="item in navigate.source" :key="item.path" :name="item.path">
+                {{ item.title }}
             </Menu-item>
         </Menu>
-        <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'live'">
-            <Menu-item v-for="item in navigate.live" :key="item.path" :name="item.path">
-                <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
-                <template v-else>{{ item.titleEn }}</template>
-            </Menu-item>
-        </Menu>
-        
     </div>
 </template>
 <script>
