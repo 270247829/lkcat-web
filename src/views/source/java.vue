@@ -1,27 +1,62 @@
+<style lang="less" scoped>
+    .content p{
+        padding-left: 30px
+    }
+</style>
 <template>
     <i-article>
         <article>
             <h1>后端源码</h1>
             <Anchor title="后端框架" h2></Anchor>
-            <List  :data="movieList" type="card" :grid="grid" :pagination="pagination">
+            <List  :data="movieList" type="card" :grid="grid" >
                 <!-- <div slot="header" >Header</div> -->
                 <ListItem slot-scope="scope"  >
-                    <img slot="avatar" :src="scope.item.cover" style="width: 50px;height: 60px;"/>
-                    <h4 slot="title">{{scope.item.title}}</h4>
-                    <p >{{scope.item.url}}</p>
+                    <img slot="avatar" :src="scope.item.cover" style="width: 50px;margin-top: 15px;"/>
+                    <p>名称：{{scope.item.name}}</p>
+                    <p>版本：{{scope.item.version}}</p>
+                    <p><a :href="scope.item.url" target="_blank">点击下载</a></p>
                 </ListItem>
+
+                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('常用工具')"><Icon type="plus-round" size="84" color="#e6f6ff"></Icon></div>
+
+                <!-- <ListItem slot="footer">
+                    <p><a href="scope.item.url" target="_blank">点击下载</a></p>
+                </ListItem> -->
                 <!-- <div slot="footer">Footer</div> -->
             </List>
+
             <Anchor title="后端插件" h2></Anchor>
-            <List  :data="movieList" type="card" :grid="grid" :pagination="pagination">
+            <List  :data="config" type="card" :grid="grid" >
                 <!-- <div slot="header" >Header</div> -->
-                <ListItem slot-scope="scope"  >
-                    <img slot="avatar" :src="scope.item.cover" style="width: 50px;height: 60px;"/>
-                    <h4 slot="title">{{scope.item.title}}</h4>
-                    <p >{{scope.item.url}}</p>
+                <ListItem slot-scope="scope" >
+                    <img slot="avatar" :src="scope.item.cover" style="width: 50px;margin-top: 15px;"/>
+                    <p>名称：{{scope.item.name}}</p>
+                    <p>版本：{{scope.item.version}}</p>
+                    <p><a :href="scope.item.url" target="_blank">点击下载</a></p>
                 </ListItem>
+                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('环境配置')"><Icon type="plus-round" size="84" color="#e6f6ff"></Icon></div>
                 <!-- <div slot="footer">Footer</div> -->
             </List>
+            <Modal
+                v-model="modal6"
+                title="共享"
+                :loading="loading"
+                @on-ok="asyncOK">
+                <Form :model="formItem" :label-width="60">
+                    <FormItem label="文件类型">
+                        <Input v-model="formItem.type" readonly></Input>
+                    </FormItem>
+                    <FormItem label="名称">
+                        <Input v-model="formItem.name" placeholder="请输入名称"></Input>
+                    </FormItem>
+                    <FormItem label="版本">
+                        <Input v-model="formItem.version" placeholder="请输入版本"></Input>
+                    </FormItem>
+                    <FormItem label="下载地址">
+                        <Input v-model="formItem.url" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="请输入下载地址"></Input>
+                    </FormItem>
+                </Form>
+            </Modal>
         </article>
     </i-article>
 </template>
@@ -40,20 +75,43 @@
         data () {
             return {
                 movieList: [
-                   {cover:"http://60.10.113.44:10101/download/pic/zip.png",title:"昆池岩",url:"https://movie.douban.com/subject/26945085/"},
-                   {cover:"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2514384737.jpg",title:"现在去见你",url:"https://movie.douban.com/subject/27018285/"},
-                   {cover:"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2520212236.jpg",title:"疯狂婚礼周",url:"https://movie.douban.com/subject/27031084/"},
-                   {cover:"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518132366.jpg",title:"血观音",url:"https://movie.douban.com/subject/27113517/"},
-                   {cover:"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2514119443.jpg",title:"红海行动",url:"https://movie.douban.com/subject/26861685/"},
-                   {cover:"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2512123434.jpg",title:"黑豹",url:"https://movie.douban.com/subject/6390825/"}
+                    {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
+                    {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
+                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+
+                ],
+                config: [
+                    {cover:"http://60.10.113.44:10101/download/pic/zip.png",name:"node.js",version:"8.9.3-x64",url:"http://60.10.113.44:10101/download/node-v8.9.3-x64.zip"},
+                    {cover:"http://60.10.113.44:10101/download/pic/cratedb.png",name:"cratedb",version:"2.2.5",url:"http://60.10.113.44:10101/download/crate-2.2.5.tar.gz"},
+                    {cover:"http://60.10.113.44:10101/download/pic/kafka.png",name:"kafka",version:"2.11-1.0.0",url:"http://60.10.113.44:10101/download/kafka_2.11-1.0.0.tgz"}
+
+                   
                 ],
                 grid:{
                     column:3,gutter:16
+                },
+                modal6: false,
+                loading: true,
+                formItem: {
+                    name:'',
+                    version:'',
+                    type:'',
+                    url:''
                 }
             }
         },
         methods: {
-
+            asyncOK () {
+                setTimeout(() => {
+                    this.modal6 = false;
+                    this.$Message.success('提交审核成功，请耐心等待。');
+                }, 2000);
+            },
+            showForm (type){
+                this.formItem.type = type;
+                this.modal6 = true;
+            }
         }
     }
 </script>

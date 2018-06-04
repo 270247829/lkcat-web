@@ -76,13 +76,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/guide/layout-en.vue'], resolve)
     // },
-    // {
-    //     path: '/docs/guide/standard',
-    //     meta: {
-    //         title: '参与贡献'
-    //     },
-    //     component: (resolve) => require(['./views/guide/standard.vue'], resolve)
-    // },
+    {
+        path: '/docs/guide/standard',
+        meta: {
+            title: '参与贡献'
+        },
+        component: (resolve) => require(['./views/guide/standard.vue'], resolve)
+    },
     // {
     //     path: '/docs/guide/standard-en',
     //     meta: {
@@ -132,13 +132,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/guide/install-en.vue'], resolve)
     // },
-    // {
-    //     path: '/docs/guide/start',
-    //     meta: {
-    //         title: '快速上手'
-    //     },
-    //     component: (resolve) => require(['./views/guide/start.vue'], resolve)
-    // },
+    {
+        path: '/docs/guide/start',
+        meta: {
+            title: '快速上手'
+        },
+        component: (resolve) => require(['./views/guide/start.vue'], resolve)
+    },
     // {
     //     path: '/docs/guide/start-en',
     //     meta: {

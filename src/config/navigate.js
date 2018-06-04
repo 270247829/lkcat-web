@@ -15,14 +15,14 @@ const list = {
     ],
     beforeComponents: [
         {
+            title: 'LK Cat',
+            titleEn: 'Quick Start',
+            path: '/docs/guide/start'
+        },
+        {
             title: '安装',
             titleEn: 'Installation',
             path: '/docs/guide/install'
-        },
-        {
-            title: '快速上手',
-            titleEn: 'Quick Start',
-            path: '/docs/guide/start'
         }
     ],
     components: [

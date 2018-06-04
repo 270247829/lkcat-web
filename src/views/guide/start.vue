@@ -1,36 +1,33 @@
+<style>
+.pic-plus > *{
+    vertical-align: middle;
+}
+.pic-plus span {
+    font-size: 30px;
+    color: #aaa;
+    margin: 0 20px;
+}
+</style>
+
 <template>
     <i-article>
-        <article>
-            <h1>快速上手</h1>
-            <Anchor title="使用之前" h2></Anchor>
-            <p>高效的开发，离不开基础工程的搭建。在开始使用 LKCat 之前，有必要先了解以下基础知识，我们也假设您已经写过 Vue，并掌握了下面的内容。</p>
+        <article class="pic-plus">
+            <h1>LK Cat of Vue</h1>
+            <p>这里是 LK Cat 的 Vue 实现，结合了 Ant Design 和 iView ，开发和服务于企业级后台产品。</p>
+            <img :src="antd" width="150" />
+            <span> + </span>
+            <img :src="iview" width="150" />
+            <span> + </span>
+            <img :src="vue" width="150" />
+            <span> = </span>
+            <img :src="logo" width="150" />
+            <Anchor title="特性" h2></Anchor>
             <ul>
-                <li>
-                    <a href="https://cn.vuejs.org/v2/guide/components.html" target="_blank">Vue组件</a>
-                </li>
-                <li>
-                    <a href="https://cn.vuejs.org/v2/guide/single-file-components.html" target="_blank">单文件组件</a>
-                </li>
+                <li>提炼自企业级中后台产品的交互语言和视觉风格。</li>
+                <li>开箱即用的高质量 Vue 组件。</li>
+                <li>封装复杂性，提供简单友好的api。</li>
+                <li>基于 Ant Design 样式优化。</li>
             </ul>
-            <p>以下概念贯穿 LKCat 前后，建议开发者花点时间来了解。</p>
-            <ul>
-                <li>
-                    <code>props</code> 传递数据
-                </li>
-                <li>
-                    <code>slot</code> 内容分发
-                </li>
-                <li>
-                    <code>events</code> <code>$emit</code> <code>@click</code> 事件
-                </li>
-            </ul>
-
-            <Anchor title="使用 LKCat Pro 示例项目" h2></Anchor>
-            <p>以 LKCat Pro 为基础开发，可以为您省去大量配置和调试环境的时间。</p>
-            <p>
-                示例项目：<a href="https://github.com/270247829/lkcat-pro" target="_blank">lkcat-pro</a>
-            </p>
-           
         </article>
     </i-article>
 </template>
@@ -39,6 +36,10 @@
     import iCode from 'iCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
+    import antd from '../../images/antd.svg';
+    import iview from '../../images/iview.png';
+    import vue from '../../images/vue.png';
+    import logo from '../../images/logo.svg';
 
     export default {
         components: {
@@ -48,7 +49,10 @@
         },
         data () {
             return {
-                code: Code
+                antd:antd,
+                iview:iview,
+                vue:vue,
+                logo:logo
             }
         },
         methods: {

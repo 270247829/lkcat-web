@@ -105,6 +105,7 @@
             asyncOK () {
                 setTimeout(() => {
                     this.modal6 = false;
+                    this.$Message.success('提交审核成功，请耐心等待。');
                 }, 2000);
             },
             showForm (type){
