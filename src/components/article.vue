@@ -10,13 +10,13 @@
             
             <div class="wrapper-container">
                 <Row>
-                    <i-col span="4" class="wrapper-navigate">
+                    <i-col span="5" class="wrapper-navigate">
                                   
 
                         <Navigate :type="activeKey"></Navigate>
                        
                     </i-col>
-                    <i-col span="18">
+                    <i-col span="17">
                         
                         <div class="wrapper-content lkui-article">
                             <slot></slot>

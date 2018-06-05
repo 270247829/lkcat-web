@@ -1,19 +1,16 @@
 <style lang="less">
     @import '../styles/demo.less';
-/* 可以设置不同的进入和离开动画 */
-/* 设置持续时间和动画函数 */
-.slide-fade-enter-active {
-  transition: all .8s ease;
+.btn-toggle {
+    position: absolute;
+    right: 16px;
+    bottom: 17px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #999;
 }
-.slide-fade-leave-active {
-//   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
-}
-
    
 </style>
 <template>
@@ -31,10 +28,17 @@
             <div class="example-case">
                 <slot name="demo"></slot>
             </div>
+            <div style="height: 20px;margin: 10px;">
+            <span class="btn-toggle" @click="showCode = !showCode">
+                <Icon type="ios-plus-outline" v-show="!showCode&&!show"></Icon>
+                <Icon type="ios-minus-outline" v-show="showCode&&!show"></Icon>
+            </span>
+            </div>
         </i-col>
         <!-- <div class="example-split"></div> -->
-        <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12" >
+        <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12" v-show="showCode">
             <div :style="style"><slot name="code"></slot></div>
+            
             <div class="example-code-more" v-if="showMore" @click="showCode = !showCode" v-show="false">
                 <Icon type="ios-arrow-down" v-show="!showCode&&!show"></Icon>
 
@@ -74,7 +78,7 @@
         },
         data () {
             return {
-                showCode: true,
+                showCode: false,
                 showMore: true,
                 demo_height: 0,
                 code_height: 0,
@@ -87,13 +91,13 @@
             codeHeight () {
                 let style = {};
 
-                if (this.ready) {
-                    if (this.showCode) {
-                        style.height = `${this.code_height}px`;
-                    } else {
-                        style.height = `${this.demo_height}px`;
-                    }
-                }
+                // if (this.ready) {
+                //     if (this.showCode) {
+                //         style.height = `${this.code_height}px`;
+                //     } else {
+                //         style.height = `${this.demo_height}px`;
+                //     }
+                // }
 
                 return style;
             },

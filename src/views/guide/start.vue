@@ -28,6 +28,10 @@
                 <li>封装复杂性，提供简单友好的api。</li>
                 <li>基于 Ant Design 样式优化。</li>
             </ul>
+            <Anchor title="兼容" h2></Anchor>
+            <ul>
+                <li>现代浏览器和 IE11 及以上</li>
+            </ul>
         </article>
     </i-article>
 </template>

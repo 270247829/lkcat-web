@@ -63,7 +63,7 @@ const routers = [
     //     component: (resolve) => require(['./views/guide/design-en.vue'], resolve)
     // },
     {
-        path: '/docs/guide/layout',
+        path: '/components/layout',
         meta: {
             title: '布局'
         },
@@ -699,13 +699,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/tree-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/menu',
-    //     meta: {
-    //         title: '导航菜单 Menu'
-    //     },
-    //     component: (resolve) => require(['./views/components/menu.vue'], resolve)
-    // },
+    {
+        path: '/components/menu',
+        meta: {
+            title: '导航菜单 Menu'
+        },
+        component: (resolve) => require(['./views/components/menu.vue'], resolve)
+    },
     // {
     //     path: '/components/menu-en',
     //     meta: {
@@ -727,13 +727,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/tabs-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/dropdown',
-    //     meta: {
-    //         title: '下拉菜单 Dropdown'
-    //     },
-    //     component: (resolve) => require(['./views/components/dropdown.vue'], resolve)
-    // },
+    {
+        path: '/components/dropdown',
+        meta: {
+            title: '下拉菜单 Dropdown'
+        },
+        component: (resolve) => require(['./views/components/dropdown.vue'], resolve)
+    },
     // {
     //     path: '/components/dropdown-en',
     //     meta: {
@@ -741,13 +741,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/dropdown-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/page',
-    //     meta: {
-    //         title: '分页 Page'
-    //     },
-    //     component: (resolve) => require(['./views/components/page.vue'], resolve)
-    // },
+    {
+        path: '/components/page',
+        meta: {
+            title: '分页 Page'
+        },
+        component: (resolve) => require(['./views/components/page.vue'], resolve)
+    },
     // {
     //     path: '/components/page-en',
     //     meta: {
@@ -755,13 +755,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/page-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/breadcrumb',
-    //     meta: {
-    //         title: '面包屑 Breadcrumb'
-    //     },
-    //     component: (resolve) => require(['./views/components/breadcrumb.vue'], resolve)
-    // },
+    {
+        path: '/components/breadcrumb',
+        meta: {
+            title: '面包屑 Breadcrumb'
+        },
+        component: (resolve) => require(['./views/components/breadcrumb.vue'], resolve)
+    },
     // {
     //     path: '/components/breadcrumb-en',
     //     meta: {
@@ -769,13 +769,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/breadcrumb-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/steps',
-    //     meta: {
-    //         title: '步骤条 Steps'
-    //     },
-    //     component: (resolve) => require(['./views/components/steps.vue'], resolve)
-    // },
+    {
+        path: '/components/steps',
+        meta: {
+            title: '步骤条 Steps'
+        },
+        component: (resolve) => require(['./views/components/steps.vue'], resolve)
+    },
     // {
     //     path: '/components/steps-en',
     //     meta: {
@@ -811,13 +811,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/circle-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/affix',
-    //     meta: {
-    //         title: '图钉 Affix'
-    //     },
-    //     component: (resolve) => require(['./views/components/affix.vue'], resolve)
-    // },
+    {
+        path: '/components/affix',
+        meta: {
+            title: '图钉 Affix'
+        },
+        component: (resolve) => require(['./views/components/affix.vue'], resolve)
+    },
     // {
     //     path: '/components/affix-en',
     //     meta: {

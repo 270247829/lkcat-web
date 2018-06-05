@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Page 分页</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>当数据量较多时，使用分页可以快速进行数据切换。</p>
+            <p>采用分页的形式分隔长列表，每次只加载一个页面。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本">
                 <div slot="demo">
@@ -63,8 +62,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

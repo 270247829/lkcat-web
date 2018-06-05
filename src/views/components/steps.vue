@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Steps 步骤条</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>拆分某项流程的步骤，引导用户按流程完成任务。</p>
+            <p>引导用户按照流程完成任务的导航条。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法" vertical>
                 <div slot="demo">
@@ -92,8 +91,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.error }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

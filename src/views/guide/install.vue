@@ -2,16 +2,19 @@
     <i-article>
         <article>
             <h1>安装</h1>
-            <Anchor title="node.js环境下使用" h2></Anchor>
-            <p>推荐使用 npm 来安装，享受生态圈和工具带来的便利，更好地和 webpack 配合使用，当然，我们也推荐使用 ES2015。</p>
+            <Anchor title="使用 npm 安装" h2></Anchor>
+            <p>我们推荐使用 npm 方式进行开发，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。</p>
+            <br>
             <i-code lang="auto" bg>{{ code.install.install }}</i-code>
-            <p>如果您使用了 NPM 安装，并使用 webpack 作为构建工具，请继续阅读<router-link to="/docs/guide/start">快速上手</router-link>章节。</p>
-            <Anchor title="原生js环境下使用" h2></Anchor>
+            <br>
+            <p>如果你的网络环境不佳，推荐使用 <a href="https://github.com/cnpm/cnpm" target="_blank">cnpm</a>。</p>
+            <Anchor title="浏览器引入" h2></Anchor>
             <p>通过 <a href="https://unpkg.com/lkcat/" target="_blank">unpkg.com/lkcat</a> 可以看到 LKCat 最新版本的资源，也可以切换版本选择需要的资源，在页面上引入 js 和 css 文件即可开始使用：</p>
             <i-code lang="html" bg>{{ code.install.cdn }}</i-code>
-            <Anchor title="示例" h3></Anchor>
-            <p>通过 CDN 可以快速使用 LKCat 写出一个示例，您可以复制下面代码或<a href="http://output.jsbin.com/vowupu" target="_blank">在线预览</a>。</p>
-            <i-code lang="auto" bg>{{ code.install.demo }}</i-code>
+            <br>
+            <Alert type="warning" show-icon>
+                强烈不推荐使用此方式
+            </Alert>
         </article>
     </i-article>
 </template>

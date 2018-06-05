@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Dropdown 下拉菜单</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>展示一组折叠的下拉菜单。</p>
+            <p>向下弹出的列表。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -165,8 +164,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.nest }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

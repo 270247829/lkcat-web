@@ -8,8 +8,14 @@
     <i-article>
         <article>
             <h1>Breadcrumb 面包屑</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>显示网站的层级结构，告知用户当前所在位置，以及在需要向上级导航时使用。</p>
+            <p>显示当前页面在系统层级结构中的位置，并能向上返回。</p>
+            <Anchor title="何时使用" h2></Anchor>
+            <ul>
+                <li>当系统拥有超过两级以上的层级结构时</li>
+                <li>当需要告知用户『你在哪里』时</li>
+                <li>当需要向上导航的功能时</li>
+
+            </ul>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -61,8 +67,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.separator }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

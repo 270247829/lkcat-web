@@ -2,6 +2,9 @@
     .content p{
         padding-left: 30px
     }
+    .lkui-list .list-item {
+        min-height: 105px;
+    }
 </style>
 <template>
     <i-article>
@@ -17,7 +20,7 @@
                     <p><a :href="scope.item.url" target="_blank">点击下载</a></p>
                 </ListItem>
 
-                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('常用工具')"><Icon type="plus-round" size="84" color="#e6f6ff"></Icon></div>
+                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('常用工具')"><Icon type="plus-round" size="105" color="#e6f6ff"></Icon></div>
 
                 <!-- <ListItem slot="footer">
                     <p><a href="scope.item.url" target="_blank">点击下载</a></p>
@@ -34,7 +37,7 @@
                     <p>版本：{{scope.item.version}}</p>
                     <p><a :href="scope.item.url" target="_blank">点击下载</a></p>
                 </ListItem>
-                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('环境配置')"><Icon type="plus-round" size="84" color="#e6f6ff"></Icon></div>
+                <div slot="action" style="text-align:center;cursor:pointer" @click="showForm('环境配置')"><Icon type="plus-round" size="105" color="#e6f6ff"></Icon></div>
                 <!-- <div slot="footer">Footer</div> -->
             </List>
             <Modal

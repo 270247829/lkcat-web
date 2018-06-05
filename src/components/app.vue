@@ -16,7 +16,7 @@
 <template>
     <div>
         <router-view></router-view>
-        <Back-top></Back-top>
+        <Back-top><Icon type="android-arrow-dropup-circle" color="#8c8c8c" size="50"></Icon></Back-top>
         <transition name="fade">
             <div class="loading" v-show="loading">
                 <Icon type="load-c" size="18" class="icon-loading"></Icon>

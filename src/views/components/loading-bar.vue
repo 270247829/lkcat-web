@@ -2,7 +2,6 @@
     <i-article>
         <article>
             <h1>LoadingBar 加载进度条</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>全局创建一个显示页面加载、异步请求、文件上传等的加载进度条。</p>
             <Anchor title="说明" h2></Anchor>
             <p>LoadingBar 只会在全局创建一个，因此在任何位置调用的方法都会控制这同一个组件。主要使用场景是路由切换和Ajax，因为这两者都不能拿到精确的进度，LoadingBar 会模拟进度，当然也可以通过<code>update()</code>方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。</p>
