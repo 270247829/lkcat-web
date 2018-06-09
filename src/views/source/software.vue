@@ -78,6 +78,7 @@
         data () {
             return {
                 movieList: [
+                    {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},

@@ -356,13 +356,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/table-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/list',
-    //     meta: {
-    //         title: '列表 list'
-    //     },
-    //     component: (resolve) => require(['./views/components/list.vue'], resolve)
-    // },
+    {
+        path: '/components/list',
+        meta: {
+            title: '列表 list'
+        },
+        component: (resolve) => require(['./views/components/list.vue'], resolve)
+    },
     // {
     //     path: '/components/select',
     //     meta: {

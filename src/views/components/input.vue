@@ -6,8 +6,6 @@
             <p>基本表单组件，支持 input 和 textarea，并在原生控件基础上进行了功能扩展，可以组合使用。</p>
             <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-input</code>。</Alert>
             <Anchor title="代码示例" h2></Anchor>
-            <Row gutter="16">
-                <Col span="12">
                     <Demo title="基础用法">
                         <div slot="demo">
                             <Input v-model="value" placeholder="Enter something..." style="width: 300px"></Input>
@@ -57,9 +55,6 @@
                         </div>
                         <i-code lang="html" slot="code">{{ code.icon }}</i-code>
                     </Demo>
-                </Col>
-               
-                <Col span="12">
                     <Demo title="文本域">
                         <div slot="demo">
                             <Row :gutter="8">
@@ -142,8 +137,6 @@
                         </div>
                         <i-code lang="html" slot="code">{{ code.addon }}</i-code>
                     </Demo>
-                </Col>
-            </Row>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
