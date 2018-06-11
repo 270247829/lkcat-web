@@ -18,8 +18,7 @@
     <i-article>
         <article>
             <h1>Tooltip 文字提示</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>文字提示气泡框，在鼠标悬停时显示，代替了系统的<code>title</code>提示。</p>
+            <p>简单的文字提示气泡框。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -125,7 +124,6 @@
                 <i-code lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

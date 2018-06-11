@@ -40,9 +40,7 @@
     <i-article>
         <article>
             <h1>Upload 上传</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>文件选择上传和拖拽上传控件。</p>
-            <Alert show-icon style="margin-top: 16px">暂不支持 IE9 浏览器。</Alert>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="点击上传">
                 <div slot="demo">
@@ -151,8 +149,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.list }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -351,6 +347,8 @@
     import Demo from '../../components/demo.vue';
     import Code from '../../code/upload';
     import Anchor from '../../components/anchor.vue';
+    import vue from '../../images/vue.png';
+    import logo from '../../images/logo.svg';
 
     export default {
         components: {
@@ -367,11 +365,11 @@
                 defaultList: [
                     {
                         'name': 'a42bdcc1178e62b4694c830f028db5c0',
-                        'url': 'https://o5wwk8baw.qnssl.com/a42bdcc1178e62b4694c830f028db5c0/avatar'
+                        'url': logo
                     },
                     {
                         'name': 'bc7521e033abdd1e92222d733590f104',
-                        'url': 'https://o5wwk8baw.qnssl.com/bc7521e033abdd1e92222d733590f104/avatar'
+                        'url': vue
                     }
                 ],
                 imgName: '',

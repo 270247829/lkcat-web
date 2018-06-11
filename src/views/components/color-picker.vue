@@ -2,7 +2,6 @@
     <i-article>
         <article>
             <h1>ColorPicker 颜色选择器</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>用于颜色选择，支持多种颜色格式，支持颜色预设。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
@@ -76,8 +75,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

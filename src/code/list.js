@@ -16,8 +16,7 @@ code.base = `
                     {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"}
                 ]
             }
         }
@@ -43,8 +42,7 @@ code.hf = `
                     {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"}
                 ]
             }
         }
@@ -71,8 +69,7 @@ code.gj = `
                     {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"}
                 ],
                 grid:{
                     column:3,gutter:16
@@ -101,8 +98,7 @@ code.card = `
                     {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"}
                 ],
                 grid:{
                     column:3,gutter:16
@@ -132,8 +128,7 @@ code.cardAction = `
                     {cover:"http://60.10.113.44:10101/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10101/download/WinSCP-5.13.2-Setup.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10101/download/TeamViewer13_wm.zip"},
                     {cover:"http://60.10.113.44:10101/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10101/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"},
-                    {cover:"http://60.10.113.44:10101/download/pic/neo4j.png",name:"neo4j-community",version:"3.3.4",url:"http://60.10.113.44:10101/download/neo4j-community-3.3.4-windows.zip"}
+                    {cover:"http://60.10.113.44:10101/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10101/download/mongobooster-3.5.6.zip"}
                 ],
                 grid:{
                     column:3,gutter:16

@@ -226,7 +226,7 @@
                 <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
 
-            <ad></ad>
+            
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

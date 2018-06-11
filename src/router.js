@@ -300,13 +300,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/input-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/radio',
-    //     meta: {
-    //         title: '单选框 Radio'
-    //     },
-    //     component: (resolve) => require(['./views/components/radio.vue'], resolve)
-    // },
+    {
+        path: '/components/radio',
+        meta: {
+            title: '单选框 Radio'
+        },
+        component: (resolve) => require(['./views/components/radio.vue'], resolve)
+    },
     // {
     //     path: '/components/radio-en',
     //     meta: {
@@ -314,13 +314,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/radio-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/checkbox',
-    //     meta: {
-    //         title: '多选框 Checkbox'
-    //     },
-    //     component: (resolve) => require(['./views/components/checkbox.vue'], resolve)
-    // },
+    {
+        path: '/components/checkbox',
+        meta: {
+            title: '多选框 Checkbox'
+        },
+        component: (resolve) => require(['./views/components/checkbox.vue'], resolve)
+    },
     // {
     //     path: '/components/checkbox-en',
     //     meta: {
@@ -328,27 +328,27 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/checkbox-en.vue'], resolve)
     // },
+    {
+        path: '/components/switch',
+        meta: {
+            title: '开关 Switch'
+        },
+        component: (resolve) => require(['./views/components/switch.vue'], resolve)
+    },
     // {
-    //     path: '/components/switch',
+    //     path: '/components/tree-select',
     //     meta: {
-    //         title: '开关 Switch'
+    //         title: 'TreeSelect 树选择'
     //     },
-    //     component: (resolve) => require(['./views/components/switch.vue'], resolve)
+    //     component: (resolve) => require(['./views/components/tree-select.vue'], resolve)
     // },
-    // {
-    //     path: '/components/switch-en',
-    //     meta: {
-    //         title: 'Switch'
-    //     },
-    //     component: (resolve) => require(['./views/components/switch-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/components/table',
-    //     meta: {
-    //         title: '表格 Table'
-    //     },
-    //     component: (resolve) => require(['./views/components/table.vue'], resolve)
-    // },
+    {
+        path: '/components/table',
+        meta: {
+            title: '表格 Table'
+        },
+        component: (resolve) => require(['./views/components/table.vue'], resolve)
+    },
     // {
     //     path: '/components/table-en',
     //     meta: {
@@ -363,13 +363,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/list.vue'], resolve)
     },
-    // {
-    //     path: '/components/select',
-    //     meta: {
-    //         title: '选择器 Select'
-    //     },
-    //     component: (resolve) => require(['./views/components/select.vue'], resolve)
-    // },
+    {
+        path: '/components/select',
+        meta: {
+            title: '选择器 Select'
+        },
+        component: (resolve) => require(['./views/components/select.vue'], resolve)
+    },
     // {
     //     path: '/components/select-en',
     //     meta: {
@@ -377,13 +377,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/select-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/slider',
-    //     meta: {
-    //         title: '滑块 Slider'
-    //     },
-    //     component: (resolve) => require(['./views/components/slider.vue'], resolve)
-    // },
+    {
+        path: '/components/slider',
+        meta: {
+            title: '滑块 Slider'
+        },
+        component: (resolve) => require(['./views/components/slider.vue'], resolve)
+    },
     // {
     //     path: '/components/slider-en',
     //     meta: {
@@ -391,13 +391,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/slider-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/date-picker',
-    //     meta: {
-    //         title: '日期选择器 DatePicker'
-    //     },
-    //     component: (resolve) => require(['./views/components/date-picker.vue'], resolve)
-    // },
+    {
+        path: '/components/date-picker',
+        meta: {
+            title: '日期选择器 DatePicker'
+        },
+        component: (resolve) => require(['./views/components/date-picker.vue'], resolve)
+    },
     // {
     //     path: '/components/date-picker-en',
     //     meta: {
@@ -405,13 +405,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/date-picker-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/time-picker',
-    //     meta: {
-    //         title: '时间选择器 TimePicker'
-    //     },
-    //     component: (resolve) => require(['./views/components/time-picker.vue'], resolve)
-    // },
+    {
+        path: '/components/time-picker',
+        meta: {
+            title: '时间选择器 TimePicker'
+        },
+        component: (resolve) => require(['./views/components/time-picker.vue'], resolve)
+    },
     // {
     //     path: '/components/time-picker-en',
     //     meta: {
@@ -419,13 +419,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/time-picker-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/cascader',
-    //     meta: {
-    //         title: '级联选择 Cascader'
-    //     },
-    //     component: (resolve) => require(['./views/components/cascader.vue'], resolve)
-    // },
+    {
+        path: '/components/cascader',
+        meta: {
+            title: '级联选择 Cascader'
+        },
+        component: (resolve) => require(['./views/components/cascader.vue'], resolve)
+    },
     // {
     //     path: '/components/cascader-en',
     //     meta: {
@@ -433,13 +433,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/cascader-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/transfer',
-    //     meta: {
-    //         title: '穿梭框 Transfer'
-    //     },
-    //     component: (resolve) => require(['./views/components/transfer.vue'], resolve)
-    // },
+    {
+        path: '/components/transfer',
+        meta: {
+            title: '穿梭框 Transfer'
+        },
+        component: (resolve) => require(['./views/components/transfer.vue'], resolve)
+    },
     // {
     //     path: '/components/transfer-en',
     //     meta: {
@@ -447,13 +447,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/transfer-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/input-number',
-    //     meta: {
-    //         title: '数字输入框 InputNumber'
-    //     },
-    //     component: (resolve) => require(['./views/components/input-number.vue'], resolve)
-    // },
+    {
+        path: '/components/input-number',
+        meta: {
+            title: '数字输入框 InputNumber'
+        },
+        component: (resolve) => require(['./views/components/input-number.vue'], resolve)
+    },
     // {
     //     path: '/components/input-number-en',
     //     meta: {
@@ -461,13 +461,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/input-number-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/rate',
-    //     meta: {
-    //         title: '评分 Rate'
-    //     },
-    //     component: (resolve) => require(['./views/components/rate.vue'], resolve)
-    // },
+    {
+        path: '/components/rate',
+        meta: {
+            title: '评分 Rate'
+        },
+        component: (resolve) => require(['./views/components/rate.vue'], resolve)
+    },
     // {
     //     path: '/components/rate-en',
     //     meta: {
@@ -475,13 +475,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/rate-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/upload',
-    //     meta: {
-    //         title: '上传 Upload'
-    //     },
-    //     component: (resolve) => require(['./views/components/upload.vue'], resolve)
-    // },
+    {
+        path: '/components/upload',
+        meta: {
+            title: '上传 Upload'
+        },
+        component: (resolve) => require(['./views/components/upload.vue'], resolve)
+    },
     // {
     //     path: '/components/upload-en',
     //     meta: {
@@ -489,13 +489,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/upload-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/form',
-    //     meta: {
-    //         title: '表单 Form'
-    //     },
-    //     component: (resolve) => require(['./views/components/form.vue'], resolve)
-    // },
+    {
+        path: '/components/form',
+        meta: {
+            title: '表单 Form'
+        },
+        component: (resolve) => require(['./views/components/form.vue'], resolve)
+    },
     // {
     //     path: '/components/form-en',
     //     meta: {
@@ -503,13 +503,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/form-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/alert',
-    //     meta: {
-    //         title: '警告提示 Alert'
-    //     },
-    //     component: (resolve) => require(['./views/components/alert.vue'], resolve)
-    // },
+    {
+        path: '/components/alert',
+        meta: {
+            title: '警告提示 Alert'
+        },
+        component: (resolve) => require(['./views/components/alert.vue'], resolve)
+    },
     // {
     //     path: '/components/alert-en',
     //     meta: {
@@ -517,13 +517,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/alert-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/card',
-    //     meta: {
-    //         title: '卡片 Card'
-    //     },
-    //     component: (resolve) => require(['./views/components/card.vue'], resolve)
-    // },
+    {
+        path: '/components/card',
+        meta: {
+            title: '卡片 Card'
+        },
+        component: (resolve) => require(['./views/components/card.vue'], resolve)
+    },
     // {
     //     path: '/components/card-en',
     //     meta: {
@@ -531,13 +531,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/card-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/message',
-    //     meta: {
-    //         title: '全局提示 Message'
-    //     },
-    //     component: (resolve) => require(['./views/components/message.vue'], resolve)
-    // },
+    {
+        path: '/components/message',
+        meta: {
+            title: '全局提示 Message'
+        },
+        component: (resolve) => require(['./views/components/message.vue'], resolve)
+    },
     // {
     //     path: '/components/message-en',
     //     meta: {
@@ -545,13 +545,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/message-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/notice',
-    //     meta: {
-    //         title: '通知提醒 Notice'
-    //     },
-    //     component: (resolve) => require(['./views/components/notice.vue'], resolve)
-    // },
+    {
+        path: '/components/notice',
+        meta: {
+            title: '通知提醒 Notice'
+        },
+        component: (resolve) => require(['./views/components/notice.vue'], resolve)
+    },
     // {
     //     path: '/components/notice-en',
     //     meta: {
@@ -559,13 +559,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/notice-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/modal',
-    //     meta: {
-    //         title: '对话框 Modal'
-    //     },
-    //     component: (resolve) => require(['./views/components/modal.vue'], resolve)
-    // },
+    {
+        path: '/components/modal',
+        meta: {
+            title: '对话框 Modal'
+        },
+        component: (resolve) => require(['./views/components/modal.vue'], resolve)
+    },
     // {
     //     path: '/components/modal-en',
     //     meta: {
@@ -573,13 +573,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/modal-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/progress',
-    //     meta: {
-    //         title: '进度条 Progress'
-    //     },
-    //     component: (resolve) => require(['./views/components/progress.vue'], resolve)
-    // },
+    {
+        path: '/components/progress',
+        meta: {
+            title: '进度条 Progress'
+        },
+        component: (resolve) => require(['./views/components/progress.vue'], resolve)
+    },
     // {
     //     path: '/components/progress-en',
     //     meta: {
@@ -587,13 +587,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/progress-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/badge',
-    //     meta: {
-    //         title: '徽标数 Badge'
-    //     },
-    //     component: (resolve) => require(['./views/components/badge.vue'], resolve)
-    // },
+    {
+        path: '/components/badge',
+        meta: {
+            title: '徽标数 Badge'
+        },
+        component: (resolve) => require(['./views/components/badge.vue'], resolve)
+    },
     // {
     //     path: '/components/badge-en',
     //     meta: {
@@ -601,13 +601,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/badge-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/collapse',
-    //     meta: {
-    //         title: '折叠面板 Collapse'
-    //     },
-    //     component: (resolve) => require(['./views/components/collapse.vue'], resolve)
-    // },
+    {
+        path: '/components/collapse',
+        meta: {
+            title: '折叠面板 Collapse'
+        },
+        component: (resolve) => require(['./views/components/collapse.vue'], resolve)
+    },
     // {
     //     path: '/components/collapse-en',
     //     meta: {
@@ -615,13 +615,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/collapse-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/timeline',
-    //     meta: {
-    //         title: '时间轴 Timeline'
-    //     },
-    //     component: (resolve) => require(['./views/components/timeline.vue'], resolve)
-    // },
+    {
+        path: '/components/timeline',
+        meta: {
+            title: '时间轴 Timeline'
+        },
+        component: (resolve) => require(['./views/components/timeline.vue'], resolve)
+    },
     // {
     //     path: '/components/timeline-en',
     //     meta: {
@@ -629,13 +629,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/timeline-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/tag',
-    //     meta: {
-    //         title: '标签 Tag'
-    //     },
-    //     component: (resolve) => require(['./views/components/tag.vue'], resolve)
-    // },
+    {
+        path: '/components/tag',
+        meta: {
+            title: '标签 Tag'
+        },
+        component: (resolve) => require(['./views/components/tag.vue'], resolve)
+    },
     // {
     //     path: '/components/tag-en',
     //     meta: {
@@ -643,13 +643,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/tag-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/tooltip',
-    //     meta: {
-    //         title: '文字提示 Tooltip'
-    //     },
-    //     component: (resolve) => require(['./views/components/tooltip.vue'], resolve)
-    // },
+    {
+        path: '/components/tooltip',
+        meta: {
+            title: '文字提示 Tooltip'
+        },
+        component: (resolve) => require(['./views/components/tooltip.vue'], resolve)
+    },
     // {
     //     path: '/components/tooltip-en',
     //     meta: {
@@ -657,13 +657,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/tooltip-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/poptip',
-    //     meta: {
-    //         title: '气泡提示 Poptip'
-    //     },
-    //     component: (resolve) => require(['./views/components/poptip.vue'], resolve)
-    // },
+    {
+        path: '/components/poptip',
+        meta: {
+            title: '气泡提示 Poptip'
+        },
+        component: (resolve) => require(['./views/components/poptip.vue'], resolve)
+    },
     // {
     //     path: '/components/poptip-en',
     //     meta: {
@@ -671,13 +671,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/poptip-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/carousel',
-    //     meta: {
-    //         title: '走马灯 Carousel'
-    //     },
-    //     component: (resolve) => require(['./views/components/carousel.vue'], resolve)
-    // },
+    {
+        path: '/components/carousel',
+        meta: {
+            title: '走马灯 Carousel'
+        },
+        component: (resolve) => require(['./views/components/carousel.vue'], resolve)
+    },
     // {
     //     path: '/components/carousel-en',
     //     meta: {
@@ -685,13 +685,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/carousel-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/tree',
-    //     meta: {
-    //         title: '树形控件 Tree'
-    //     },
-    //     component: (resolve) => require(['./views/components/tree.vue'], resolve)
-    // },
+    {
+        path: '/components/tree',
+        meta: {
+            title: '树形控件 Tree'
+        },
+        component: (resolve) => require(['./views/components/tree.vue'], resolve)
+    },
     // {
     //     path: '/components/tree-en',
     //     meta: {
@@ -713,13 +713,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/menu-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/tabs',
-    //     meta: {
-    //         title: '标签页 Tabs'
-    //     },
-    //     component: (resolve) => require(['./views/components/tabs.vue'], resolve)
-    // },
+    {
+        path: '/components/tabs',
+        meta: {
+            title: '标签页 Tabs'
+        },
+        component: (resolve) => require(['./views/components/tabs.vue'], resolve)
+    },
     // {
     //     path: '/components/tabs-en',
     //     meta: {
@@ -797,20 +797,20 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/loading-bar-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/circle',
-    //     meta: {
-    //         title: '进度环 Circle'
-    //     },
-    //     component: (resolve) => require(['./views/components/circle.vue'], resolve)
-    // },
-    // {
-    //     path: '/components/circle-en',
-    //     meta: {
-    //         title: 'Circle'
-    //     },
-    //     component: (resolve) => require(['./views/components/circle-en.vue'], resolve)
-    // },
+    {
+        path: '/components/circle',
+        meta: {
+            title: '进度环 Circle'
+        },
+        component: (resolve) => require(['./views/components/circle.vue'], resolve)
+    },
+    {
+        path: '/components/divider',
+        meta: {
+            title: 'Divider 分割线'
+        },
+        component: (resolve) => require(['./views/components/divider.vue'], resolve)
+    },
     {
         path: '/components/affix',
         meta: {
@@ -825,13 +825,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/affix-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/back-top',
-    //     meta: {
-    //         title: '回到顶部 BackTop'
-    //     },
-    //     component: (resolve) => require(['./views/components/back-top.vue'], resolve)
-    // },
+    {
+        path: '/components/back-top',
+        meta: {
+            title: '回到顶部 BackTop'
+        },
+        component: (resolve) => require(['./views/components/back-top.vue'], resolve)
+    },
     // {
     //     path: '/components/back-top-en',
     //     meta: {
@@ -839,13 +839,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/back-top-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/spin',
-    //     meta: {
-    //         title: '加载中 Spin'
-    //     },
-    //     component: (resolve) => require(['./views/components/spin.vue'], resolve)
-    // },
+    {
+        path: '/components/spin',
+        meta: {
+            title: '加载中 Spin'
+        },
+        component: (resolve) => require(['./views/components/spin.vue'], resolve)
+    },
     // {
     //     path: '/components/spin-en',
     //     meta: {
@@ -853,13 +853,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/spin-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/avatar',
-    //     meta: {
-    //         title: 'Avatar 头像'
-    //     },
-    //     component: (resolve) => require(['./views/components/avatar.vue'], resolve)
-    // },
+    {
+        path: '/components/avatar',
+        meta: {
+            title: 'Avatar 头像'
+        },
+        component: (resolve) => require(['./views/components/avatar.vue'], resolve)
+    },
     // {
     //     path: '/components/avatar-en',
     //     meta: {
@@ -867,13 +867,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/avatar-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/color-picker',
-    //     meta: {
-    //         title: 'ColorPicker 颜色选择器'
-    //     },
-    //     component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
-    // },
+    {
+        path: '/components/color-picker',
+        meta: {
+            title: 'ColorPicker 颜色选择器'
+        },
+        component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
+    },
     // {
     //     path: '/components/color-picker-en',
     //     meta: {
@@ -881,13 +881,13 @@ const routers = [
     //     },
     //     component: (resolve) => require(['./views/components/color-picker-en.vue'], resolve)
     // },
-    // {
-    //     path: '/components/auto-complete',
-    //     meta: {
-    //         title: 'AutoComplete 自动完成'
-    //     },
-    //     component: (resolve) => require(['./views/components/auto-complete.vue'], resolve)
-    // },
+    {
+        path: '/components/auto-complete',
+        meta: {
+            title: 'AutoComplete 自动完成'
+        },
+        component: (resolve) => require(['./views/components/auto-complete.vue'], resolve)
+    },
     // {
     //     path: '/components/auto-complete-en',
     //     meta: {

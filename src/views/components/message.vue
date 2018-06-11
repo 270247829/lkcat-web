@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Message 全局提示</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>轻量级的信息反馈组件，在顶部居中显示，并自动消失。有多种不同的提示状态可选择。</p>
+            <p>全局展示操作反馈信息。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="普通提示">
                 <div slot="demo">
@@ -61,8 +60,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

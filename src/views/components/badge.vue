@@ -16,8 +16,7 @@
     <i-article>
         <article>
             <h1>Badge 徽标数</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>主要用于通知未读数的角标，提醒用户点击。</p>
+            <p>图标右上角的圆形徽标数字。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -85,8 +84,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.alone }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

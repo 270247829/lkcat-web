@@ -30,7 +30,6 @@
     <i-article>
         <article>
             <h1>AutoComplete 自动完成</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>输入框自动完成功能。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
@@ -103,7 +102,6 @@
                 <i-code lang="html" slot="code">{{ code.search }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

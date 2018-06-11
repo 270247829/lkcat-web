@@ -263,7 +263,7 @@
                 <i-code lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
 
-            <ad></ad>
+            
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

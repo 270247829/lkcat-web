@@ -29,10 +29,7 @@
         <i-article>
             <article>
                 <h1>Table 表格</h1>
-                <Anchor title="概述" h2></Anchor>
-                <p>主要用于展示大量结构化数据。</p>
-                <p>支持排序、筛选、分页、自定义操作、导出 csv 等复杂功能。</p>
-                <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-table</code>。</Alert>
+                <p>展示行列数据。</p>
                 <Anchor title="代码示例" h2></Anchor>
                 <Demo title="基础用法" vertical hide-code>
                     <div slot="demo">
@@ -171,7 +168,6 @@
                     <div slot="desc">
                         <p>通过给 <code>columns</code> 数据的项，设置一个函数 <code>render</code>，可以自定义渲染当前列，包括渲染自定义组件，它基于 Vue 的 Render 函数。</p>
                         <p><code>render</code> 函数传入两个参数，第一个是 h，第二个是对象，包含 <code>row</code>、<code>column</code> 和 <code>index</code>，分别指当前单元格数据，当前列数据，当前是第几行。</p>
-                        <p><study-render></study-render></p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.render }}</i-code>
                 </Demo>
@@ -184,7 +180,6 @@
                         <p>通过给 <code>columns</code> 数据设置一项，指定 <code>type: 'expand'</code>，即可开启扩展功能。</p>
                         <p>给行数据 data 的某项设置 <code>_expanded</code> 为 true，可以默认展开当前行，设置 <code>_disableExpand</code> 可以禁用当前行的展开功能。</p>
                         <p>渲染展开区域与自定义列模板方法类似，使用 render 函数。当内容较复杂时，可拆分为组件或使用 JSX。</p>
-                        <p><study-render></study-render></p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.expand }}</i-code>
                 </Demo>
@@ -246,7 +241,6 @@
                 <Button type="primary" size="large" @click="table2 = true">多列指标筛选的表格</Button>
                 <Button type="primary" size="large" @click="table3 = true">多种效果组合的表格</Button>
 
-                <ad></ad>
 
                 <div class="api">
                     <Anchor title="API" h2></Anchor>
@@ -629,7 +623,7 @@
                         <tr>
                             <td>render</td>
                             <!--<td>自定义渲染列，传入三个参数 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例</td>-->
-                            <td>自定义渲染列，使用 Vue 的 Render 函数。传入两个参数，第一个是 h，第二个为对象，包含 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例。<study-render></study-render></td>
+                            <td>自定义渲染列，使用 Vue 的 Render 函数。传入两个参数，第一个是 h，第二个为对象，包含 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例。</td>
                             <td>Function</td>
                             <td>-</td>
                         </tr>

@@ -12,8 +12,7 @@
     <i-article>
         <article>
             <h1>Carousel 走马灯</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>常用于一组图片或卡片轮播，当内容空间不足时，可以用走马灯的形式进行收纳，进行轮播展现。</p>
+            <p>旋转木马，一组轮播的区域。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -126,7 +125,6 @@
                 <i-code lang="html" slot="code">{{ code.setting }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

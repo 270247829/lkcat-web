@@ -43,8 +43,7 @@
     <i-article>
         <article>
             <h1>Spin 加载中</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>当区块正在获取数据中时可使用，适当的等待动画可以提升用户体验。</p>
+            <p>用于页面和区块的加载中状态。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -55,7 +54,7 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
-            <Demo title="各种尺寸">
+            <!-- <Demo title="各种尺寸">
                 <div slot="demo">
                     <Row>
                         <Col span="8">
@@ -73,7 +72,7 @@
                     <p>通过设置<code>size</code>属性为<code>large</code>和<code>small</code>将 Spin 设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.size }}</i-code>
-            </Demo>
+            </Demo> -->
             <Demo title="居中固定">
                 <div slot="demo">
                     <div class="demo-spin-container">
@@ -146,7 +145,7 @@
                 <i-code lang="html" slot="code">{{ code.$spin }}</i-code>
             </Demo>
 
-            <ad></ad>
+            
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

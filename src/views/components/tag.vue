@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Tag 标签</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>对不同维度进行简单的标记和分类。</p>
+            <p>进行标记和分类的小标签。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -79,7 +78,6 @@
                 <i-code lang="html" slot="code">{{ code.add }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

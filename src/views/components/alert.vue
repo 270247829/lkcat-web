@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Alert 警告提示</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>静态地呈现一些警告信息，可手动关闭。</p>
+            <p>警告提示，展现需要关注的信息。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -109,8 +108,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.banner }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

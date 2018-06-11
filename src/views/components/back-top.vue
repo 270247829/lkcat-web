@@ -11,8 +11,7 @@
     <i-article>
         <article>
             <h1>BackTop 返回顶部</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>当页面内容冗长，需要快捷返回顶部时使用，一般放置在页面右下角位置。</p>
+            <p>返回页面顶部的操作按钮。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -36,7 +35,7 @@
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
 
-            <ad></ad>
+            
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

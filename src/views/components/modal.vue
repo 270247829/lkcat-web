@@ -13,9 +13,7 @@
     <i-article>
         <article>
             <h1>Modal 对话框</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>模态对话框，在浮层中显示，引导用户进行相关操作。</p>
-            <p><code>Modal</code>提供了两种用法，普通组件使用和封装好的简洁实例调用。</p>
+            <p>模态对话框。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Anchor title="普通组件使用方法" h3></Anchor>
             <Demo title="基础用法">
@@ -191,12 +189,10 @@
                 <div slot="desc">
                     <p>使用 <code>render</code> 字段可以基于 Render 函数来自定义内容。</p>
                     <p>使用 render 后，将不再限制类型，content 也将无效。</p>
-                    <p><study-render></study-render></p>
+                    <p></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -389,7 +385,7 @@
                         </tr>
                         <tr>
                             <td>render</td>
-                            <td>自定义内容，使用后不再限制类型， content 也无效。<study-render></study-render></td>
+                            <td>自定义内容，使用后不再限制类型， content 也无效。</td>
                             <td>Function</td>
                             <td>-</td>
                         </tr>

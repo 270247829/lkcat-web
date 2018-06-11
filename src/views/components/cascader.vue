@@ -7,9 +7,7 @@
     <i-article>
         <article>
             <h1>Cascader 级联选择</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>从一组相关联的数据集合中进行选择，常用于省市区、公司级层、事务分类等。</p>
-            <p>相比 Select 组件，可以一次性完成选择，体验更好。</p>
+            <p>级联选择框。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -120,8 +118,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.filterable }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

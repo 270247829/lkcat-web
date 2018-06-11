@@ -18,9 +18,7 @@
     <i-article>
         <article>
             <h1>Poptip 气泡提示</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>Poptip 与 Tooltip 类似，具有很多相同配置，不同点是 Poptip 以卡片的形式承载了更多的内容，比如链接、表格、按钮等。</p>
-            <p>Poptip 还 confirm 确认框，与 Modal 不同的是，它会出现在就近元素，相对轻量。</p>
+            <p>点击/鼠标移入元素，弹出气泡式的卡片浮层。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -175,8 +173,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

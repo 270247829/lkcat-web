@@ -2,9 +2,7 @@
     <i-article>
         <article>
             <h1>i-switch 开关</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>在两种状态间切换时用到的开关选择器。</p>
-            <Alert show-icon style="margin-top: 16px" type="warning">注意：没有使用 <router-link to="/docs/guide/lkcat-loader">lkcat-loader</router-link> 时，必须使用 <code>i-switch</code> 标签。</Alert>
+            <p>开关选择器。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本">
                 <div slot="demo">
@@ -61,9 +59,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
-
-            <ad></ad>
-
             <div class="api">
                 <Anchor title="API" h2></Anchor>
                 <Anchor title="i-switch props" h3></Anchor>

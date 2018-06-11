@@ -7,8 +7,7 @@
     <i-article>
         <article>
             <h1>Checkbox 多选框</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>基本组件-多选框。主要用于一组可选项多项选择，或者单独用于标记切换某种状态。</p>
+            <p>多选框。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="单独使用">
                 <div slot="demo">
@@ -112,8 +111,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.indeterminate }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

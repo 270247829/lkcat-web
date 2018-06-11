@@ -38,8 +38,7 @@
     <i-article>
         <article>
             <h1>Tabs 标签页</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>选项卡切换组件，常用于平级区域大块内容的的收纳和展现。</p>
+            <p>选项卡切换组件。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -130,7 +129,7 @@
                 </div>
                 <div slot="desc">
                     <p>设置 label 为 Render 函数后，可以自定义标签页的内容。</p>
-                    <p><study-render></study-render></p>
+                    <p></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
@@ -184,7 +183,6 @@
                 <i-code lang="html" slot="code">{{ code.style }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -287,7 +285,7 @@
                         </tr>
                         <tr>
                             <td>label</td>
-                            <td>选项卡头显示文字，支持 Render 函数。<study-render></study-render></td>
+                            <td>选项卡头显示文字，支持 Render 函数。</td>
                             <td>String | Function</td>
                             <td>空</td>
                         </tr>

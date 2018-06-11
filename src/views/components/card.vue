@@ -26,8 +26,7 @@
     <i-article>
         <article>
             <h1>Card 卡片</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>基础容器，用来显示文字、列表、图文等内容，也可以配合其它组件一起使用。</p>
+            <p>通用卡片容器。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -138,7 +137,6 @@
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

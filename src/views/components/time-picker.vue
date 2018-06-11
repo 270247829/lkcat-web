@@ -3,8 +3,7 @@
         <i-article>
             <article>
                 <h1>TimePicker 时间选择器</h1>
-                <Anchor title="概述" h2></Anchor>
-                <p>选择或输入标准时间，支持选择范围。</p>
+                <p>当用户需要输入一个时间，可以点击标准输入框，弹出时间面板进行选择。</p>
                 <Anchor title="代码示例" h2></Anchor>
                 <Demo title="基础用法">
                     <div slot="demo">
@@ -148,8 +147,6 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
-
-                <ad></ad>
 
                 <div class="api">
                     <Anchor title="API" h2></Anchor>

@@ -12,8 +12,7 @@
     <i-article>
         <article>
             <h1>Timeline 时间轴</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>对一系列信息进行时间排序时，垂直地展示。</p>
+            <p>垂直展示的时间流信息。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -91,7 +90,6 @@
                 <i-code lang="html" slot="code">{{ code.dot }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

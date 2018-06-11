@@ -7,8 +7,7 @@
     <i-article>
         <article>
             <h1>Radio 单选框</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>基本组件-单选框。主要用于一组可选项单项选择，或者单独用于切换到选中状态。</p>
+            <p>单选框。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="单独使用">
                 <div slot="demo">
@@ -145,8 +144,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -195,7 +195,7 @@
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
 
-            <ad></ad>
+            
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -388,7 +388,7 @@
                         </tr>
                         <tr>
                             <td>render</td>
-                            <td>Custom content. No more type limitation after using it. Content will be invalid too.<study-render></study-render></td>
+                            <td>Custom content. No more type limitation after using it. Content will be invalid too.</td>
                             <td>Function</td>
                             <td>-</td>
                         </tr>

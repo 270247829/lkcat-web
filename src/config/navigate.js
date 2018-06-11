@@ -211,12 +211,12 @@ const list = {
                     img: 'switch.png',
                     icon: 'toggle'
                 },
-                // {
-                //     title: 'Tree 树形控件',
-                //     path: '/components/tree',
-                //     img: 'tree.png',
-                //     icon: 'network'
-                // },
+                {
+                    title: 'TreeSelect 树选择',
+                    path: '/components/tree-select',
+                    img: 'tree.png',
+                    icon: 'network'
+                },
                 {
                     title: 'TimePicker 时间选择器',
                     path: '/components/time-picker',
@@ -377,6 +377,12 @@ const list = {
                 {
                     title: 'Circle 进度环',
                     path: '/components/circle',
+                    img: 'circle.png',
+                    icon: 'ios-circle-outline'
+                },
+                {
+                    title: 'Divider 分割线',
+                    path: '/components/divider',
                     img: 'circle.png',
                     icon: 'ios-circle-outline'
                 },

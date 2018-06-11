@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Collapse 折叠面板</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>将内容区域折叠/展开。</p>
+            <p>可以折叠/展开的内容区域。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -84,7 +83,6 @@
                 <i-code lang="html" slot="code">{{ code.nest }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

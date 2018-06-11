@@ -8,8 +8,7 @@
     <i-article>
         <article>
             <h1>Slider 滑块</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>滑动输入器，用于在数值区间/自定义区间内进行选择，支持连续或离散值。</p>
+            <p>滑动型输入器，展示当前值和可选范围。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -63,8 +62,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

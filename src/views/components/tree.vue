@@ -2,7 +2,6 @@
     <i-article>
         <article>
             <h1>Tree 树形控件</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>文件夹、组织架构、生物分类、国家地区等等，世间万物的大多数结构都是树形结构。使用树控件可以完整展现其中的层级关系，并具有展开收起选择等交互功能。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
@@ -58,12 +57,11 @@
                     </ul>
                     <p>通过合理地使用 root、node 和 data 可以实现各种效果，其中，LKCat 给每个节点都设置了一个 <code>nodeKey</code> 字段，用来标识节点的 id。</p>
                     <p>Render 函数分两种，一种是给当前树的每个节点都设置同样的渲染内容，此 render 通过 Tree 组件的属性 <code>render</code> 传递；另一种是单独给某个节点设置，在该节点的 <code>render</code> 字段内设置；同时设置时，会优先使用当前节点的 Render 函数。</p>
-                    <p><study-render></study-render></p>
+                    <p></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

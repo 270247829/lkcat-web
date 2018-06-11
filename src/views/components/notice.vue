@@ -2,12 +2,7 @@
     <i-article>
         <article>
             <h1>Notice 通知提醒</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>在界面右上角显示可关闭的全局通知，常用于以下场景：</p>
-            <ul>
-                <li>通知内容带有描述信息</li>
-                <li>系统主动推送</li>
-            </ul>
+            <p>全局展示通知提醒信息。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -57,7 +52,6 @@
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

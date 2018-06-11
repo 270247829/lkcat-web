@@ -11,7 +11,6 @@
     <i-article>
         <article>
             <h1>Avatar 头像</h1>
-            <Anchor title="概述" h2></Anchor>
             <p>用来代表用户或事物，支持图片、图标或字符展示。</p>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
@@ -77,7 +76,6 @@
                 <i-code lang="html" slot="code">{{ code.string }}</i-code>
             </Demo>
 
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>

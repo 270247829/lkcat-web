@@ -2,8 +2,7 @@
     <i-article>
         <article>
             <h1>Transfer 穿梭框</h1>
-            <Anchor title="概述" h2></Anchor>
-            <p>双栏穿梭选择框，常用于将多个项目从一边移动到另一边。</p>
+            <p>双栏穿梭选择框。</p>
             <Anchor title="说明" h2></Anchor>
             <p>Transfer 组件主要基于以下四个 API 来使用：</p>
             <ul>
@@ -82,8 +81,6 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
-
-            <ad></ad>
 
             <div class="api">
                 <Anchor title="API" h2></Anchor>
