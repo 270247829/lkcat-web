@@ -3,26 +3,26 @@
 const list = {
     guide: [
         {
+            title: 'LK Cat',
+            titleEn: 'Quick Start',
+            path: '/guide/lkcat'
+        },
+        {
             title: 'LKCat Pro',
             titleEn: 'Introduction',
-            path: '/docs/guide/introduce'
+            path: '/guide/lkcat-pro'
         },
         {
             title: '参与贡献',
             titleEn: 'Contributing Guide',
-            path: '/docs/guide/standard'
+            path: '/guide/join-us'
         }
     ],
     beforeComponents: [
         {
-            title: 'LK Cat',
-            titleEn: 'Quick Start',
-            path: '/docs/guide/start'
-        },
-        {
             title: '安装',
             titleEn: 'Installation',
-            path: '/docs/guide/install'
+            path: '/components/install'
         }
     ],
     components: [
@@ -57,6 +57,12 @@ const list = {
                 {
                     title: 'Layout 布局',
                     path: '/components/layout',
+                    img: 'layout-new.png',
+                    icon: 'ios-browsers-outline'
+                },
+                {
+                    title: 'MorePanel 更多条件',
+                    path: '/components/more-panel',
                     img: 'layout-new.png',
                     icon: 'ios-browsers-outline'
                 }
@@ -175,12 +181,12 @@ const list = {
                     img: 'input-number.png',
                     icon: 'ios-calculator'
                 },
-                {
-                    title:'Mention 提及',
-                    path: '/components/mention',
-                    img: 'input-number.png',
-                    icon: 'ios-calculator'
-                },
+                // {
+                //     title:'Mention 提及',
+                //     path: '/components/mention',
+                //     img: 'input-number.png',
+                //     icon: 'ios-calculator'
+                // },
                 {
                     title: 'Rate 评分',
                     path: '/components/rate',

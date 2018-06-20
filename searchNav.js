@@ -335,5 +335,26 @@
             title: 'Scroll 无限滚动'
         },
         desc:'无限滚动'
+    },
+    {
+        path: '/components/tree-select',
+        meta: {
+            title: 'TreeSelect 树选择'
+        },
+        desc:'树型下拉选择'
+    },
+    {
+        path: '/components/divider',
+        meta: {
+            title: 'Divider 分割线'
+        },
+        desc:'文本分割线'
+    },
+    {
+        path: '/components/more-panel',
+        meta: {
+            title: 'MorePanel 更多条件面板'
+        },
+        desc:'更多条件收缩面板'
     }
 ]

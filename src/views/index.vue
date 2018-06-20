@@ -22,10 +22,10 @@
                     <h2>{{ $t('index.title') }}</h2>
                     <div class="list">
 
-                        <router-link :to="'/docs/guide/introduce' + suffix">
+                        <router-link :to="'/guide/lkcat' + suffix">
                             <Button type="primary" shape="circle">{{ $t('index.guide') }}</Button>
                         </router-link>
-                        <router-link :to="'/docs/guide/start' + suffix">
+                        <router-link :to="'/components/install' + suffix">
                             <Button type="ghost" shape="circle">{{ $t('index.component') }}</Button>
                         </router-link>
                         <a href="https://github.com/270247829/lkcat" target="_blank">

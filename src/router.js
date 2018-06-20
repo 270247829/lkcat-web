@@ -35,9 +35,9 @@ const routers = [
         component: (resolve) => require(['./views/source/java.vue'], resolve)
     },
     {
-        path: '/docs/guide/introduce',
+        path: '/guide/lkcat-pro',
         meta: {
-            title: 'LKCat介绍'
+            title: 'lkcat-pro'
         },
         component: (resolve) => require(['./views/guide/introduce.vue'], resolve)
     },
@@ -69,15 +69,15 @@ const routers = [
         },
         component: (resolve) => require(['./views/guide/layout.vue'], resolve)
     },
-    // {
-    //     path: '/docs/guide/layout-en',
-    //     meta: {
-    //         title: 'Layout'
-    //     },
-    //     component: (resolve) => require(['./views/guide/layout-en.vue'], resolve)
-    // },
     {
-        path: '/docs/guide/standard',
+        path: '/components/more-panel',
+        meta: {
+            title: '更多条件面板'
+        },
+        component: (resolve) => require(['./views/components/more-panel.vue'], resolve)
+    },
+    {
+        path: '/guide/join-us',
         meta: {
             title: '参与贡献'
         },
@@ -119,7 +119,7 @@ const routers = [
     //     component: (resolve) => require(['./views/practice/logo-en.vue'], resolve)
     // },
     {
-        path: '/docs/guide/install',
+        path: '/components/install',
         meta: {
             title: '安装'
         },
@@ -133,75 +133,75 @@ const routers = [
     //     component: (resolve) => require(['./views/guide/install-en.vue'], resolve)
     // },
     {
-        path: '/docs/guide/start',
+        path: '/guide/lkcat',
         meta: {
             title: '快速上手'
         },
         component: (resolve) => require(['./views/guide/start.vue'], resolve)
     },
-    // {
-    //     path: '/docs/guide/start-en',
-    //     meta: {
-    //         title: 'Quick Start'
-    //     },
-    //     component: (resolve) => require(['./views/guide/start-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/i18n',
-    //     meta: {
-    //         title: '国际化'
-    //     },
-    //     component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/i18n-en',
-    //     meta: {
-    //         title: 'Internationalization'
-    //     },
-    //     component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/theme',
-    //     meta: {
-    //         title: '定制主题'
-    //     },
-    //     component: (resolve) => require(['./views/guide/theme.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/theme-en',
-    //     meta: {
-    //         title: 'Customize Theme'
-    //     },
-    //     component: (resolve) => require(['./views/guide/theme-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/lkcat-loader',
-    //     meta: {
-    //         title: 'LKCat Loader'
-    //     },
-    //     component: (resolve) => require(['./views/guide/lkcat-loader.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/lkcat-loader-en',
-    //     meta: {
-    //         title: 'LKCat Loader'
-    //     },
-    //     component: (resolve) => require(['./views/guide/lkcat-loader-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/update',
-    //     meta: {
-    //         title: '更新日志'
-    //     },
-    //     component: (resolve) => require(['./views/guide/update.vue'], resolve)
-    // },
-    // {
-    //     path: '/docs/guide/update-en',
-    //     meta: {
-    //         title: 'Changelog'
-    //     },
-    //     component: (resolve) => require(['./views/guide/update-en.vue'], resolve)
-    // },
+    {
+        path: '/docs/guide/start-en',
+        meta: {
+            title: 'Quick Start'
+        },
+        component: (resolve) => require(['./views/guide/start-en.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/i18n',
+        meta: {
+            title: '国际化'
+        },
+        component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/i18n-en',
+        meta: {
+            title: 'Internationalization'
+        },
+        component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/theme',
+        meta: {
+            title: '定制主题'
+        },
+        component: (resolve) => require(['./views/guide/theme.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/theme-en',
+        meta: {
+            title: 'Customize Theme'
+        },
+        component: (resolve) => require(['./views/guide/theme-en.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/lkcat-loader',
+        meta: {
+            title: 'LKCat Loader'
+        },
+        component: (resolve) => require(['./views/guide/lkcat-loader.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/lkcat-loader-en',
+        meta: {
+            title: 'LKCat Loader'
+        },
+        component: (resolve) => require(['./views/guide/lkcat-loader-en.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/update',
+        meta: {
+            title: '更新日志'
+        },
+        component: (resolve) => require(['./views/guide/update.vue'], resolve)
+    },
+    {
+        path: '/docs/guide/update-en',
+        meta: {
+            title: 'Changelog'
+        },
+        component: (resolve) => require(['./views/guide/update-en.vue'], resolve)
+    },
     {
         path: '/components/grid',
         meta: {
@@ -335,13 +335,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/switch.vue'], resolve)
     },
-    // {
-    //     path: '/components/tree-select',
-    //     meta: {
-    //         title: 'TreeSelect 树选择'
-    //     },
-    //     component: (resolve) => require(['./views/components/tree-select.vue'], resolve)
-    // },
+    {
+        path: '/components/tree-select',
+        meta: {
+            title: 'TreeSelect 树选择'
+        },
+        component: (resolve) => require(['./views/components/tree-select.vue'], resolve)
+    },
     {
         path: '/components/table',
         meta: {
@@ -888,27 +888,27 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/auto-complete.vue'], resolve)
     },
-    // {
-    //     path: '/components/auto-complete-en',
-    //     meta: {
-    //         title: 'AutoComplete'
-    //     },
-    //     component: (resolve) => require(['./views/components/auto-complete-en.vue'], resolve)
-    // },
-    // {
-    //     path: '/components/scroll',
-    //     meta: {
-    //         title: 'Scroll 无限滚动'
-    //     },
-    //     component: (resolve) => require(['./views/components/scroll.vue'], resolve)
-    // },
-    // {
-    //     path: '/components/scroll-en',
-    //     meta: {
-    //         title: 'Scroll'
-    //     },
-    //     component: (resolve) => require(['./views/components/scroll-en.vue'], resolve)
-    // },
+    {
+        path: '/components/auto-complete-en',
+        meta: {
+            title: 'AutoComplete'
+        },
+        component: (resolve) => require(['./views/components/auto-complete-en.vue'], resolve)
+    },
+    {
+        path: '/components/scroll',
+        meta: {
+            title: 'Scroll 无限滚动'
+        },
+        component: (resolve) => require(['./views/components/scroll.vue'], resolve)
+    },
+    {
+        path: '/components/scroll-en',
+        meta: {
+            title: 'Scroll'
+        },
+        component: (resolve) => require(['./views/components/scroll-en.vue'], resolve)
+    },
     {
         path: '*',
         redirect: '/'

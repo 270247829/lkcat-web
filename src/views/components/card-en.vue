@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="less" scoped>
     .lkui-article{
         .lkui-card p{
             margin: 0;

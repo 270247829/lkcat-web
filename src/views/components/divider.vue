@@ -35,154 +35,85 @@
 <template>
     <i-article>
         <article>
-            <h1>Circle</h1>
-            <Anchor title="Overview" h2></Anchor>
-            <p>Circular progress bar. When to use:</p>
-            <ul>
-                <li>To display the current progress of an operation flow.</li>
-                <li>To display the percentage of some indexes.</li>
-            </ul>
-            <Alert show-icon style="margin-top: 16px" type="warning">Warning: If you don't use <router-link to="/docs/guide/lkcat-loader-en">lkcat-loader</router-link>, you have to use <code>i-circle</code> tag.</Alert>
-            <Anchor title="Examples" h2></Anchor>
-            <Demo title="Basic Usage">
+            <h1>Divider 分割线</h1>
+            <p>区隔内容的分割线。</p>
+            <Anchor title="代码示例" h2></Anchor>
+            <Demo title="垂直分割线">
                 <div slot="demo">
-                    <Row>
-                        <Col span="8">
-                            <Circle :percent="80">
-                                <span class="demo-circle-inner" style="font-size:24px">80%</span>
-                            </Circle>
-                        </Col>
-                        <Col span="8">
-                            <Circle :percent="100" stroke-color="#5cb85c">
-                                <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
-                            </Circle>
-                        </Col>
-                        <Col span="8">
-                            <Circle :percent="35" stroke-color="#ff5500">
-                        <span class="demo-circle-inner">
-                            <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
-                        </span>
-                            </Circle>
-                        </Col>
-                    </Row>
+                    <div>
+                        Text
+                        <Divider type="vertical" />
+                        <a href="#">Link</a>
+                        <Divider type="vertical" />
+                        <a href="#">Link</a>
+                    </div>
                 </div>
                 <div slot="desc">
-                    <p>Circle has many modifiable attributes. Check out the details at the bottom.</p>
+                    <p>使用 <code>type="vertical"</code> 设置为行内的垂直分割线。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
-            <Demo title="With Other Components">
+            <Demo title="水平分割线">
                 <div slot="demo">
-                    <Circle :percent="percent" :stroke-color="color">
-                        <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
-                        <span v-else style="font-size:24px">{{ percent }}%</span>
-                    </Circle>
-                    <ButtonGroup size="large">
-                        <Button icon="ios-plus-empty" @click="add"></Button>
-                        <Button icon="ios-minus-empty" @click="minus"></Button>
-                    </ButtonGroup>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                        <Divider />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                        <Divider>With Text</Divider>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                        <Divider dashed />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                    </div>
                 </div>
                 <div slot="desc">
-                    <p>Circle can interact with other useful components, such as update the value dynamically.</p>
+                    <p>默认为水平分割线，可在中间加入文字。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <i-code lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
-            <Demo title="Customize">
+            <Demo title="标题位置">
                 <div slot="demo">
-                    <Circle
-                        :size="250"
-                        :trail-width="4"
-                        :stroke-width="5"
-                        :percent="75"
-                        stroke-linecap="square"
-                        stroke-color="#43a3fb">
-                        <div class="demo-circle-custom">
-                            <h1>42,001,776</h1>
-                            <p>消费人群规模</p>
-                            <span>
-                                总占人数
-                                <i>75%</i>
-                            </span>
-                        </div>
-                    </Circle>
+                    <div>
+                        <Divider orientation="left">Left Text</Divider>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                        <Divider orientation="right">Right Text</Divider>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.</p>
+                    </div>
                 </div>
                 <div slot="desc">
-                    <p>You can customize inner content by <code>slot</code>.</p>
+                    <p>修改分割线标题的位置。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code lang="html" slot="code">{{ code.load }}</i-code>
             </Demo>
-
-            
-
             <div class="api">
                 <Anchor title="API" h2></Anchor>
-                <Anchor title="Circle props" h3></Anchor>
+                <Anchor title="Divider props" h3></Anchor>
                 <table>
                     <thead>
                         <tr>
-                            <th>Property</th>
-                            <th>Description</th>
-                            <th>Type</th>
-                            <th>Default</th>
+                            <th>属性</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>默认值</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
-                            <td>percent</td>
-                            <td>Completion percentage.</td>
-                            <td>Number</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>size</td>
-                            <td>Size (i.e. width and height) of circular progress bar in px.</td>
-                            <td>Number</td>
-                            <td>120</td>
+                            <td>dashed</td>
+                            <td>是否虚线</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         <tr>
-                            <td>stroke-linecap</td>
-                            <td>Shape of cap, options: <code>square</code>, <code>round</code>.</td>
-                            <td>String</td>
-                            <td>round</td>
+                            <td>type</td>
+                            <td>水平还是垂直类型</td>
+                            <td>enum: <code>horizontal</code><code> vertical</code></td>
+                            <td><code>horizontal</code></td>
                         </tr>
                         <tr>
-                            <td>stroke-width</td>
-                            <td>Width of the line in px.</td>
-                            <td>Number</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>stroke-color</td>
-                            <td>Color of the line.</td>
-                            <td>String</td>
-                            <td>#2db7f5</td>
-                        </tr>
-                        <tr>
-                            <td>trail-width</td>
-                            <td>Width of unfilled circle in px</td>
-                            <td>Number</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>trail-color</td>
-                            <td>Color of unfilled circle.</td>
-                            <td>String</td>
-                            <td>#eaeef2</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <Anchor title="Circle slot" h3></Anchor>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>—</td>
-                            <td>Customized inner content. Be vertically centered by default.</td>
+                            <td>orientation</td>
+                            <td>分割线标题的位置</td>
+                            <td>enum: <code>left</code><code> right</code></td>
+                            <td><code>center</code></td>
                         </tr>
                     </tbody>
                 </table>
@@ -194,7 +125,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/circle';
+    import Code from '../../code/divider';
     import Anchor from '../../components/anchor.vue';
 
     export default {

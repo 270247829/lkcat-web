@@ -23,16 +23,32 @@ module.exports = {
         rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    loaders: {
-                        css: 'vue-style-loader!css-loader',
-                        less: 'vue-style-loader!css-loader!less-loader'
+                use: [
+                    {
+                        loader: 'vue-loader',
+                        options: {
+                            loaders: {
+                                less: ExtractTextPlugin.extract({
+                                    use: ['css-loader?minimize', 'autoprefixer-loader', 'less-loader'],
+                                    fallback: 'vue-style-loader'
+                                }),
+                                css: ExtractTextPlugin.extract({
+                                    use: ['css-loader?minimize', 'autoprefixer-loader', 'less-loader'],
+                                    fallback: 'vue-style-loader'
+                                }),
+                            },
+                            postLoaders: {
+                                html: 'babel-loader'
+                            }
+                        }
                     },
-                    postLoaders: {
-                        html: 'babel-loader'
+                    {
+                        loader: 'lkcat-loader',
+                        options: {
+                            prefix: false
+                        }
                     }
-                }
+                ]
             },
             {
                 test: /lkcat\/.*?js$/,
