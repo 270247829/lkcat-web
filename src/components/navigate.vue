@@ -1,5 +1,8 @@
 <style lang="less" scoped>
     @import "../styles/navigate.less";
+    .lkui-menu-item-group-title{
+        padding-left: 56px;
+    }
 </style>
 <template>
     <div class="navigate">
@@ -10,7 +13,7 @@
             </Menu-item>
         </Menu>
         <Menu width="auto" :active-name="activeKey" @on-select="handleSelect" v-if="type === 'component'">
-            <Menu-item v-for="item in navigate.beforeComponents" :key="item.path" :name="item.path">
+            <Menu-item v-for="item in navigate.beforeComponents" :key="item.path" :name="item.path" style="padding-left:80px">
                 <template v-if="item.title !== '更新日志'">
                     <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                     <template v-else>{{ item.titleEn }}</template>

@@ -16,16 +16,16 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
     color: #999;
 }
 .hljs-tag{
-    color: #3e76f6;
+    color: #57acff;
 }
 .hljs-attribute {
-    color: #e96900;
+    color: #92c120;
 }
 .hljs-value{
-    color: #42b983;
+    color: #fc484f;
 }
 .hljs-keyword{
-    color: #e96900;
+    color: #ba26c3;
 }
 .hljs-string{
     color: #42b983;
