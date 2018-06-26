@@ -95,7 +95,7 @@
                 </i-select> -->
                 <Icon type="ios-search" />
                 <Poptip width="300" v-model="visible" @on-popper-show="showReulst">
-                    <Input @on-keyup="search" v-model="content" @on-focus="showReulst">
+                    <Input @on-keyup="search" v-model="content" @on-focus="showReulst" placeholder="搜索组件">
                     </Input>
                     <div class="api" slot="content">
                         <ul>

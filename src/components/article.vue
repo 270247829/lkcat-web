@@ -1,5 +1,32 @@
 <style lang="less">
     @import "../styles/article.less";
+
+    @media (min-width: 1200px){
+        .wrapper{
+            .lkui-col-span-5 {
+                display: block;
+                width: 20.83333333%;
+            }
+            .lkui-col-span-17 {
+                display: block;
+                width: 70.83333333%
+            }
+        }
+
+    }
+    @media (min-width: 1600px){
+        .wrapper{
+            .lkui-col-span-5 {
+                display: block;
+                width: 16.66666667%;
+            }
+            .lkui-col-span-17 {
+                display: block;
+                width: 74.83333333%
+            }
+        }
+    }
+
 </style>
 <template>
     <div>

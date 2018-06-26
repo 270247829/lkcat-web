@@ -151,3 +151,6 @@ color {  100%, 0% {
         stroke: #ffa700;
     }
 }
+.navigate .lkui-menu-item-group .lkui-menu-item-group-title{
+    padding-left: 56px;
+}

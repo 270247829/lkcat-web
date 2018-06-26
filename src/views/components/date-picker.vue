@@ -378,6 +378,12 @@
                             <td>Object</td>
                             <td>{}</td>
                         </tr>
+                        <tr>
+                            <td>is-date</td>
+                            <td><code>v-model</code>返回值格式，<code>true</code>返回日期类型，<code>false</code>返回字符串类型</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                         </tbody>
                     </table>
                     <Anchor title="options" h3></Anchor>
