@@ -65,9 +65,6 @@ router.afterEach((to, from, next) => {
     LKCat.LoadingBar.finish();
     bus.loading = false;
     window.scrollTo(0, 0);
-    if (_hmt) {
-        _hmt.push(['_trackEvent', 'page', to.path]);
-    }
 });
 
 new Vue({

@@ -230,7 +230,6 @@
                 bus.$emit('on-change-lang', lang, '/#'+ path);
             },
             handleGoToGitHub () {
-                // _hmt.push(['_trackEvent', 'menu-go-github', 'click']);
                 window.open('https://github.com/270247829/lkcat');
             },
             search(){

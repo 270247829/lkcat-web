@@ -172,7 +172,6 @@
                 window.scrollTo(0, scroll_top);
             },
             handleAsideAd (name, isQQGroup = false) {
-                _hmt.push(['_trackEvent', name, 'click']);
                 if (isQQGroup) {
                     this.ask = true;
                 }

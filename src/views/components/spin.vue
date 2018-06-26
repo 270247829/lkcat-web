@@ -140,7 +140,6 @@
                 </div>
                 <div slot="desc">
                     <p>使用内置的 <code>$Spin</code> 方法可以全局加载。</p>
-                    <p>可以使用 Render 函数自定义显示内容。<studyRender></studyRender></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.$spin }}</i-code>
             </Demo>

@@ -57,14 +57,6 @@
 
             }
 
-            // 广告统计
-            window.clickAdBuy = function () {
-                _hmt.push(['_trackEvent', 'index-ad-buy', 'click'])
-            }
-
-            window.clickAdVideo = function () {
-                _hmt.push(['_trackEvent', 'index-ad-video', 'click'])
-            }
         },
         methods: {
             getTodayUnix () {
@@ -83,7 +75,6 @@
                 this.fee = false;
             },
             gotofee () {
-                _hmt.push(['_trackEvent', 'gotofee', 'click']);
                 window.open('https://live.bilibili.com/1353202');
             }
         }

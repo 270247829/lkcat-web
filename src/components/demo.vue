@@ -5,10 +5,10 @@
     right: 16px;
     bottom: 17px;
     cursor: pointer;
-    width: 18px;
-    height: 18px;
-    font-size: 18px;
-    line-height: 18px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
     color: #999;
 }
    
