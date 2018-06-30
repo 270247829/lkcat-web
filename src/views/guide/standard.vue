@@ -5,7 +5,7 @@
             <Anchor title="加入我们" h2></Anchor>
             <p>QQ群</p>
             <ul>
-                <li><a href="https://jq.qq.com/?_wv=1027&k=5Ts2Pg7" target="_blank" >点击加群</a>，或者手动搜索群号：751455419</li>
+                <li><a href="https://jq.qq.com/?_wv=1027&k=5HrXvU0" target="_blank" >点击加群</a>，或者手动搜索群号：813229201</li>
             </ul>
         </article>
     </i-article>

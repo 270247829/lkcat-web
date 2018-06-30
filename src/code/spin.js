@@ -106,7 +106,7 @@ code.status = `
         <Spin size="large" fix v-if="spinShow"></Spin>
     </div>
     <br>
-    切换显示状态：<i-switch @on-change="spinShow = !spinShow"></i-switch>
+    切换显示状态：<Switch @on-change="spinShow = !spinShow"></Switch>
 </template>
 <script>
     export default {

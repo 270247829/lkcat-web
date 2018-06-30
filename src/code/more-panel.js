@@ -41,10 +41,10 @@ code.base = `
                     </CheckboxGroup>
                 </FormItem>
                 <FormItem label="Switch">
-                    <i-switch v-model="formItem.switch" size="large">
+                    <Switch v-model="formItem.switch" size="large">
                         <span slot="open">On</span>
                         <span slot="close">Off</span>
-                    </i-switch>
+                    </Switch>
                 </FormItem>
                 <FormItem label="Slider">
                     <Slider v-model="formItem.slider" range></Slider>

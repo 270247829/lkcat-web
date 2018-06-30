@@ -742,12 +742,12 @@
                     </blockquote>
                 </div>
                 <div style="margin: 10px">
-                    显示边框 <i-switch v-model="showBorder" style="margin-right: 5px"></i-switch>
-                    显示斑马纹 <i-switch v-model="showStripe" style="margin-right: 5px"></i-switch>
-                    显示索引 <i-switch v-model="showIndex" style="margin-right: 5px"></i-switch>
-                    显示多选框 <i-switch v-model="showCheckbox" style="margin-right: 5px"></i-switch>
-                    显示表头 <i-switch v-model="showHeader" style="margin-right: 5px"></i-switch>
-                    表格滚动 <i-switch v-model="fixedHeader" style="margin-right: 5px"></i-switch>
+                    显示边框 <Switch v-model="showBorder" style="margin-right: 5px"></Switch>
+                    显示斑马纹 <Switch v-model="showStripe" style="margin-right: 5px"></Switch>
+                    显示索引 <Switch v-model="showIndex" style="margin-right: 5px"></Switch>
+                    显示多选框 <Switch v-model="showCheckbox" style="margin-right: 5px"></Switch>
+                    显示表头 <Switch v-model="showHeader" style="margin-right: 5px"></Switch>
+                    表格滚动 <Switch v-model="fixedHeader" style="margin-right: 5px"></Switch>
                     <br>
                     <br>
                     表格尺寸

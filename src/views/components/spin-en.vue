@@ -127,7 +127,7 @@
                         <Spin size="large" fix v-if="spinShow"></Spin>
                     </div>
                     <br>
-                    Switch status：<i-switch @on-change="spinShow = !spinShow"></i-switch>
+                    Switch status：<Switch @on-change="spinShow = !spinShow"></Switch>
                 </div>
                 <div slot="desc">
                     <p>Controls the display and disappearance of the spin.</p>

@@ -9,7 +9,7 @@
                     <Button type="primary" @click="info">显示普通提示</Button>
                 </div>
                 <div slot="desc">
-                    <p>最基本的提示，默认在1.5秒后消失。</p>
+                    <p>最基本的提示，默认在3秒后消失。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.info }}</i-code>
             </Demo>
@@ -109,7 +109,7 @@
                             <td>duration</td>
                             <td>自动关闭的延时，单位秒，不关闭可以写 0</td>
                             <td>Number</td>
-                            <td>1.5</td>
+                            <td>3</td>
                         </tr>
                         <tr>
                             <td>onClose</td>
@@ -157,7 +157,7 @@
                             <td>duration</td>
                             <td>默认自动关闭的延时，单位秒</td>
                             <td>Number</td>
-                            <td>1.5</td>
+                            <td>3</td>
                         </tr>
                     </tbody>
                 </table>

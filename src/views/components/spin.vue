@@ -126,7 +126,7 @@
                         <Spin size="large" fix v-if="spinShow"></Spin>
                     </div>
                     <br>
-                    切换显示状态：<i-switch @on-change="spinShow = !spinShow"></i-switch>
+                    切换显示状态：<Switch @on-change="spinShow = !spinShow"></Switch>
                 </div>
                 <div slot="desc">
                     <p>控制 Spin 组件的显示和消失。</p>
