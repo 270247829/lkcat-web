@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>LKCat Loader</h1>
             <Anchor title="用途" h2></Anchor>
@@ -9,30 +9,30 @@
             <Anchor title="使用方法" h2></Anchor>
             <Anchor title="安装" h3></Anchor>
             <p>首先通过 npm 安装 lkcat-loader</p>
-            <i-code lang="auto" bg>{{ code.loader.install }}</i-code>
+            <lk-code lang="auto" bg>{{ code.loader.install }}</lk-code>
             <Anchor title="配置" h3></Anchor>
             <p>配置 webpack，改写平时 vue-loader 的配置，形如：</p>
-            <i-code bg>{{ code.loader.webpack }}</i-code>
+            <lk-code bg>{{ code.loader.webpack }}</lk-code>
             <Anchor title="说明" h3></Anchor>
             <ul>
                 <li>可以直接写 <code>&lt;Switch&gt;</code> 和 <code>&lt;Circle&gt;</code> 这两个标签；</li>
                 <li>参数 <code>prefix</code> 设置为 <code>true</code> 后，所有 LKCat 组件标签名都可以使用前缀 <code>i-</code>，例如 <code>&lt;i-row&gt;</code>、<code>&lt;i-select&gt;</code></li>
             </ul>
             <p>完整的标签名如下：</p>
-            <i-code bg>{{ code.loader.tags }}</i-code>
+            <lk-code bg>{{ code.loader.tags }}</lk-code>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

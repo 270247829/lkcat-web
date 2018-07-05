@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>LoadingBar</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -7,9 +7,9 @@
             <Anchor title="Explanation" h2></Anchor>
             <p>LoadingBar will be created only once globally, so you'll control the same component no matter where you call the methods. It is mainly used on route changing or Ajax. In those two situations, operation cannot get the accurate progress rate, so LoadingBar will simulate the progress rate. You can also use <code>update()</code> to pass an accurate progress rate. Details on API Doc.</p>
             <Anchor title="Using in Router" h4></Anchor>
-            <i-code bg>{{ code.router }}</i-code>
+            <lk-code bg>{{ code.router }}</lk-code>
             <Anchor title="Using in Asynchronous Request" h4></Anchor>
-            <i-code bg lang="html">{{ code.ajax }}</i-code>
+            <lk-code bg lang="html">{{ code.ajax }}</lk-code>
             <Anchor title="Examples" h2></Anchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>Click Start to start loading. Click Finish to complete. When calling <code>start()</code> method, the component will automatically simulate the loading bar. When calling <code>finish()</code> or <code>error()</code> methods, the loading bar will be fulfilled and then disappear.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
 
             
@@ -85,7 +85,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -119,19 +119,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/loading-bar';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

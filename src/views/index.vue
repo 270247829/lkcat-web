@@ -17,7 +17,7 @@
             <img :src="logoPath" class="logo"/>
             <cat ></cat>
             <Row   type="flex" justify="center" align="middle" style="position: relative;z-index: 3">
-                <i-col span="24" >
+                <lk-col span="24" >
                     <h1>LK Cat</h1>
                     <h2>{{ $t('index.title') }}</h2>
                     <div class="list">
@@ -35,7 +35,7 @@
                             </Button>
                         </a>
                     </div>
-                </i-col>
+                </lk-col>
             </Row>
         </div>
         <div id="indexLizi"></div>

@@ -7,7 +7,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>后端源码</h1>
             <Anchor title="后端框架" h2></Anchor>
@@ -60,18 +60,18 @@
                 </Form>
             </Modal>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

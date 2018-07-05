@@ -37,7 +37,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Upload</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>Basic usage. Clikc to upload, each at one time.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.select }}</lk-code>
             </Demo>
             <Demo title="Multi Choices">
                 <div slot="demo">
@@ -66,7 +66,7 @@
                 <div slot="desc">
                     <p>Set <code>multiple</code> prop to enable multi choices.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.multiple }}</lk-code>
             </Demo>
             <Demo title="Manual Upload">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>Bind a function which returns <code>false</code> to <code>before-upload</code>. It will prevent default upload process and allow you control it manually.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.manual }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.manual }}</lk-code>
             </Demo>
             <Demo title="Drag to Upload">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>Set <code>type</code> prop to <code>drag</code> to enable drag-to-upload.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.drag }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.drag }}</lk-code>
             </Demo>
             <Demo title="Custom Upload List">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                         <li>The size of each image does not exceed 2M.</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.list }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.list }}</lk-code>
             </Demo>
 
             
@@ -343,19 +343,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/upload';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Menu</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -50,7 +50,7 @@
                     <p>Select a theme by setting <code>theme</code> prop to <code>light</code>, <code>dark</code>, <code>primary</code>.</p>
                     <p>Set <code>on-select</code> event to get the name of the clicked menu item, then you can control the router or do custom operations.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Side Navigator" vertical hide-code>
                 <div slot="demo">
@@ -177,7 +177,7 @@
                     <p>Set <code>accordion</code> prop to open  accordion mode. Which means only one sub menu can be expanded at the same time.</p>
                     <p>Set <code>theme</code> prop to <code>light</code>, <code>dark</code> to choose a theme, but it doesn't support primary theme.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="Inline Menu" vertical hide-code>
                 <div slot="demo">
@@ -224,7 +224,7 @@
                 <div slot="desc">
                     <p>Vertical menu with inline submenus.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.inline }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.inline }}</lk-code>
             </Demo>
             <Demo title="Menu Group" vertical hide-code>
                 <div slot="demo">
@@ -260,7 +260,7 @@
                 <div slot="desc">
                     <p>Use <code>MenuGroup</code> to group the menus.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
 
             
@@ -438,19 +438,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/menu';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

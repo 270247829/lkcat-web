@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tag</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -15,7 +15,7 @@
                     <p>Usage of basic Tag, and it could be closable by set <code>closable</code> property. </p>
                     <p>Click to close the tag, it will trigger <code>on-close</code> event, you need to implement the logic of your own closure.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Type">
                 <div slot="demo">
@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>You can select a different style type by setting the <code>type</code> property to <code>border</code> or <code>dot</code>. It is recommended to use the border when you want to close, in the legend of the scene using dot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="Colors">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>Four default color, you can also use custom color.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.color }}</lk-code>
             </Demo>
             <Demo title="Checkable">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>Set the property <code>checkable</code> to select the tag, and the property <code>checked</code> to control the current selection state.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.checkable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.checkable }}</lk-code>
             </Demo>
             <Demo title="Add & Remove Dynamically">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>Generating a set of Tags by array, you can add and remove dynamically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.add }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.add }}</lk-code>
             </Demo>
 
             
@@ -150,19 +150,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tag';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -23,7 +23,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Card 卡片</h1>
             <p>通用卡片容器。</p>
@@ -54,7 +54,7 @@
                     <p>自定义标题、额外操作和主体内容，可以完全自由控制各个部分，也可以结合其它组件一起使用，较为灵活。</p>
                     <p><blockquote>可以通过设置属性 <code>title</code> 和 <code>icon</code> 快速设置标题栏。</blockquote></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="无边框">
                 <div slot="demo">
@@ -68,7 +68,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>bordered</code>为 false ，可以不添加边框，建议在灰色背景下使用。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bordered }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bordered }}</lk-code>
             </Demo>
             <Demo title="禁用悬停阴影">
                 <div slot="demo">
@@ -94,7 +94,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>dis-hover</code>来禁用鼠标悬停显示阴影的效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disHover }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disHover }}</lk-code>
             </Demo>
             <Demo title="卡片阴影">
                 <div slot="demo">
@@ -121,7 +121,7 @@
                     <p>通过设置属性<code>shadow</code>来显示卡片阴影，使用该属性后，<code>bordered</code>和<code
                     >dis-hover</code>将无效，建议在灰色背景下使用。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.shadow }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.shadow }}</lk-code>
             </Demo>
             <Demo title="简洁卡片">
                 <div slot="demo">
@@ -134,7 +134,7 @@
                 <div slot="desc">
                     <p>只包含内容区域，没有标题。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.simple }}</lk-code>
             </Demo>
 
 
@@ -214,19 +214,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/card';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

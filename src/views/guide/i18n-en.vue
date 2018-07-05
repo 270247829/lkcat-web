@@ -1,22 +1,22 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Internationalization</h1>
             <p>The default language is Chinese. To use other languages, you need to do some customization.</p>
             <Anchor title="Use in Webpack" h2></Anchor>
             <p>Import LKCat</p>
-            <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.demo }}</lk-code>
             <p>Import LKCat on demand</p>
-            <i-code lang="js" bg>{{ code.i18n.demand }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.demand }}</lk-code>
             <p>Compatible with vue-i18n@6.x+</p>
-            <i-code lang="js" bg>{{ code.i18n.vuei18n6 }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.vuei18n6 }}</lk-code>
             <p>Compatible with vue-i18n@5.x</p>
-            <i-code lang="js" bg>{{ code.i18n.vuei18n5 }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.vuei18n5 }}</lk-code>
             <Alert show-icon style="margin-top: 16px">When you use vue-i18n, you can also import LKCat components on demand, similar to the example above.</Alert>
             <Anchor title="Use with CDN" h2></Anchor>
-            <i-code lang="html" bg>{{ code.i18n.cdn }}</i-code>
+            <lk-code lang="html" bg>{{ code.i18n.cdn }}</lk-code>
             <p>Combined with vue-i18n</p>
-            <i-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</i-code>
+            <lk-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</lk-code>
             <Anchor title="Supported Languages" h2></Anchor>
             <p>LKCat have beed translated from Chinese to the following languages:</p>
             <ul>
@@ -46,18 +46,18 @@
             </ul>
             <p>If your target language is not included, you are more than welcome to contribute: just add another language config <a href="https://github.com/lkcat/lkcat/tree/2.0/src/locale/lang" target="_blank">here</a> and create a pull request.</p>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

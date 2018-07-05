@@ -4,7 +4,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Checkbox 多选框</h1>
             <p>多选框。</p>
@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>使用 v-model 可以双向绑定数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.single }}</lk-code>
             </Demo>
             <Demo title="组合使用">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>使用<code>CheckboxGroup</code>配合数组来生成组合。在组合使用时，<code>Checkbox</code> 使用 <code>label</code> 来自动判断选中状态。每个 Checkbox 的内容可以自定义，如不填写则默认使用 label 的值。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -66,7 +66,7 @@
                 <div slot="desc">
                     <p>通过设置<code>disabled</code>属性来禁用多选框。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="与其它组件通信">
                 <div slot="demo">
@@ -90,7 +90,7 @@
                 <div slot="desc">
                     <p>与其它组件进行数据联动。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.communication }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.communication }}</lk-code>
             </Demo>
             <Demo title="全选">
                 <div slot="demo">
@@ -109,7 +109,7 @@
                 <div slot="desc">
                     <p>在实现全选效果时，你可能会用到 <code>indeterminate</code> 属性。示例代码只是一种写法，业务中可以用更多的方法，比如计算属性。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.indeterminate }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.indeterminate }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -230,19 +230,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/checkbox';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

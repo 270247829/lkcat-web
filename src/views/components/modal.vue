@@ -10,7 +10,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Modal 对话框</h1>
             <p>模态对话框。</p>
@@ -34,7 +34,7 @@
                     <p>可以使用 v-model 实现双向绑定。</p>
                     <p>默认按键盘<code>ESC</code>键也可以关闭。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="自定义样式">
                 <div slot="demo">
@@ -81,7 +81,7 @@
                     <p>Modal 组件提供了灵活的自定义样式 API 和 Slot，可以自由控制整个 Modal 的各个组成部分，比如页头、页脚、关闭按钮。</p>
                     <p>通过和其它组件的交互，能实现更复杂的功能，满足了大多业务场景。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
             <Demo title="异步关闭">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>给<code>Modal</code>添加属性<code>loading</code>后，点击确定按钮对话框不会自动消失，并显示 loading 状态，需要手动关闭对话框，常用于表单提交。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.async }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.async }}</lk-code>
             </Demo>
             <Demo title="禁用关闭">
                 <div slot="demo">
@@ -123,7 +123,7 @@
                 <div slot="desc">
                     <p>可以禁用关闭和遮罩层关闭。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.close }}</lk-code>
             </Demo>
             <Demo title="自定义位置">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                 <div slot="desc">
                     <p>可以自定义 Modal 的对话框样式 以及 对话框 Wrap 的 class 名称，从而实现更多自定义的样式，比如垂直居中。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.position }}</lk-code>
             </Demo>
             <Anchor title="实例化使用方法" h3></Anchor>
             <p>除了上述通过标准组件的使用方法，LKCat 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
@@ -164,7 +164,7 @@
                 <div slot="desc">
                     <p>四种基本的对话框，只提供一个确定按钮。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.baseInstance }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.baseInstance }}</lk-code>
             </Demo>
             <Demo title="确认对话框">
                 <div slot="demo">
@@ -175,7 +175,7 @@
                 <div slot="desc">
                     <p>快速弹出确认对话框，并且可以自定义按钮文字及异步关闭。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
             </Demo>
             <Demo title="自定义内容">
                 <div slot="demo">
@@ -191,7 +191,7 @@
                     <p>使用 render 后，将不再限制类型，content 也将无效。</p>
                     <p></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -447,11 +447,11 @@
                 </ul>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/modal';
     import Anchor from '../../components/anchor.vue';
@@ -459,8 +459,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             studyRender

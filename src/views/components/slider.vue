@@ -5,7 +5,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Slider 滑块</h1>
             <p>滑动型输入器，展示当前值和可选范围。</p>
@@ -21,7 +21,7 @@
                     <p>通过设置属性 <code>range</code> 开启双滑块，通过设置属性 <code>disabled</code> 禁用滑块。</p>
                     <p>注意，单滑块时，<code>value</code> 格式为数字，当开启双滑块时，<code>value</code> 为长度是2的数组，且每项为数字。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="离散值">
                 <div slot="demo">
@@ -31,7 +31,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>step</code> 可以控制每次滑动的间隔。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.step }}</lk-code>
             </Demo>
             <Demo title="显示间断点">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>show-stops</code> 可以显示间断点，建议在 <code>step</code> 间隔不密集时使用。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.stops }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.stops }}</lk-code>
             </Demo>
             <Demo title="带有输入框">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>show-input</code> 可以显示数字输入框，配合使用，仅在单滑块模式下有效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.input }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.input }}</lk-code>
             </Demo>
             <Demo title="自定义提示">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>Slider 会把当前值传给 <code>tip-format</code>，并在 Tooltip 中显示 tip-format 的返回值，若为 null，则隐藏 Tooltip。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.format }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -168,19 +168,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/slider';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -33,7 +33,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>i-circle 进度环</h1>
             <Anchor title="概述" h2></Anchor>
@@ -48,35 +48,35 @@
                 <div slot="demo">
                     <Row>
                         <Col span="8">
-                            <i-circle :percent="80">
+                            <lk-circle :percent="80">
                                 <span class="demo-circle-inner" style="font-size:24px">80%</span>
-                            </i-circle>
+                            </lk-circle>
                         </Col>
                         <Col span="8">
-                            <i-circle :percent="100" stroke-color="#5cb85c">
+                            <lk-circle :percent="100" stroke-color="#5cb85c">
                                 <Icon type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
-                            </i-circle>
+                            </lk-circle>
                         </Col>
                         <Col span="8">
-                            <i-circle :percent="35" stroke-color="#ff5500">
+                            <lk-circle :percent="35" stroke-color="#ff5500">
                         <span class="demo-circle-inner">
                             <Icon type="ios-close-empty" size="50" style="color:#ff5500"></Icon>
                         </span>
-                            </i-circle>
+                            </lk-circle>
                         </Col>
                     </Row>
                 </div>
                 <div slot="desc">
                     <p>圆形进度环有一系列的参数可配置，具体可以查看下面的API文档。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="配合外部组件使用">
                 <div slot="demo">
-                    <i-circle :percent="percent" :stroke-color="color">
+                    <lk-circle :percent="percent" :stroke-color="color">
                         <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
                         <span v-else style="font-size:24px">{{ percent }}%</span>
-                    </i-circle>
+                    </lk-circle>
                     <ButtonGroup size="large">
                         <Button icon="ios-plus-empty" @click="add"></Button>
                         <Button icon="ios-minus-empty" @click="minus"></Button>
@@ -85,11 +85,11 @@
                 <div slot="desc">
                     <p>通过数据的联动和逻辑控制，实现交互效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.percent }}</lk-code>
             </Demo>
             <Demo title="自定义更多样式">
                 <div slot="demo">
-                    <i-circle
+                    <lk-circle
                         :size="250"
                         :trail-width="4"
                         :stroke-width="5"
@@ -104,12 +104,12 @@
                                 <i>75%</i>
                             </span>
                         </div>
-                    </i-circle>
+                    </lk-circle>
                 </div>
                 <div slot="desc">
                     <p>通过自定义<code>slot</code>和丰富的配置，可以组合出很多统计效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
 
             
@@ -188,19 +188,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/circle';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

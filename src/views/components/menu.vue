@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Menu 导航菜单</h1>
             <p>为页面和功能提供导航的菜单列表。</p>
@@ -48,7 +48,7 @@
                     <p>通过设置属性 <code>theme</code> 为 <code>light</code>、<code>dark</code>、<code>primary</code> 可以选择主题。</p>
                     <p>通过事件 <code>on-select</code> 可以得到点击菜单的 name 值，从而控制页面路由或自定义操作。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="侧栏导航" vertical hide-code>
                 <div slot="demo">
@@ -175,7 +175,7 @@
                     <p>设置属性 <code>accordion</code> 可以开启手风琴模式，每次只能展开一个子菜单。</p>
                     <p>通过设置属性 <code>theme</code> 为 <code>light</code>、<code>dark</code> 可以选择主题，侧栏菜单不支持 primary 主题。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="内嵌菜单" vertical hide-code>
                 <div slot="demo">
@@ -222,7 +222,7 @@
                 <div slot="desc">
                     <p>垂直菜单，子菜单内嵌在菜单区域。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.inline }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.inline }}</lk-code>
             </Demo>
             <Demo title="分组" vertical hide-code>
                 <div slot="demo">
@@ -258,7 +258,7 @@
                 <div slot="desc">
                     <p>使用 <code>MenuGroup</code> 组件进行分组。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -434,19 +434,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/menu';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

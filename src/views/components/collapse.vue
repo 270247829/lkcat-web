@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Collapse 折叠面板</h1>
             <p>可以折叠/展开的内容区域。</p>
@@ -24,7 +24,7 @@
                 <div slot="desc">
                     <p>默认可以同时展开多个面板，可以设置默认展开第几个。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="手风琴">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>accordion</code>开启手风琴模式，每次只能打开一个面板。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.accordion }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.accordion }}</lk-code>
             </Demo>
             <Demo title="面板嵌套">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>折叠面板可以进行嵌套。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.nest }}</lk-code>
             </Demo>
 
 
@@ -168,19 +168,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/collapse';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>ColorPicker 颜色选择器</h1>
             <p>用于颜色选择，支持多种颜色格式，支持颜色预设。</p>
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="透明度">
                 <div slot="demo">
@@ -29,7 +29,7 @@
                 <div slot="desc">
                     <p>开启属性 <code>alpha</code>，可以选择带 Alpha 通道的颜色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alpha }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.alpha }}</lk-code>
             </Demo>
             <Demo title="色彩">
                 <div slot="demo">
@@ -38,7 +38,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>hue</code> 为 false，可以禁用色彩选项。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.hue }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.hue }}</lk-code>
             </Demo>
             <Demo title="颜色预设">
                 <div slot="demo">
@@ -54,7 +54,7 @@
                 <div slot="desc">
                     <p>开启属性 <code>recommend</code> 可以显示推荐的颜色预设，或设置属性 <code>colors</code> 来自定义预设颜色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.colors }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.colors }}</lk-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>选择器有三种尺寸：大、默认（中）、小。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -157,19 +157,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/color-picker';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

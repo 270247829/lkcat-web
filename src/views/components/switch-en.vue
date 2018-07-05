@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Switch</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>The most basic usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>Set the size to <code>large</code> or <code>small</code> to use large/small size of switch, by default the switch's size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="Text & icon">
                 <div slot="demo">
@@ -54,7 +54,7 @@
                     <p>With text and icon.</p>
                     <p>Customize content, it is recommended that if you use 2 characters, set the switch size to large.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -64,7 +64,7 @@
                 <div slot="desc">
                     <p>Disabled state of Switch.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
 
             
@@ -152,19 +152,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/switch';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

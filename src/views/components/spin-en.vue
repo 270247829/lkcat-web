@@ -40,7 +40,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Spin</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>A simple loading status.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -72,7 +72,7 @@
                 <div slot="desc">
                     <p>Set the <code>size</code> to <code>large</code> or <code>small</code> to use large/small size of spin, by default the spin's size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="Centered fixed">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>Vertical center fixed inside the container, you need to set a <code>relative</code> or <code>absolute</code> style in parent.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fix }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.fix }}</lk-code>
             </Demo>
             <Demo title="Customized description">
                 <div slot="demo">
@@ -111,7 +111,7 @@
                 <div slot="desc">
                     <p>Customized description content. You can set it as a simple text, or a very complicated animation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
             <Demo title="State switch">
                 <div slot="demo">
@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>Controls the display and disappearance of the spin.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.status }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.status }}</lk-code>
             </Demo>
             <Demo title="Full screen loading">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                     <p>Use the <code>$Spin</code> method to load globally.</p>
                     <p>You can use the Render function to customize the display content.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.$spin }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.$spin }}</lk-code>
             </Demo>
 
             
@@ -192,19 +192,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/spin';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -16,11 +16,11 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <div class="overview" v-for="item in navigate.components">
             <h3>{{ item.type }}</h3>
             <Row>
-                <i-col v-for="component in item.list" :span="span" :key="component.path">
+                <lk-col v-for="component in item.list" :span="span" :key="component.path">
                     <router-link :to="component.path">
                         <Card>
                             <p slot="title">{{ component.title.split(' ')[0] }}</p>
@@ -29,15 +29,15 @@
                             </div>
                         </Card>
                     </router-link>
-                </i-col>
+                </lk-col>
             </Row>
         </div>
-    </i-article>
+    </lk-article>
 </template>
 <script>
     import Config from '../../config/config';
     import navigate from '../../config/navigate';
-    import iArticle from '../../components/article.vue';
+    import lkArticle from '../../components/article.vue';
 
     export default {
         components: {

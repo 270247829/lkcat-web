@@ -1,6 +1,6 @@
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>TimePicker 时间选择器</h1>
                 <p>当用户需要输入一个时间，可以点击标准输入框，弹出时间面板进行选择。</p>
@@ -20,7 +20,7 @@
                         <p>设置属性 <code>type</code> 为 <code>time</code> 或 <code>timerange</code> 分别显示<strong>选择单个时间</strong>和<strong>选择范围时间</strong>类型。</p>
                         <p>设置属性 <code>placement</code> 可以更改选择器出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="时间格式">
                     <div slot="demo">
@@ -37,7 +37,7 @@
                         <p>设置属性 <code>format</code> 可以改变时间的显示格式，详见 <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>。</p>
                         <p>注意，format 只是改变显示的格式，并非改变 value 值。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.format }}</lk-code>
                 </Demo>
                 <Demo title="选择时分">
                     <div slot="demo">
@@ -53,7 +53,7 @@
                     <div slot="desc">
                         <p>组件浮层中的列会随着 <code>format</code> 变化，当略去 <code>format</code> 中的秒时，浮层中对应的列也会消失。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.hours }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.hours }}</lk-code>
                 </Demo>
                 <Demo title="时间间隔">
                     <div slot="demo">
@@ -62,7 +62,7 @@
                     <div slot="desc">
                         <p>通过属性 <code>steps</code> 可以设置时间间隔。数组的三项分别对应小时、分钟、秒。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.steps }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.steps }}</lk-code>
                 </Demo>
                 <Demo title="不可选时间">
                     <div slot="demo">
@@ -88,7 +88,7 @@
                         <p>可以使用 <code>disabled-hours</code> <code>disabled-minutes</code> <code>disabled-seconds</code> 组合禁止用户选择某个时间。</p>
                         <p>使用 <code>hide-disabled-options</code> 可以直接把不可选择的项隐藏。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
                 </Demo>
                 <Demo title="带有确认操作">
                     <div slot="demo">
@@ -105,7 +105,7 @@
                         <p>设置属性 <code>confirm</code>，选择器会有清空和确定按钮。</p>
                         <p>确认按钮并没有影响时间的正常选择。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
                 </Demo>
                 <Demo title="手动控制组件">
                     <div slot="demo">
@@ -126,7 +126,7 @@
                     <div slot="desc">
                         <p>对于一些定制化的场景，可以使用 slot 配合参数 <code>open</code> <code>confirm</code> 及事件来手动控制组件的显示状态，详见示例和 API。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
                 </Demo>
                 <Demo title="尺寸">
                     <div slot="demo">
@@ -145,7 +145,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整选择器尺寸为大或小，默认不填为中。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                 </Demo>
 
                 <div class="api">
@@ -315,13 +315,13 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
         <Date-type v-model="showDateModal"></Date-type>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/time-picker';
     import Anchor from '../../components/anchor.vue';
@@ -329,8 +329,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             DateType

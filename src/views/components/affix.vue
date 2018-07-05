@@ -11,7 +11,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Affix 图钉</h1>
             <p>将页面元素钉在可视范围。</p>
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>简单使用，当元素不可见时，直接固定在最顶端。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="偏移">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                 <div slot="desc">
                     <p>当滚动到一定距离时再固定。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.top }}</lk-code>
             </Demo>
             <Demo title="固定在底部">
                 <div slot="demo">
@@ -51,7 +51,7 @@
                     <p>在屏幕下方固定，可以通过缩小浏览器窗口高度来查看效果。</p>
                     <p>注意，<code>offset-top</code>和<code>offset-bottom</code>只可以设置一个，如果都设置，会使用<code>offset-top</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bottom }}</lk-code>
             </Demo>
             <Demo title="固定状态改变时的回调">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>当固定状态发生改变时，会触发事件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.change }}</lk-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -110,19 +110,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/affix';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

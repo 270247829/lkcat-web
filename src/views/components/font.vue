@@ -7,7 +7,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Font 字体</h1>
             <Anchor title="概述" h2></Anchor>
@@ -18,10 +18,10 @@
                 <li>英文字体</li>
             </ul>
             <Anchor title="字体代码" h3></Anchor>
-            <i-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>
+            <lk-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</lk-code>
             <Anchor title="字体使用规范" h3></Anchor>
             <Row class="api" :gutter="16">
-                <i-col span="12">
+                <lk-col span="12">
                     <table>
                         <thead>
                             <tr>
@@ -84,8 +84,8 @@
                             </tr>
                         </tbody>
                     </table>
-                </i-col>
-                <i-col span="12">
+                </lk-col>
+                <lk-col span="12">
                     <table>
                         <thead>
                             <tr>
@@ -148,21 +148,21 @@
                             </tr>
                         </tbody>
                     </table>
-                </i-col>
+                </lk-col>
             </Row>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

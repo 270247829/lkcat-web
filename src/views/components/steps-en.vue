@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Steps</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>The most basic step bar，The component automatically determines the status of each step based on <code>current</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Mini version" vertical>
                 <div slot="demo">
@@ -31,7 +31,7 @@
                 <div slot="desc">
                     <p>Set <code>size</code> to <code>small</code> to use mini version. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="With icon" vertical>
                 <div slot="demo">
@@ -44,7 +44,7 @@
                 <div slot="desc">
                     <p>You can use icons by setting the property <code>icon</code> for Step.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="Switch Step" vertical>
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>Cooperate with the content and buttons, to represent the progress of a process.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.change }}</lk-code>
             </Demo>
             <Demo title="Vertical">
                 <div slot="demo">
@@ -76,7 +76,7 @@
                 <div slot="desc">
                     <p>A simple step bar in the vertical direction by setting attribute <code>direction</code> to <code>vertical</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.direction }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.direction }}</lk-code>
             </Demo>
             <Demo title="Error status" vertical>
                 <div slot="demo">
@@ -90,7 +90,7 @@
                 <div slot="desc">
                     <p>By using <code>status</code> of <code>Steps</code>, you can specify the state for current step.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.error }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.error }}</lk-code>
             </Demo>
 
             
@@ -173,19 +173,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/steps';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

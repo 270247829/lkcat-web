@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Alert</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -15,7 +15,7 @@
                 <div slot="desc">
                     <p>Basic Usage: 4 alternative types: <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="With Description">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>Customize <code>&lt;slot name="desc"&gt;</code> Discription Content.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.desc }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.desc }}</lk-code>
             </Demo>
             <Demo title="Icon">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>Add different icons by type property, or customize icon slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>Show close button, click to close alert. User can also customize close slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.close }}</lk-code>
             </Demo>
             <Demo title="Banner">
                 <div slot="demo">
@@ -107,7 +107,7 @@
                 <div slot="desc">
                     <p>Set property <code>banner</code> can apply banner style.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.banner }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.banner }}</lk-code>
             </Demo>
 
             
@@ -191,19 +191,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/alert';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

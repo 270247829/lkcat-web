@@ -27,7 +27,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>AutoComplete 自动完成</h1>
             <p>输入框自动完成功能。</p>
@@ -44,7 +44,7 @@
                 <div slot="desc">
                     <p>基本用法，通过 data 设置自动完成的数据源。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="自定义选项">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>除了使用 data，还可以直接传入 <code>Option</code> 组件作为 slot 使用，这样可以自定义显示效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
             </Demo>
             <Demo title="不区分大小写">
                 <div slot="demo">
@@ -74,7 +74,7 @@
                 <div slot="desc">
                     <p>不区分大小写的 AutoComplete，及过滤的用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.filter }}</lk-code>
             </Demo>
             <Demo title="查询模式">
                 <div slot="demo">
@@ -99,7 +99,7 @@
                 <div slot="desc">
                     <p>完全自定义 Option，显示复杂的布局。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.search }}</lk-code>
             </Demo>
 
 
@@ -213,19 +213,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/auto-complete';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

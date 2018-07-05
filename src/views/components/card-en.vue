@@ -23,7 +23,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Card</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -55,7 +55,7 @@
                     <p>Customized title, extra operation and main content. User can customize all parts of the component, and combined with other components. It's relatively flexible.</p>
                     <p><blockquote>You can quickly set the title bar by setting the properties <code>title</code> and <code>icon</code> after 2.12.0</blockquote></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="No Border">
                 <div slot="demo">
@@ -69,7 +69,7 @@
                 <div slot="desc">
                     <p>Disable the border by setting <code>bordered</code> prop to false. We recommend you to use it when background color is gray.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bordered }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bordered }}</lk-code>
             </Demo>
             <Demo title="Disable Hover Shadow">
                 <div slot="demo">
@@ -95,7 +95,7 @@
                 <div slot="desc">
                     <p>Disable mouse hover shadow by setting <code>dis-hover</code> prop. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disHover }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disHover }}</lk-code>
             </Demo>
             <Demo title="Card Shadow">
                 <div slot="demo">
@@ -122,7 +122,7 @@
                     <p>Set <code>shadow</code> prop to display card shadow. If the prop is set, <code>bordered</code> prop and <code
                     >dis-hover</code> prop will be invalid. We recommend you to use it when background color is gray.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.shadow }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.shadow }}</lk-code>
             </Demo>
             <Demo title="Succinct Card">
                 <div slot="demo">
@@ -135,7 +135,7 @@
                 <div slot="desc">
                     <p>Only contains content, no title.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.simple }}</lk-code>
             </Demo>
 
             
@@ -216,19 +216,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/card';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

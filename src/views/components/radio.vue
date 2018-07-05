@@ -4,7 +4,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Radio 单选框</h1>
             <p>单选框。</p>
@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>使用 v-model 可以双向绑定数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.single }}</lk-code>
             </Demo>
             <Demo title="组合使用">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>使用<code>RadioGroup</code>实现一组互斥的选项组。在组合使用时，<code>Radio</code> 使用 <code>label</code> 来自动判断。每个 Radio 的内容可以自定义，如不填写则默认使用 label 的值。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>通过设置<code>disabled</code>属性来禁用单选框。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="垂直">
                 <div slot="demo">
@@ -84,7 +84,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>vertical</code> 可以垂直显示，按钮样式下无效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="按钮样式">
                 <div slot="demo">
@@ -113,7 +113,7 @@
                 <div slot="desc">
                     <p>组合使用时可以设置属性<code>type</code>为 button 来应用按钮的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.button }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.button }}</lk-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -142,7 +142,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>size</code>为<code>large</code>或<code>small</code>将按钮样式设置为大和小尺寸，不设置为默认(中)尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -269,19 +269,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/radio';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

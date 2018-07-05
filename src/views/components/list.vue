@@ -26,7 +26,7 @@
 </style>
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>List 列表</h1>
                 <p>通用列表。</p>
@@ -42,7 +42,7 @@
                     <div slot="desc">
                         <p>列表的最简单用法。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="头部和尾部" vertical hide-code>
                     <div slot="demo">
@@ -57,7 +57,7 @@
                     <div slot="desc">
                         <p>列表的头部和尾部。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.hf }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.hf }}</lk-code>
                 </Demo>
                 <Demo title="高级用法" vertical hide-code>
                     <div slot="demo">
@@ -73,7 +73,7 @@
                     <div slot="desc">
                         <p>列表的高级用法。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.gj }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.gj }}</lk-code>
                 </Demo>
                 <Demo title="卡片显示" vertical hide-code>
                     <div slot="demo">
@@ -89,7 +89,7 @@
                     <div slot="desc">
                         <p>列表的卡片展示。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.card }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.card }}</lk-code>
                 </Demo>
                 <Demo title="卡片操作" vertical hide-code>
                     <div slot="demo">
@@ -106,7 +106,7 @@
                     <div slot="desc">
                         <p>列表的卡片操作。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.cardAction }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.cardAction }}</lk-code>
                 </Demo>
                 <div class="api">
                     <Anchor title="API" h2></Anchor>
@@ -177,21 +177,21 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
+    import lkArticle from '../../components/article.vue';
     import Demo from '../../components/demo.vue';
     import Anchor from '../../components/anchor.vue';
-    import iCode from 'iCode';
+    import lkCode from 'lkCode';
     import Code from '../../code/list';
 
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

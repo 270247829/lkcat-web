@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tree</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -13,7 +13,7 @@
                 <div slot="desc">
                     <p>The most basic usage, tell you how to use selected and expanded.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Checkbox">
                 <div slot="demo">
@@ -22,7 +22,7 @@
                 <div slot="desc">
                     <p>Set the property <code>show-checkbox</code> to check the nodes.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.checkbox }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.checkbox }}</lk-code>
             </Demo>
             <Demo title="Lazy mode">
                 <div slot="demo">
@@ -33,7 +33,7 @@
                     <p>The first param of load-data is current node data. Call the second param and transfer the data obtained.</p>
                     <p>If a node does not contain <code>loading</code> and <code>children</code> fields, the asynchronous loading effect will not be applied.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.lazy }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.lazy }}</lk-code>
             </Demo>
             <Demo title="Expand, Selected, Checked and Disabled">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                     <p>Set <code>expand</code>, <code>selected</code>, <code>checked</code> and <code>disabled</code> to nodes can set the node to expand, select, check, and disable.</p>
                     <p>Multiple choices can be made for setting property <code>multiple</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.more }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.more }}</lk-code>
             </Demo>
             <Demo title="Custom node content">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                     <p>By reasonably using root, node, and data to achieve various effects, the LKCat sets a <code>nodeKey</code> field for each node to identify the node's id.</p>
                     <p>The Render function is divided into two types. One is to set the same rendering content to each node of the current Tree, which is passed through the property <code>render</code> of the Tree component. The other is to set up a single node, set in the <code>render</code> field of the node; At the same time, the Render function of the current node is preferred.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             
@@ -234,19 +234,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tree';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

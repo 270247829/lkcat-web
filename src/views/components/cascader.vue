@@ -4,7 +4,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Cascader 级联选择</h1>
             <p>级联选择框。</p>
@@ -17,7 +17,7 @@
                     <p>级联选择对数据有较严格要求，请参照示例的格式使用<code>data</code>，每项数据至少包含 <code>value</code>、<code>label</code> 两项，子集为 <code>children</code>，以此类推。</p>
                     <p><code>value</code> 为当前选择的数据的 value 值的数组，比如 <code>['beijing', 'gugong']</code> ，按照级联顺序依次排序，使用 <code>v-model</code> 进行双向绑定。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="默认值">
                 <div slot="demo">
@@ -26,7 +26,7 @@
                 <div slot="desc">
                     <p>指定 <code>value</code> 默认值，组件会在初始化时选定数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.value }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.value }}</lk-code>
             </Demo>
             <Demo title="移入展开">
                 <div slot="demo">
@@ -35,7 +35,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>trigger</code> 为 <code>hover</code>，当鼠标悬停时就会展开子集。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.trigger }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.trigger }}</lk-code>
             </Demo>
             <Demo title="自定义显示">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>通过设置 slot 可以自定义显示内容，不局限于输入框。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
             </Demo>
             <Demo title="禁用">
                 <div slot="demo">
@@ -64,7 +64,7 @@
                     <p>设置属性 <code>disabled</code> 可以禁用组件。</p>
                     <p>给某项数据设置 <code>disabled: true</code> 可以禁用某一项。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="选择即改变">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>change-on-select</code> 点任何一级都可以选择。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.select }}</lk-code>
             </Demo>
             <Demo title="自定义已选项">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                     <p>对于显示的结果，可以通过 <code>render-format</code> 接收一个函数来自定义。</p>
                     <p>其中第一个参数 <code>labels</code> 是当前选择的label的集合，第二个参数 <code>selectedData</code> 是当前选择的数据集合，可以利用它们组合出你想要显示的内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.format }}</lk-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -96,7 +96,7 @@
                 <div slot="desc">
                     <p>通过设置<code>size</code>属性为<code>large</code>和<code>small</code>将输入框设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="动态加载选项">
                 <div slot="demo">
@@ -106,7 +106,7 @@
                     <p>使用 <code>load-data</code> 属性可以异步加载子选项，需要给数据增加 <code>loading</code> 来标识当前是否在加载中。</p>
                     <p>load-data 的第二个参数为回调，如果执行，则会自动展开当前项的子列表。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loadData }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.loadData }}</lk-code>
             </Demo>
             <Demo title="搜索">
                 <div slot="demo">
@@ -116,7 +116,7 @@
                     <p>使用属性 <code>filterable</code> 可直接搜索选项并选择。</p>
                     <p>暂不支持服务端搜索。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filterable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.filterable }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -243,19 +243,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/cascader';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

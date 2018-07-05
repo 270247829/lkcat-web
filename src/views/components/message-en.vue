@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Message</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Basic promt, fades after 1.5 seconds by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.info }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.info }}</lk-code>
             </Demo>
             <Demo title="Prompt Type">
                 <div slot="demo">
@@ -23,7 +23,7 @@
                 <div slot="desc">
                     <p>Different prompt types: success, warning, error.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="Loading Prompt">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Loading status, dismissed asynchronously.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
             </Demo>
             <Demo title="Custom Prompt Duration">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>Customize prompt duration. Can also be configured in <code>Message.config()</code>, refer to API section below.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.time }}</lk-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>Set parameter as an object, and set its <code>closable</code> to true to allow manual close. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.closable }}</lk-code>
             </Demo>
             <Demo title="render">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>You can custom content with render</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             
@@ -138,7 +138,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -166,19 +166,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/message';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

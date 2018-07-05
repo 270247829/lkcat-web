@@ -26,7 +26,7 @@
 </style>
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>Table 表格</h1>
                 <p>展示行列数据。</p>
@@ -38,7 +38,7 @@
                     <div slot="desc">
                         <p>表格的最简单用法。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="斑马纹" vertical hide-code>
                     <div slot="demo">
@@ -47,7 +47,7 @@
                     <div slot="desc">
                         <p>设置属性 <code>stripe</code> ，表格会间隔显示不同颜色，用于区分不同行数据。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.stripe }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.stripe }}</lk-code>
                 </Demo>
                 <Demo title="带边框" vertical hide-code>
                     <div slot="demo">
@@ -56,7 +56,7 @@
                     <div slot="desc">
                         <p>添加表格的边框线。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.border }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.border }}</lk-code>
                 </Demo>
                 <Demo title="特定样式" vertical hide-code>
                     <div slot="demo">
@@ -72,7 +72,7 @@
                         <p><strong>列</strong>：通过给列 columns 设置字段 <code>className</code> 可以给某一列指定一个样式。</p>
                         <p><strong>单元格</strong>：通过给数据 data 设置字段 <code>cellClassName</code> 可以给任意一个单元格指定样式。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.class }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.class }}</lk-code>
                 </Demo>
                 <Demo title="固定表头" vertical hide-code>
                     <div slot="demo">
@@ -81,7 +81,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>height</code> 给表格指定高度后，会自动固定表头。当纵向内容过多时可以使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.height }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.height }}</lk-code>
                 </Demo>
                 <Demo title="固定列" vertical hide-code>
                     <div slot="demo">
@@ -90,7 +90,7 @@
                     <div slot="desc">
                         <p>通过给数据 <code>columns</code> 的项设置 <code>fixed</code> 为 <code>left</code> 或 <code>right</code>，可以左右固定需要的列。当横向内容过多时可以使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixed }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.fixed }}</lk-code>
                 </Demo>
                 <Demo title="固定表头和列" vertical hide-code>
                     <div slot="demo">
@@ -99,7 +99,7 @@
                     <div slot="desc">
                         <p>同时应用上述两个属性，可以同时固定表头和列。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixedAll }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.fixedAll }}</lk-code>
                 </Demo>
                 <Demo title="单选" vertical hide-code>
                     <div slot="demo">
@@ -114,7 +114,7 @@
                         <p>给 data 项设置特殊 key <code>_highlight: true</code> 可以默认选中当前项。</p>
                         <p>调用 <code>clearCurrentRow</code> 方法可以手动清除选中项。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.highlight }}</lk-code>
                 </Demo>
                 <Demo title="多选" vertical hide-code>
                     <div slot="demo">
@@ -134,7 +134,7 @@
                             <li><code>@on-selection-change</code>，只要选中项发生变化时就会触发，返回值为 <code>selection</code>，已选项。</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.selection }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.selection }}</lk-code>
                 </Demo>
                 <Demo title="排序" vertical hide-code>
                     <div slot="demo">
@@ -147,7 +147,7 @@
                         <p>如果使用远程排序，可以设置 <code>sortable： 'custom'</code>，然后在触发排序事件 <code>@on-sort-change</code>后，进行远程排序，并手动设置新的 data，详见 API。</p>
                         <p>注意，排序并不会影响到源数据 data。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.sort }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.sort }}</lk-code>
                 </Demo>
                 <Demo title="筛选" vertical hide-code>
                     <div slot="demo">
@@ -159,7 +159,7 @@
                         <p>如果指定 <code>filterMultiple: false</code>，则使用单选，默认为多选。</p>
                         <p>注意，筛选并不会影响到源数据 data。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.filter }}</lk-code>
                 </Demo>
                 <Demo title="自定义列模板" vertical hide-code>
                     <div slot="demo">
@@ -169,7 +169,7 @@
                         <p>通过给 <code>columns</code> 数据的项，设置一个函数 <code>render</code>，可以自定义渲染当前列，包括渲染自定义组件，它基于 Vue 的 Render 函数。</p>
                         <p><code>render</code> 函数传入两个参数，第一个是 h，第二个是对象，包含 <code>row</code>、<code>column</code> 和 <code>index</code>，分别指当前单元格数据，当前列数据，当前是第几行。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
                 </Demo>
                 <Demo title="可展开" vertical hide-code>
                     <div slot="demo">
@@ -181,7 +181,7 @@
                         <p>给行数据 data 的某项设置 <code>_expanded</code> 为 true，可以默认展开当前行，设置 <code>_disableExpand</code> 可以禁用当前行的展开功能。</p>
                         <p>渲染展开区域与自定义列模板方法类似，使用 render 函数。当内容较复杂时，可拆分为组件或使用 JSX。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.expand }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.expand }}</lk-code>
                 </Demo>
 
                 <Demo title="表头分组" vertical hide-code>
@@ -191,7 +191,7 @@
                     <div slot="desc">
                         <p>给 column 设置 children，可以渲染出分组表头。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.head }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.head }}</lk-code>
                 </Demo>
 
                 <Demo title="加载中" vertical hide-code>
@@ -203,7 +203,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>loading</code> 可以让表格处于加载中状态，在异步请求数据、分页时建议使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
                 </Demo>
                 <Demo title="尺寸" vertical hide-code>
                     <div slot="demo">
@@ -214,7 +214,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整表格尺寸为大或小，默认不填或填写 <code>default</code> 为中。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                 </Demo>
                 <Demo title="导出csv" vertical hide-code>
                     <div slot="demo">
@@ -233,7 +233,7 @@
                             <li>IE9暂时只支持英文，中文会显示为乱码。</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.csv }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.csv }}</lk-code>
                 </Demo>
                 <Anchor title="高级示例" h2></Anchor>
                 <p>以上示例已经基本涵盖了表格组件的所有功能，我们根据实际业务场景，增加了一些较为复杂的示例，可以结合来看，更深入了解表格组件的使用。</p>
@@ -691,7 +691,7 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
         <Modal v-model="table1" title="带有分页的复杂表格" width="1000" :styles="{top: '20px'}">
             <div v-if="table1">
                 <div class="lkui-article">
@@ -705,7 +705,7 @@
                         <Page :total="100" :current="1" @on-change="changePage"></Page>
                     </div>
                 </div>
-                <i-code lang="html" bg>{{ code.table1 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table1 }}</lk-code>
             </div>
         </Modal>
         <Modal v-model="table2" title="多列指标筛选的表格" width="1000" :styles="{top: '20px'}">
@@ -731,7 +731,7 @@
                 </Checkbox-group>
                 <Table :data="tableData2" :columns="tableColumns2" border></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table2 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table2 }}</lk-code>
             </div>
         </Modal>
         <Modal v-model="table3" title="多种效果组合的表格" width="1000" :styles="{top: '20px'}">
@@ -759,14 +759,14 @@
                 </div>
                 <Table :border="showBorder" :stripe="showStripe" :show-header="showHeader" :height="fixedHeader ? 250 : ''" :size="tableSize" :data="tableData3" :columns="tableColumns3"></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table3 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table3 }}</lk-code>
             </div>
         </Modal>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/table';
     import Anchor from '../../components/anchor.vue';
@@ -776,8 +776,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             expandRow,

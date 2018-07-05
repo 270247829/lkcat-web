@@ -8,7 +8,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>TreeSelect 树选择</h1>
             <p>树型选择控件。</p>
@@ -22,7 +22,7 @@
                 <div slot="desc">
                     <p>基础用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="多选">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>可勾选。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="异步加载">
                 <div slot="demo">
@@ -42,7 +42,7 @@
                 <div slot="desc">
                     <p>点击展开节点，动态加载数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.load }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.load }}</lk-code>
             </Demo>
 
             
@@ -115,19 +115,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tree-select';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

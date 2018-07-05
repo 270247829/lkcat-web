@@ -26,7 +26,7 @@
 </style>
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>Table</h1>
                 <Anchor title="Brief Introduction" h2></Anchor>
@@ -41,7 +41,7 @@
                     <div slot="desc">
                         <p>The simplest usage.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="Stripe" vertical hide-code>
                     <div slot="demo">
@@ -50,7 +50,7 @@
                     <div slot="desc">
                         <p>Set <code>stripe</code> prop to apply stripe style. It's used to differentiate adjacent rows.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.stripe }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.stripe }}</lk-code>
                 </Demo>
                 <Demo title="Bordered" vertical hide-code>
                     <div slot="demo">
@@ -59,7 +59,7 @@
                     <div slot="desc">
                         <p>Add border to Table.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.border }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.border }}</lk-code>
                 </Demo>
                 <Demo title="Custom Style" vertical hide-code>
                     <div slot="demo">
@@ -75,7 +75,7 @@
                         <p><strong>Column</strong>: Set <code>className</code> key to columns prop's object to assign a class name to a certain column.</p>
                         <p><strong>Cell</strong>: Set <code>cellClassName</code> key to data prop's object to assign a class name to a certain cell.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.class }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.class }}</lk-code>
                 </Demo>
                 <Demo title="Fixed Header" vertical hide-code>
                     <div slot="demo">
@@ -84,7 +84,7 @@
                     <div slot="desc">
                         <p>Set <code>height</code> prop to fix the height of the header. It'll make the header fixed on the top of Table.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.height }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.height }}</lk-code>
                 </Demo>
                 <Demo title="Fixed Column" vertical hide-code>
                     <div slot="demo">
@@ -93,7 +93,7 @@
                     <div slot="desc">
                         <p>Set <code>fixed</code> key to <code>left</code> or <code>right</code> in <code>columns</code> prop to fix the column to the left or right.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixed }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.fixed }}</lk-code>
                 </Demo>
                 <Demo title="Fixed Header &amp; Column" vertical hide-code>
                     <div slot="demo">
@@ -102,7 +102,7 @@
                     <div slot="desc">
                         <p>You can fix header and certain columns simultaneously by setting both props above.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixedAll }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.fixedAll }}</lk-code>
                 </Demo>
                 <Demo title="Single Choice" vertical hide-code>
                     <div slot="demo">
@@ -116,7 +116,7 @@
                         <p>Set <code>_highlight: true</code> key to data can make the item selected by default.</p>
                         <p>Call the <code>clearCurrentRow</code> method to clear the highlighted item.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.highlight }}</lk-code>
                 </Demo>
                 <Demo title="Multiple Choices" vertical hide-code>
                     <div slot="demo">
@@ -136,7 +136,7 @@
                             <li><code>@on-selection-change</code>: Emitted when select state is changed. Return value: <code>selection</code> (selected items array) </li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.selection }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.selection }}</lk-code>
                 </Demo>
                 <Demo title="Sort" vertical hide-code>
                     <div slot="demo">
@@ -149,7 +149,7 @@
                         <p>If remote sorting is needed, you can set <code>sortable： 'custom'</code>, and do the remote sorting after <code>@on-sort-change</code> is emitted. After sorting, you have to set the new data manually. Details on API Doc.</p>
                         <p>Attention: Sorting won't affect source data.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.sort }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.sort }}</lk-code>
                 </Demo>
                 <Demo title="Filter" vertical hide-code>
                     <div slot="demo">
@@ -161,7 +161,7 @@
                         <p>If <code>filterMultiple: false</code> is set, single choice is used. Default is multiple choices.</p>
                         <p>Attention: filter won't affect source data.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.filter }}</lk-code>
                 </Demo>
                 <Demo title="Custom Column Template" vertical hide-code>
                     <div slot="demo">
@@ -171,7 +171,7 @@
                         <p>You can render the column yourself by setting <code>render</code> to certain <code>columns</code> prop's items. It is based on Vue's Render function.</p>
                         <p><code>render</code> accepts two arguments: the first is h, the second is an object including <code>row</code>, <code>column</code> and <code>index</code> (current row's data, current column's data, current index).</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
                 </Demo>
                 <Demo title="Expandable" vertical hide-code>
                     <div slot="demo">
@@ -183,7 +183,7 @@
                         <p>Set <code>_expanded</code> to true for certain data item can let the row be expanded by default. Set <code>_disableExpand</code> to disable expanding on the row.</p>                        
                         <p>Simular to custom column template, we use render function to render expand area. If the content is complex, you can split it into components or use JSX.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.expand }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.expand }}</lk-code>
                 </Demo>
 
                 <Demo title="Grouping table head" vertical hide-code>
@@ -193,7 +193,7 @@
                     <div slot="desc">
                         <p>Set children to column to render the group header.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.head }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.head }}</lk-code>
                 </Demo>
 
                 <Demo title="Loading" vertical hide-code>
@@ -205,7 +205,7 @@
                     <div slot="desc">
                         <p>Set property <code>loading</code> can make the table in the load state, and it is recommended for asynchronous request data, paging.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
                 </Demo>
                 <Demo title="Size" vertical hide-code>
                     <div slot="demo">
@@ -216,7 +216,7 @@
                     <div slot="desc">
                         <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> or <code>default</code> to adjust the size of the table to large or small or default size. Default is medium.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                 </Demo>
                 <Demo title="Export csv" vertical hide-code>
                     <div slot="demo">
@@ -235,7 +235,7 @@
                             <li>Temporarily, IE9 only supports English data. Chinese will be messy code.</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.csv }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.csv }}</lk-code>
                 </Demo>
                 <Anchor title="Advanced Examples" h2></Anchor>
                 <p>Examples above basically cover all the functions of Table. We provides some complex examples on the basis of real business scenarios:</p>
@@ -693,7 +693,7 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
         <Modal v-model="table1" title="Complex Table with Paging" width="1000" :styles="{top: '20px'}">
             <div v-if="table1">
                 <div class="lkui-article">
@@ -707,7 +707,7 @@
                         <Page :total="100" :current="1" @on-change="changePage"></Page>
                     </div>
                 </div>
-                <i-code lang="html" bg>{{ code.table1 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table1 }}</lk-code>
             </div>
         </Modal>
         <Modal v-model="table2" title="Table with Multi-cols Filter" width="1000" :styles="{top: '20px'}">
@@ -733,7 +733,7 @@
                 </Checkbox-group>
                 <Table :data="tableData2" :columns="tableColumns2" border></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table2 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table2 }}</lk-code>
             </div>
         </Modal>
         <Modal v-model="table3" title="Table with Many Styles" width="1000" :styles="{top: '20px'}">
@@ -744,12 +744,12 @@
                     </blockquote>
                 </div>
                 <div style="margin: 10px">
-                    Display border <i-switch v-model="showBorder" style="margin-right: 5px"></i-switch>
-                    Display stripe <i-switch v-model="showStripe" style="margin-right: 5px"></i-switch>
-                    Display index <i-switch v-model="showIndex" style="margin-right: 5px"></i-switch>
-                    Display multi choice <i-switch v-model="showCheckbox" style="margin-right: 5px"></i-switch>
-                    Display header <i-switch v-model="showHeader" style="margin-right: 5px"></i-switch>
-                    Table scrolling <i-switch v-model="fixedHeader" style="margin-right: 5px"></i-switch>
+                    Display border <lk-switch v-model="showBorder" style="margin-right: 5px"></lk-switch>
+                    Display stripe <lk-switch v-model="showStripe" style="margin-right: 5px"></lk-switch>
+                    Display index <lk-switch v-model="showIndex" style="margin-right: 5px"></lk-switch>
+                    Display multi choice <lk-switch v-model="showCheckbox" style="margin-right: 5px"></lk-switch>
+                    Display header <lk-switch v-model="showHeader" style="margin-right: 5px"></lk-switch>
+                    Table scrolling <lk-switch v-model="fixedHeader" style="margin-right: 5px"></lk-switch>
                     <br>
                     <br>
                     Table size
@@ -761,14 +761,14 @@
                 </div>
                 <Table :border="showBorder" :stripe="showStripe" :show-header="showHeader" :height="fixedHeader ? 250 : ''" :size="tableSize" :data="tableData3" :columns="tableColumns3"></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table3 }}</i-code>
+                <lk-code lang="html" bg>{{ code.table3 }}</lk-code>
             </div>
         </Modal>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/table';
     import Anchor from '../../components/anchor.vue';
@@ -778,8 +778,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             expandRow,

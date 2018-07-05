@@ -50,7 +50,7 @@ install.demo = `
 </head>
 <body>
 <div id="app">
-    <i-button @click="show">Click me!</i-button>
+    <Button @click="show">Click me!</Button>
     <Modal v-model="visible" title="Welcome">Welcome to LKCat</Modal>
 </div>
 <script>

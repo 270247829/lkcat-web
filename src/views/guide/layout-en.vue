@@ -106,7 +106,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <Anchor title="Layout" h1></Anchor>
                 <p>Handling the overall layout of a page.</p>
@@ -201,7 +201,7 @@
                 <div slot="desc">
                     <p>Classic page layouts.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.basic }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.basic }}</lk-code>
             </Demo>
             <Demo title="Header-Content-Footer" vertical hide-code>
                 <div slot="demo">
@@ -251,7 +251,7 @@
                     <p>Generally, the mainnav is placed at the top of the page, and includes the logo, the first level navigation, and the secondary menu (users, settings, notifications) from left to right in it. We always put contents in a fixed size navigation (eg: <code>1200px</code>), the layout of the whole page is stable, it's not affected by viewing area.</p>
                     <p>Top-bottom structure is conform with the top-bottom viewing habit, it's a classical navigation pattern of websites. This pattern demonstrates efficiency in the main workarea, while using some vertical space. And because the horizontal space of the navigation is limited, this pattern is not suitable for cases when the first level navigation contains many elements or links</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topMiddleBottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topMiddleBottom }}</lk-code>
             </Demo>
             <Demo title="Header-Sider" vertical hide-code>
                 <div slot="demo">
@@ -327,7 +327,7 @@
                 <div slot="desc">
                     <p>Both the top navigation and the sidebar, commonly used in application site.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topLeftRight }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topLeftRight }}</lk-code>
             </Demo>
             <Demo title="Header-Sider" vertical hide-code>
                 <div slot="demo">
@@ -406,7 +406,7 @@
                 <div slot="desc">
                     <p>Both the top navigation and the sidebar, commonly used in documentation site.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topSiderFooter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topSiderFooter }}</lk-code>
             </Demo>
             <Demo title="Sider" vertical hide-code>
                 <div slot="demo">
@@ -419,7 +419,7 @@
                     <p>Generally, the mainnav is placed on the left side of the page, and the secondary menu is placed on the top of the working area. Contents will adapt the layout to the viewing area to improve the horizontal space usage, while the layout of the whole page is not stable.</p>
                     <p>The level of the aisde navigation is scalable. The first, second, and third level navigations could be present more fluently and relevantly, and aside navigation can be fixed, allowing the user to quickly switch and spot the current position, improving the user experience. However, this navigation occupies some horizontal space of the contents</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.left }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.left }}</lk-code>
             </Demo>
             <Demo title="Custom trigger" vertical hide-code>
                 <div slot="demo">
@@ -455,7 +455,7 @@
                 <div slot="desc">
                     <p>if you want to use custom trigger, you can set <code>hide-trigger</code> to hide default trigger, you can also replace default trigger by <code>slot</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.selfTrigger }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.selfTrigger }}</lk-code>
             </Demo>
             <Demo title="Responsive" vertical hide-code>
                 <div slot="demo">
@@ -491,7 +491,7 @@
                     <p>Sider supports responsive layout.</p>
                     <Alert style="margin-top: 16px">Note: You can get a responsive layout by setting <code>breakpoint</code>, the Sider will collapse to the width of <code>collapsedWidth</code> when window width is below the <code>breakpoint</code>. And a special trigger will appear if the <code>collapsedWidth</code> is set to <code>0</code>.</Alert>
                 </div>
-                <i-code lang="html" slot="code">{{ code.media }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.media }}</lk-code>
             </Demo>
             <Demo title="Fixed Header" vertical hide-code>
                 <div slot="demo">
@@ -504,7 +504,7 @@
                 <div slot="desc">
                     <p>Fixed Header is generally used to fix the top navigation to facilitate page switching.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.headerFixed }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.headerFixed }}</lk-code>
             </Demo>
             <Demo title="Fixed sider" vertical hide-code>
                 <div slot="demo">
@@ -517,7 +517,7 @@
                 <div slot="desc">
                     <p>When dealing with long content, a fixed sider can provide a better user experience.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.headerFixed }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.headerFixed }}</lk-code>
             </Demo>
 
             
@@ -634,7 +634,7 @@
                 </table>
             </div>
             <Anchor title="breakpoint width" h3></Anchor>
-            <i-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
+            <lk-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
         {
             xs: '480px',
             sm: '768px',
@@ -642,21 +642,21 @@
             lg: '1200px',
             xl: '1600px'
         }
-            </i-code>
+            </lk-code>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/layout';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

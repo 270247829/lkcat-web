@@ -1,6 +1,6 @@
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>TimePicker</h1>
                 <Anchor title="Brief Introduction" h2></Anchor>
@@ -21,7 +21,7 @@
                         <p>Set <code>type</code> prop to <code>time</code> or <code>timerange</code> to display <strong>Select Time</strong> or <strong>Select Time Range</strong> type.</p>
                         <p>Set <code>placement</code> prop to change the direction time picker displays. The configuration is same to Poptip and Tooltip. Details on API Doc.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="Time Format">
                     <div slot="demo">
@@ -38,7 +38,7 @@
                         <p>Set <code>format</code> prop can change the time format. See <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a> for more details.</p>
                         <p>Attention: format only controls how TimePicker displays the date, it won't change value.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.format }}</lk-code>
                 </Demo>
                 <Demo title="Select Hour & Minute">
                     <div slot="demo">
@@ -54,7 +54,7 @@
                     <div slot="desc">
                         <p>The columns in the picker will change with <code>format</code>. When second in <code>format</code> is removed, the second column will be removed too.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.hours }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.hours }}</lk-code>
                 </Demo>
                 <Demo title="Steps">
                     <div slot="demo">
@@ -63,7 +63,7 @@
                     <div slot="desc">
                         <p>You can set the interval of hours, minutes, and seconds by <code>steps</code> property. The value corresponds to hours, minutes and seconds.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.steps }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.steps }}</lk-code>
                 </Demo>
                 <Demo title="Disabled Time">
                     <div slot="demo">
@@ -89,7 +89,7 @@
                         <p>You can use <code>disabled-hours</code> <code>disabled-minutes</code> <code>disabled-seconds</code> as a combination to disallow user select a certain time.</p>
                         <p>Use <code>hide-disabled-options</code> can hide disabled options.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
                 </Demo>
                 <Demo title="Operation with Confirmation">
                     <div slot="demo">
@@ -106,7 +106,7 @@
                         <p>The picker will get a clear and an OK button if you set <code>confirm</code> prop.</p>
                         <p>OK button won't affect time picking operation.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
                 </Demo>
                 <Demo title="Manually Controlled Component">
                     <div slot="demo">
@@ -127,7 +127,7 @@
                     <div slot="desc">
                         <p>In some custom scenarios, you can use slots with <code>open</code> <code>confirm</code> params and events to handle the component. Details on API Doc.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
                 </Demo>
                 <Demo title="Size">
                     <div slot="demo">
@@ -146,7 +146,7 @@
                     <div slot="desc">
                         <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> to adjust TimePicker's size. Default is medium.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                 </Demo>
 
                 
@@ -318,13 +318,13 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
         <Date-type v-model="showDateModal"></Date-type>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/time-picker';
     import Anchor from '../../components/anchor.vue';
@@ -332,8 +332,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             DateType

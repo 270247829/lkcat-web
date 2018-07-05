@@ -1584,12 +1584,12 @@ code.table2 = `
 code.table3 = `
 <template>
     <div style="margin: 10px">
-        Display border <i-switch v-model="showBorder" style="margin-right: 5px"></i-switch>
-        Display stripe <i-switch v-model="showStripe" style="margin-right: 5px"></i-switch>
-        Display index <i-switch v-model="showIndex" style="margin-right: 5px"></i-switch>
-        Display multi choice <i-switch v-model="showCheckbox" style="margin-right: 5px"></i-switch>
-        Display header <i-switch v-model="showHeader" style="margin-right: 5px"></i-switch>
-        Table scrolling <i-switch v-model="fixedHeader" style="margin-right: 5px"></i-switch>
+        Display border <lk-switch v-model="showBorder" style="margin-right: 5px"></lk-switch>
+        Display stripe <lk-switch v-model="showStripe" style="margin-right: 5px"></lk-switch>
+        Display index <lk-switch v-model="showIndex" style="margin-right: 5px"></lk-switch>
+        Display multi choice <lk-switch v-model="showCheckbox" style="margin-right: 5px"></lk-switch>
+        Display header <lk-switch v-model="showHeader" style="margin-right: 5px"></lk-switch>
+        Table scrolling <lk-switch v-model="fixedHeader" style="margin-right: 5px"></lk-switch>
         <br>
         <br>
         Table size

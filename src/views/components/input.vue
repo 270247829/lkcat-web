@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Input 输入框</h1>
             <p>通过鼠标或键盘输入内容，是最基础的表单域的包装。</p>
@@ -12,7 +12,7 @@
                             <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。</p>
                             <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                     </Demo>
                     <Demo title="尺寸">
                         <div slot="demo">
@@ -32,7 +32,7 @@
                             <p>输入框有三种尺寸：大、默认（中）、小</p>
                             <p>通过设置<code>size</code>为<code>large</code>和<code>small</code>设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                     </Demo>
                     <Demo title="可清空">
                         <div slot="demo">
@@ -41,7 +41,7 @@
                         <div slot="desc">
                             <p>开启属性 <code>clearable</code> 可显示清空按钮。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.clearable }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.clearable }}</lk-code>
                     </Demo>
                     <Demo title="带Icon的输入框">
                         <div slot="demo">
@@ -51,7 +51,7 @@
                             <p>通过 <code>icon</code> 属性可以在输入框右边加一个图标。</p>
                             <p>点击图标，会触发 <code>on-click</code> 事件。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
                     </Demo>
                     <Demo title="文本域">
                         <div slot="demo">
@@ -68,7 +68,7 @@
                             <p>通过设置属性 <code>type</code> 为 <code>textarea</code> 来使用文本域，用于多行输入。</p>
                             <p>通过设置属性 <code>rows</code> 控制文本域默认显示的行数。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.textarea }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.textarea }}</lk-code>
                     </Demo>
                     <Demo title="适应文本高度的文本域">
                         <div slot="demo">
@@ -85,7 +85,7 @@
                             <p>设置属性 <code>autosize</code>，文本域会自动适应高度的变化。</p>
                             <p><code>autosize</code>也可以设定为一个对象，指定最小行数和最大行数。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.autosize }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.autosize }}</lk-code>
                     </Demo>
                     <Demo title="禁用状态">
                         <div slot="demo">
@@ -101,7 +101,7 @@
                         <div slot="desc">
                             <p>通过添加<code>disabled</code>属性可设置为不可用状态。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
                     </Demo>
                     <Demo title="复合型输入框">
                         <div slot="demo">
@@ -133,7 +133,7 @@
                         <div slot="desc">
                             通过前置和后置的 slot 可以实现复合型的输入框。
                         </div>
-                        <i-code lang="html" slot="code">{{ code.addon }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.addon }}</lk-code>
                     </Demo>
 
             <div class="api">
@@ -343,19 +343,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/input';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

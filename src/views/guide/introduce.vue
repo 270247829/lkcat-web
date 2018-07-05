@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article style="min-height:800px">
             <h1>关于 LKCat Pro</h1>
             <p>LKCat Pro 是一套基于 LKCat UI 组件库开发的后台管理系统。  <a href="/lkcat-pro" target="_blank">Demo</a></p>
@@ -57,18 +57,18 @@
                 </li>
             </ul>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

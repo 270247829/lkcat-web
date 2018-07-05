@@ -1,22 +1,22 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>国际化</h1>
             <p>LKCat 的所有组件文案默认使用的是中文，通过设置可以使用其它语言。</p>
             <Anchor title="在 Webpack 中使用" h2></Anchor>
             <p>完整引入 LKCat</p>
-            <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.demo }}</lk-code>
             <p>按需引入 LKCat</p>
-            <i-code lang="js" bg>{{ code.i18n.demand }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.demand }}</lk-code>
             <p>兼容 vue-i18n@6.x+</p>
-            <i-code lang="js" bg>{{ code.i18n.vuei18n6 }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.vuei18n6 }}</lk-code>
             <p>兼容 vue-i18n@5.x</p>
-            <i-code lang="js" bg>{{ code.i18n.vuei18n5 }}</i-code>
+            <lk-code lang="js" bg>{{ code.i18n.vuei18n5 }}</lk-code>
             <Alert show-icon style="margin-top: 16px">使用 vue-i18n 时，也可以按需引入 LKCat 组件，用法与上面的示例类似。</Alert>
             <Anchor title="通过 CDN 使用" h2></Anchor>
-            <i-code lang="html" bg>{{ code.i18n.cdn }}</i-code>
+            <lk-code lang="html" bg>{{ code.i18n.cdn }}</lk-code>
             <p>结合 vue-i18n 使用</p>
-            <i-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</i-code>
+            <lk-code lang="html" bg>{{ code.i18n.cdnvuei18n }}</lk-code>
             <Anchor title="支持的语言" h2></Anchor>
             <p>LKCat 目前已支持以下语言：</p>
             <ul>
@@ -46,18 +46,18 @@
             </ul>
             <p>欢迎贡献代码，以支持更多语言。只需在<a href="https://github.com/lkcat/lkcat/tree/2.0/src/locale/lang" target="_blank">这里</a>添加一个语言配置文件即可。</p>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

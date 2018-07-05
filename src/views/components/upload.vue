@@ -37,7 +37,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Upload 上传</h1>
             <p>文件选择上传和拖拽上传控件。</p>
@@ -51,7 +51,7 @@
                 <div slot="desc">
                     <p>最基本用法，点击上传，一次选择一个文件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.select }}</lk-code>
             </Demo>
             <Demo title="多选">
                 <div slot="demo">
@@ -64,7 +64,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>multiple</code>，可以选择多个文件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.multiple }}</lk-code>
             </Demo>
             <Demo title="手动上传">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                 <div slot="desc">
                     <p>绑定 <code>before-upload</code>，并返回<code>false</code>，可以阻止默认上传流程，手动控制文件上传。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.manual }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.manual }}</lk-code>
             </Demo>
             <Demo title="拖拽上传">
                 <div slot="demo">
@@ -95,7 +95,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>type</code> 为 <code>drag</code>，可以拖拽上传。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.drag }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.drag }}</lk-code>
             </Demo>
             <Demo title="自定义上传列表">
                 <div slot="demo">
@@ -147,7 +147,7 @@
                         <li>每个文件大小不超过 2M。</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.list }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.list }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -339,11 +339,11 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/upload';
     import Anchor from '../../components/anchor.vue';
@@ -352,8 +352,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

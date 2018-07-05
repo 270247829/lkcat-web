@@ -35,7 +35,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tabs</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p><code>Value</code> corresponds to the name of the <code>TabPane</code>, it is used to identify which item is currently active. The name defaults from 0 and activates the first item by default. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>Disabled a tab.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Icon">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                 <div slot="desc">
                     <p>The Tab with Icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="Mini tab">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>Set the property <code></code> to <code>small</code> can be displayed as a mini-type, only effective when the <code>type</code> is <code>line</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.mini }}</lk-code>
             </Demo>
             <Demo title="Card type tab">
                 <div slot="demo">
@@ -104,7 +104,7 @@
                 <div slot="desc">
                     <p>Set the property <code>type</code> to <code>card</code> can display the card style, commonly used at the top of the container.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.card }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.card }}</lk-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -118,7 +118,7 @@
                     <p>You can close an tab by setting the property <code>closable</code>, only if the <code>type</code> is <code>card</code>.</p>
                     <p>The tab should be closed manually in conjunction with the <code>on-tab-remove</code> event.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.closable }}</lk-code>
             </Demo>
             <Demo title="Custom tab">
                 <div slot="demo">
@@ -131,7 +131,7 @@
                 <div slot="desc">
                     <p>You can customize the contents of the tab by setting label as Render function.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
             <Demo title="Extra content">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                 <div slot="desc">
                     <p>You can add extra actions to the right of Tabs by adding the slot <code>extra</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.extra }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.extra }}</lk-code>
             </Demo>
             <Demo title="Do not use animation">
                 <div slot="demo">
@@ -156,7 +156,7 @@
                 <div slot="desc">
                     <p>Animating can be disabled by setting the property <code>animated</code> to <code>false</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.animated }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.animated }}</lk-code>
             </Demo>
             <Demo title="Other styles" vertical hide-code>
                 <div slot="demo">
@@ -180,7 +180,7 @@
                 <div slot="desc">
                     <p>Custom UI, needs to override styles.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.style }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.style }}</lk-code>
             </Demo>
 
             
@@ -312,11 +312,11 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tabs';
     import Anchor from '../../components/anchor.vue';
@@ -324,8 +324,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             studyRender

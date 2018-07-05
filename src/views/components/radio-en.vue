@@ -4,7 +4,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Radio</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -18,7 +18,7 @@
                 <div slot="desc">
                     <p>Use v-model to enable a two-way binding.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.single }}</lk-code>
             </Demo>
             <Demo title="Combination">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Use <code>RadioGroup</code> to combine a set of exclusive selection. When using <code>RadioGroup</code>, you shall set <code>label</code> to <code>Radio</code> to enable an auto judgement. The content of each Radio can be customized. If not set, it'll use label's value by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -63,7 +63,7 @@
                 <div slot="desc">
                     <p>Set <code>disabled</code> prop to disable a Radio.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Verticality">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>Set <code>vertical</code> prop can let Radio-gruop be displayed vertically. It will not work in button type.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="Button Type">
                 <div slot="demo">
@@ -114,7 +114,7 @@
                 <div slot="desc">
                     <p>When using RadioGroup, you can set <code>type</code> to button to apply a button type.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.button }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.button }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                 <div slot="desc">
                     <p>You can adjust the size of the button by setting <code>size</code> to <code>large</code> or <code>small</code>. The default is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
 
             
@@ -272,19 +272,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/radio';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

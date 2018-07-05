@@ -11,7 +11,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Affix</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -26,7 +26,7 @@
                 <div slot="desc">
                     <p>Simple Use: Fixed at the top when element is invisible.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Offset">
                 <div slot="demo">
@@ -37,7 +37,7 @@
                 <div slot="desc">
                     <p>Fixed after rolling a certain distance.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.top }}</lk-code>
             </Demo>
             <Demo title="Fixed at the bottom">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                     <p>Fixed at the under screen area. Reduce the height of the browser window to see the effect.</p>
                     <p>Attention，Only one of <code>offset-top</code> and <code>offset-bottom</code> can be set，If you set both，<code>offset-top</code> will be used.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bottom }}</lk-code>
             </Demo>
             <Demo title="Callback when affix state is changed">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>When affix state is changed，a event will be emitted.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.change }}</lk-code>
             </Demo>
 
             
@@ -111,19 +111,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/affix';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

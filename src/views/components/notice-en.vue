@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Notice</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -18,7 +18,7 @@
                     <p>Basic usage. It'll be closed after 4.5 sec by default. If <code>desc</code> prop is empty or not set, Title-Only style will be used.</p>
                     <p>We suggest that the title should be as clear as possiblem like "Delete Sucessfully" etc. Detail content can be placed into description area.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.open }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.open }}</lk-code>
             </Demo>
             <Demo title="Notice Type">
                 <div slot="demo">
@@ -36,7 +36,7 @@
                 <div slot="desc">
                     <p>Notice with status icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="Custom Duration">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>Set duration to 0 to disable auto close. You can also configure Notice globally in <code>Notice.config()</code>. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.time }}</lk-code>
             </Demo>
             <Demo title="render">
                 <div slot="demo">
@@ -54,7 +54,7 @@
                 <div slot="desc">
                     <p>You can custom the render function instead of desc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             
@@ -142,7 +142,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -170,19 +170,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/notice';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

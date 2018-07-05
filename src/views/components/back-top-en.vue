@@ -8,7 +8,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>BackTop</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Default at 30px to the right and the bottom, display when scroll to 400px to the top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Customized Style">
                 <div slot="demo">
@@ -33,7 +33,7 @@
                 <div slot="desc">
                     <p>Custimize the position of the BackTop button at 200px to the bottom, and display when scroll to 200px to the top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
 
             
@@ -96,19 +96,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/back-top';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

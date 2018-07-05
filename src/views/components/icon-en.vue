@@ -41,16 +41,16 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Icon</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
             <p>LKCat uses open source icon set <a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a></p>
             <Anchor title="How to Use" h2></Anchor>
             <p>Use <code>&lt;Icon /></code> component, Set corresponding <code>type</code> prop of the icon. Sample code:</p>
-            <i-code lang="html" bg>{{ code.demo }}</i-code>
+            <lk-code lang="html" bg>{{ code.demo }}</lk-code>
             <p>After rending:</p>
-            <i-code lang="html" bg>{{ code.render }}</i-code>
+            <lk-code lang="html" bg>{{ code.render }}</lk-code>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
                 <Anchor title="Icon props" h3></Anchor>
@@ -104,11 +104,11 @@
                 </div>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/icon';
     import Anchor from '../../components/anchor.vue';
@@ -119,8 +119,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

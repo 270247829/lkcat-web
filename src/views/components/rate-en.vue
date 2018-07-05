@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Rate</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>The simplest usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Half star">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Set the attribute <code>allow-half</code> to select the half star.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.half }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.half }}</lk-code>
             </Demo>
             <Demo title="Show copywriting">
                 <div slot="demo">
@@ -40,7 +40,7 @@
                     <p>Set the property <code>show-text</code> to display the prompt text.</p>
                     <p>The prompt can also be customized via the slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.text }}</lk-code>
             </Demo>
             <Demo title="Read only">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>Set the property <code>disabled</code> to open read-only mode, unable to interact.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
 
             
@@ -118,19 +118,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/rate';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

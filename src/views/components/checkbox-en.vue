@@ -4,7 +4,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Checkbox</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -18,7 +18,7 @@
                 <div slot="desc">
                     <p>Use v-model to enable two-way binding.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.single }}</lk-code>
             </Demo>
             <Demo title="Combination Usage">
                 <div slot="demo">
@@ -51,7 +51,7 @@
                 <div slot="desc">
                     <p>Use <code>CheckboxGroup</code> combined with array to generate a combination. In this case, <code>Checkbox</code> uses <code>label</code> to judge selected state automatically. The content of each Checkbox can be customized. If not filled, the value of label prop will be used by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -67,7 +67,7 @@
                 <div slot="desc">
                     <p>To disable Checkbox by setting <code>disabled</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Communication with Other Components">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>Data linking with other components.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.communication }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.communication }}</lk-code>
             </Demo>
             <Demo title="Select All">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>You might use <code>indeterminate</code> prop when realise select-all effect. The demo code is just a kind of realisation. There are many other ways you can use in your bussiness.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.indeterminate }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.indeterminate }}</lk-code>
             </Demo>
 
             
@@ -233,19 +233,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/checkbox';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

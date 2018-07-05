@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Quick Start</h1>
             <Anchor title="Before Start" h2></Anchor>
@@ -33,23 +33,23 @@
             <p>If you prefer not to use them or use other utilities like <a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a>, please keep reading.</p>
             <Anchor title="Import LKCat" h2></Anchor>
             <p>Import LKCat in the entry file (<code>main.js</code> as usual) of webpack:</p>
-            <i-code lang="js" bg>{{ code.install.import }}</i-code>
+            <lk-code lang="js" bg>{{ code.install.import }}</lk-code>
             <Anchor title="Import on demand" h2></Anchor>
             <!--<p>Only import components what we need will help reduce size.</p>-->
-            <!--<i-code bg>{{ code.install.need }}</i-code>-->
+            <!--<lk-code bg>{{ code.install.need }}</lk-code>-->
             <p>By using the <a href="https://github.com/ant-design/babel-plugin-import" target="_blank">babel-plugin-import</a> , you can load components on demand and reduce the size of files. First installation, then update <code>.babelrc</code> file:</p>
-            <i-code bg>{{ code.install.babel_plugins }}</i-code>
+            <lk-code bg>{{ code.install.babel_plugins }}</lk-code>
             <p>Now you can import components like:</p>
-            <i-code bg>{{ code.install.need }}</i-code>
+            <lk-code bg>{{ code.install.need }}</lk-code>
             <Anchor title="Reminder" h2></Anchor>
             <ul>
                 <li>Partial import will only effect logic level; you still need to import all the styles, which means add <code>import 'lkcat/dist/styles/lkcat.css';</code> to <strong>main.js</strong> or the root component.</li>
                 <!--<li>Partial import depends on babel, so it's necessary to add module to webpack in order to let it compiled:</li>-->
-                <!--<i-code lang="js" bg>{{ code.install.warning }}</i-code>-->
+                <!--<lk-code lang="js" bg>{{ code.install.warning }}</lk-code>-->
             </ul>
             <Anchor title="How to pass value to components" h2></Anchor>
             <p>Many components require adding <code>:</code> before properties for passing integer and boolean:</p>
-            <i-code lang="html" bg>{{ code.standard.prop }}</i-code>
+            <lk-code lang="html" bg>{{ code.standard.prop }}</lk-code>
             <p>If not in template/render mode(such as using CDN), the component name must be separated, such as <code>DatePicker</code> should be <code>date-picker</code>. </p>
             <p>The following components, if not in template/render mode, you need to add a prefix <code>i-</code>:</p>
             <ul>
@@ -69,18 +69,18 @@
                 <li>Circle: <code>i-circle</code></li>
             </ul>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

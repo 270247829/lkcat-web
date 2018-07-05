@@ -107,7 +107,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <Anchor title="Layout 布局" h1></Anchor>
                 <p>协助进行页面级整体布局。</p>
@@ -201,7 +201,7 @@
                 <div slot="desc">
                     <p>典型的页面布局</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.basic }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.basic }}</lk-code>
             </Demo>
             <Demo title="上中下布局" vertical hide-code>
                 <div slot="demo">
@@ -250,7 +250,7 @@
                     <p>最基本的『上-中-下』布局。</p>
                     <p>一般主导航放置于页面的顶端，从左自右依次为：logo、一级导航项、辅助菜单（用户、设置、通知等）。通常将内容放在固定尺寸（例如：1200px）内，整个页面排版稳定，不受用户终端显示器影响；上下级的结构符合用户上下浏览的习惯，也是较为经典的网站导航模式。页面上下切分的方式提高了主工作区域的信息展示效率，但在纵向空间上会有一些牺牲。此外，由于导航栏水平空间的限制，不适合那些一级导航项很多的信息结构。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topMiddleBottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topMiddleBottom }}</lk-code>
             </Demo>
             <Demo title="顶部-侧边布局-通栏" vertical hide-code>
                 <div slot="demo">
@@ -326,7 +326,7 @@
                 <div slot="desc">
                     <p>同样拥有顶部导航及侧边栏，区别是两边未留边距，多用于应用型的网站。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topLeftRight }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topLeftRight }}</lk-code>
             </Demo>
             <Demo title="顶部-侧边布局" vertical hide-code>
                 <div slot="demo">
@@ -405,7 +405,7 @@
                 <div slot="desc">
                     <p>拥有顶部导航及侧边栏的页面，多用于展示类网站。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.topSiderFooter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.topSiderFooter }}</lk-code>
             </Demo>
 
             <Demo title="自定义触发器" vertical hide-code>
@@ -442,7 +442,7 @@
                 <div slot="desc">
                     <p>要使用自定义触发器，可以设置<code>hide-trigger</code>属性来隐藏默认触发器，也可以通过<code>slot</code>替换默认触发器。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.selfTrigger }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.selfTrigger }}</lk-code>
             </Demo>
             <Demo title="响应式布局" vertical hide-code>
                 <div slot="demo">
@@ -478,7 +478,7 @@
                     <p>Sider支持响应式布局</p>
                     <Alert style="margin-top: 16px">说明：配置<code>breakpoint</code> 属性即生效，视窗宽度小于<code>breakpoint</code> 时 Sider 缩小为<code>collapsedWidth</code> 宽度，若将<code>collapsedWidth</code> 设置为零，会出现特殊 trigger。</Alert>
                 </div>
-                <i-code lang="html" slot="code">{{ code.media }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.media }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -593,7 +593,7 @@
                 </table>
             </div>
             <Anchor title="breakpoint width" h3></Anchor>
-            <i-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
+            <lk-code lang="js" slot="code" :style="{background: '#f2f4f5', height: '170px'}">
         {
             xs: '480px',
             sm: '768px',
@@ -601,21 +601,21 @@
             lg: '1200px',
             xl: '1600px'
         }
-            </i-code>
+            </lk-code>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/layout';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

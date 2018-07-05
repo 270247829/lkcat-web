@@ -5,7 +5,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Breadcrumb 面包屑</h1>
             <p>显示当前页面在系统层级结构中的位置，并能向上返回。</p>
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>最基础的用法，通过设置<code>to</code>属性添加链接。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="带图标的">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>可自定义每项的内容，比如带有一个图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="分隔符">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>通过设置<code>separator</code>属性来自定义分隔符，比如<code> > </code>，也可以接受自定义的HTML字符串。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.separator }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.separator }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -122,19 +122,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/breadcrumb';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -8,7 +8,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Avatar</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Three sizes and two shapes are available.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Type">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>Image, Icon and letter are supported, and the latter two kinds avatar can have custom colors and background colors.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="With Badge">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>Usually used for messages remind.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.badge }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.badge }}</lk-code>
             </Demo>
             <Demo title="Autoset Font Size">
                 <div slot="demo">
@@ -74,7 +74,7 @@
                 <div slot="desc">
                     <p>For letter type Avatar, when the letters are too long to display, the font size can be automatically adjusted according to the width of the Avatar.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.string }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.string }}</lk-code>
             </Demo>
 
             
@@ -120,11 +120,11 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/avatar';
     import Anchor from '../../components/anchor.vue';
@@ -135,8 +135,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

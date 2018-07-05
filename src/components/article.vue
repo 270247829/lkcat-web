@@ -37,20 +37,20 @@
             
             <div class="wrapper-container">
                 <Row>
-                    <i-col span="5" class="wrapper-navigate">
+                    <lk-col span="5" class="wrapper-navigate">
                                   
 
                         <Navigate :type="activeKey"></Navigate>
                        
-                    </i-col>
-                    <i-col span="17">
+                    </lk-col>
+                    <lk-col span="17">
                         
                         <div class="wrapper-content lkui-article">
                             <slot></slot>
                         </div>
                         
-                    </i-col>
-                    <i-col span="2">
+                    </lk-col>
+                    <lk-col span="2">
                         <Affix :offset-top="75">
                             <div class="catalogue" v-show="list.length">
                                 <card dis-hover>
@@ -75,14 +75,14 @@
                                 <div style="margin-top: 20px"></div>
                             </template>
                         </Affix>
-                    </i-col>
+                    </lk-col>
                 </Row>
             </div>
         </div>
         <!-- <div class="footer">
             <div class="footer-main">
                 <Row>
-                    <i-col span="8">
+                    <lk-col span="8">
                         <h4>
                             <Icon type="social-github"></Icon>
                             GitHub
@@ -95,7 +95,7 @@
                                 <a href="https://github.com/270247829/lkcat-pro" target="_blank">LKCat-Pro</a>
                             </li>
                         </ul>
-                    </i-col>
+                    </lk-col>
                 </Row>
             </div>
         </div> -->

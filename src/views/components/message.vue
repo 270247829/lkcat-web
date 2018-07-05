@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Message 全局提示</h1>
             <p>全局展示操作反馈信息。</p>
@@ -11,7 +11,7 @@
                 <div slot="desc">
                     <p>最基本的提示，默认在3秒后消失。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.info }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.info }}</lk-code>
             </Demo>
             <Demo title="提示类型">
                 <div slot="demo">
@@ -22,7 +22,7 @@
                 <div slot="desc">
                     <p>不同的提示状态：成功、警告、错误。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="加载中">
                 <div slot="demo">
@@ -31,7 +31,7 @@
                 <div slot="desc">
                     <p>Loading 的状态，并异步在某个时机移除。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
             </Demo>
             <Demo title="自定义时长">
                 <div slot="demo">
@@ -40,7 +40,7 @@
                 <div slot="desc">
                     <p>自定义时长，也可以在<code>Message.config()</code>中全局配置，详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.time }}</lk-code>
             </Demo>
             <Demo title="可关闭">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>将参数设置为一个对象，并指定 <code>closable</code> 为 true 后可以手动关闭提示，完整参数详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.closable }}</lk-code>
             </Demo>
             <Demo title="自定义 Render 函数">
                 <div slot="demo">
@@ -58,7 +58,7 @@
                 <div slot="desc">
                     <p>使用 Render 函数自定义内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -135,7 +135,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -163,19 +163,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/message';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

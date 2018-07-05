@@ -15,7 +15,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tooltip 文字提示</h1>
             <p>简单的文字提示气泡框。</p>
@@ -30,7 +30,7 @@
                     <p>最简单的用法。</p>
                     <p>注意 Tooltip 内的文本使用了 <code>white-space: nowrap;</code>，即不自动换行，如需展示很多内容并自动换行时，建议给内容 slot 增加样式 <code>white-space: normal;</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="位置">
                 <div slot="demo">
@@ -84,7 +84,7 @@
                 <div slot="desc">
                     <p>组件提供了12个不同的方向显示Tooltip，具体配置可查看API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.placement }}</lk-code>
             </Demo>
             <Demo title="自定义内容">
                 <div slot="demo">
@@ -99,7 +99,7 @@
                 <div slot="desc">
                     <p>通过自定义 slot 显示多行文本或更复杂的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.content }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.content }}</lk-code>
             </Demo>
             <Demo title="禁用">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>disabled</code>可以禁用文字提示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="延时">
                 <div slot="demo">
@@ -121,7 +121,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>delay</code>可以延时显示文字提示，单位毫秒。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.delay }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.delay }}</lk-code>
             </Demo>
 
 
@@ -179,7 +179,7 @@
                             <td>自定义 popper.js 的配置项，具体配置见 <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js 文档</a></td>
                             <td>Object</td>
                             <td>
-                                <i-code lang="js">{{ code.options }}</i-code>
+                                <lk-code lang="js">{{ code.options }}</lk-code>
                             </td>
                         </tr>
                     </tbody>
@@ -227,19 +227,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tooltip';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

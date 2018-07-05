@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Page</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Basic paging operation. It will be folded when there are too many pages.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Pieces in Each Page">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>You can set pieces amount shown in each page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.sizer }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.sizer }}</lk-code>
             </Demo>
             <Demo title="Elevator">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Directly jump to certain page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.elevator }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.elevator }}</lk-code>
             </Demo>
             <Demo title="Amount">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                 <div slot="desc">
                     <p>Describe how many pieces of data are shown. It accepts slot to customize content. Default: <code v-pre>Total {{ total }} items</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.total }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.total }}</lk-code>
             </Demo>
             <Demo title="Mini Size">
                 <div slot="demo">
@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p>Set <code>size</code> to <code>small</code> to use mini size. The functions of mini size are same to the normal size.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.mini }}</lk-code>
             </Demo>
             <Demo title="Conciseness">
                 <div slot="demo">
@@ -61,7 +61,7 @@
                 <div slot="desc">
                     <p>Set <code>simple</code> prop to use a more concise Page component. It changes page by entering page number then tapping Enter, or by clicking certain page number, or by tapping Up and Down keys. concise Page CANNOT use amount, elevator and you can't let user change piece amount shown in each page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.simple }}</lk-code>
             </Demo>
 
             
@@ -198,19 +198,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/page';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

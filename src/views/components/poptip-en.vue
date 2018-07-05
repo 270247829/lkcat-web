@@ -15,7 +15,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Poptip</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -41,7 +41,7 @@
                     <p>Poptip supports 3 triggers: hover, click and focus. The default is click.</p>
                     <p>Attention: Text in Poptip uses <code>white-space: nowrap;</code>, that is, no line wrap. If there are much content to show and line wrap is needed, we suggest you add style <code>white-space: normal;</code> to content slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Direction">
                 <div slot="demo">
@@ -95,7 +95,7 @@
                 <div slot="desc">
                     <p>We provide 12 different directions to show Poptip. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.placement }}</lk-code>
             </Demo>
             <Demo title="Close inside the Floating Layer">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>You can control tooltip's visibility by changing <code>v-model</code> to true or false.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.visible }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.visible }}</lk-code>
             </Demo>
             <Demo title="Nest Complex Content">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                 <div slot="desc">
                     <p>You can add complex content into Poptip by using content slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
             </Demo>
             <Demo title="Confirm Dialog">
                 <div slot="demo">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>Open confirm-dialog mode by setting <code>confirm</code> prop. The confirm dialog can only be activated by clicking. It only shows title's text. The content will be ignored.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
             </Demo>
 
             
@@ -256,7 +256,7 @@
                             <td>Customize popper.js configuration items. For details, see <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js document</a>.</td>
                             <td>Object</td>
                             <td>
-                                <i-code lang="js">{{ code.options }}</i-code>
+                                <lk-code lang="js">{{ code.options }}</lk-code>
                             </td>
                         </tr>
                     </tbody>
@@ -318,19 +318,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/poptip';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

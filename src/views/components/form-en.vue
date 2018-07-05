@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Form</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -36,7 +36,7 @@
                 <div slot="desc">
                     <p>Set  <code>inline</code> prop to let Form arrange vertically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.inline }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.inline }}</lk-code>
             </Demo>
             <Demo title="Form Control">
                 <div slot="demo">
@@ -99,7 +99,7 @@
                     <p>Setting <code>label</code> prop to <code>FormItem</code> can display the label of the form. <code>label-width</code> needs to be set on Form.</p>
                     <p>Set the property <code>label-for</code> to <code>FormItem</code>, and the <code>element-id</code> property to component, it will be focused when click label.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.item }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.item }}</lk-code>
             </Demo>
             <Demo title="Alignment">
                 <div slot="demo">
@@ -140,7 +140,7 @@
                 <div slot="desc">
                     <p>Set <code>label-position</code> prop to change the position of the label. Optional: left, right, top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.position }}</lk-code>
             </Demo>
             <Demo title="Form Validation">
                 <div slot="demo">
@@ -201,7 +201,7 @@
                     <p>For complete validation rules, please visit async-validator project site.</p>
                     <p>Validate method support Promise.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.validate }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.validate }}</lk-code>
             </Demo>
             <Demo title="Custom Validation">
                 <div slot="demo">
@@ -224,7 +224,7 @@
                 <div slot="desc">
                     <p>You can customize your own rule to complete complex validation like data that needs to be validated on server side. The demo shows a rechecking on password and a simulation of async validation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
             <Demo title="Dynamic Adding / Removing">
                 <div slot="demo">
@@ -263,7 +263,7 @@
                     <p>When setting prop prop dynamiclly, FormItem will rely on its parent Form's model to get its content. Details on demo code.</p>
                     <p>You can set required, error or some other props on FormItem. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dynamic }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.dynamic }}</lk-code>
             </Demo>
 
             
@@ -434,19 +434,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/form';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

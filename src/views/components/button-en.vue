@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Button</h1>
             <p>Basic component that is used to trigger bussiness logic.</p>
@@ -22,7 +22,7 @@
                     <p>Types of buttons: default, primary, ghost, dashed, text and 4 buttons of different colors.</p>
                     <p>Set the <code>type</code> to<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>to choose different buttons, by default the default type is used.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="Icons & Shapes">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                     The icon would appear at the leftmost side of the <code>Button</code> when <p>using the <code>icon</code>; use <code>Icon</code> component for different icons' positions.</p>
                     <p>Set the <code>shape</code> to <code>circle</code> to use a circle button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                     <p>Sizes of buttons: large, default (medium) and small.</p>
                     <p>Set the <code>size</code> to <code>large</code> or <code>small</code> to use large/small size of button, by default the button's size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="Long Button">
                 <div slot="demo">
@@ -69,7 +69,7 @@
                     <p>Set the <code>long</code> to set the width of the button to 100%，it's usually used for modals.</p>
                     <p>Users could also add <code>style</code> to the component to furtherly refine, e.g., use customed width.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.long }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.long }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>Set the <code>disabled</code> attribute to disable the button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Loading">
                 <div slot="demo">
@@ -108,7 +108,7 @@
                 <div slot="desc">
                     <p>Set <code>loading</code> attribute to set the button to loading status, click the latter two buttons to see the loading effect in action.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
             </Demo>
             <Demo title="Group">
                 <div slot="demo">
@@ -209,7 +209,7 @@
                     <p>Set the <code>ButtonGroup</code> attribute <code>size</code> to <code>large</code> or <code>small</code> to choose large/small size of botton group, by default the <code>size</code> is medium.</p>
                     <p>Set the <code>ButtonGroup</code> atrribute <code>shape</code> to <code>circle</code> to apply a border-radius to the button's shape.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
             </Demo>
             <Demo title="Vertical ButtonGroup">
                 <div slot="demo">
@@ -223,7 +223,7 @@
                 <div slot="desc">
                     <p>Set the <code>ButtonGroup</code> attribute <code>vertical</code> to set up a vertical button group.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
 
             
@@ -324,19 +324,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/button';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

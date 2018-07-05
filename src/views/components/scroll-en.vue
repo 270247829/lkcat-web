@@ -2,7 +2,7 @@
 
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Scroll</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -20,7 +20,7 @@
                     <p>Load more data when scroll the bottom.</p>
                     <p>Need to return a Promise object.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bottom }}</lk-code>
             </Demo>
             <Demo title="Reach Top">
                 <div slot="demo">
@@ -34,7 +34,7 @@
                     <p>Load more data when scroll the top.</p>
                     <p>Need to return a Promise object.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.top }}</lk-code>
             </Demo>
 
             <Demo title="Reach Edge">
@@ -49,7 +49,7 @@
                     <p>Load more data when scroll the bottom or top.</p>
                     <p>Need to return a Promise object.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.edge }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.edge }}</lk-code>
             </Demo>
 
             
@@ -107,19 +107,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/scroll';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

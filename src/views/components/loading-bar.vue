@@ -1,14 +1,14 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>LoadingBar 加载进度条</h1>
             <p>全局创建一个显示页面加载、异步请求、文件上传等的加载进度条。</p>
             <Anchor title="说明" h2></Anchor>
             <p>LoadingBar 只会在全局创建一个，因此在任何位置调用的方法都会控制这同一个组件。主要使用场景是路由切换和Ajax，因为这两者都不能拿到精确的进度，LoadingBar 会模拟进度，当然也可以通过<code>update()</code>方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。</p>
             <Anchor title="在路由中使用" h4></Anchor>
-            <i-code bg>{{ code.router }}</i-code>
+            <lk-code bg>{{ code.router }}</lk-code>
             <Anchor title="在异步请求中使用" h4></Anchor>
-            <i-code bg lang="html">{{ code.ajax }}</i-code>
+            <lk-code bg lang="html">{{ code.ajax }}</lk-code>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -19,7 +19,7 @@
                 <div slot="desc">
                     <p>点击 Start 开始进度，点击 Finish 结束。在调用<code>start()</code>方法后，组件会自动模拟进度，当调用<code>finish()</code>或<code>error()</code>时，补全进度并自动消失。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
 
             
@@ -84,7 +84,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -118,19 +118,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/loading-bar';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

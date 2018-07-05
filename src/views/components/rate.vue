@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Rate 评分</h1>
             <p>评分组件。</p>
@@ -11,7 +11,7 @@
                 <div slot="desc">
                     <p>基本用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="半星">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>allow-half</code> 可以选中半星。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.half }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.half }}</lk-code>
             </Demo>
             <Demo title="显示提示">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                     <p>设置属性 <code>show-text</code> 可以显示提示文字。</p>
                     <p>提示内容也可以通过 slot 自定义。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.text }}</lk-code>
             </Demo>
             <Demo title="只读">
                 <div slot="demo">
@@ -48,7 +48,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>disabled</code> 开启只读模式，无法交互。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -115,19 +115,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/rate';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

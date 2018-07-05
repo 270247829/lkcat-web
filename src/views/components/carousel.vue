@@ -9,7 +9,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Carousel 走马灯</h1>
             <p>旋转木马，一组轮播的区域。</p>
@@ -34,7 +34,7 @@
                 <div slot="desc">
                     <p>最基本的用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="自动切换">
                 <div slot="demo">
@@ -56,7 +56,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>autoplay</code> 可以自动轮播，同时可以设置属性 <code>autoplay-speed</code> 改变自动播放的速度。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.autoplay }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.autoplay }}</lk-code>
             </Demo>
             <Demo title="综合设置">
                 <div slot="demo">
@@ -122,7 +122,7 @@
                 <div slot="desc">
                     <p>动态调整各配置。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.setting }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.setting }}</lk-code>
             </Demo>
 
 
@@ -220,19 +220,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/carousel';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

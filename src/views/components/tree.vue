@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tree 树形控件</h1>
             <p>文件夹、组织架构、生物分类、国家地区等等，世间万物的大多数结构都是树形结构。使用树控件可以完整展现其中的层级关系，并具有展开收起选择等交互功能。</p>
@@ -11,7 +11,7 @@
                 <div slot="desc">
                     <p>最简单的用法，展示可选中，默认展开功能。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="可勾选">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>show-checkbox</code> 可以对节点进行勾选。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.checkbox }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.checkbox }}</lk-code>
             </Demo>
             <Demo title="异步加载子节点">
                 <div slot="demo">
@@ -31,7 +31,7 @@
                     <p>load-data 第一个参数为当前节点信息；执行 load-data 的第二个参数，将需要添加的数据传入。</p>
                     <p>如果某节点不包含 <code>loading</code> 和 <code>children</code> 字段，则不会应用异步加载效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.lazy }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.lazy }}</lk-code>
             </Demo>
             <Demo title="默认展开、选中、勾选和禁用">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                     <p>给节点设置 <code>expand</code>、<code>selected</code>、<code>checked</code> 和 <code>disabled</code> 可以将节点设置为展开、选中、勾选和禁用。</p>
                     <p>设置属性 <code>multiple</code> 可进行多选。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.more }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.more }}</lk-code>
             </Demo>
             <Demo title="自定义节点内容">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                     <p>Render 函数分两种，一种是给当前树的每个节点都设置同样的渲染内容，此 render 通过 Tree 组件的属性 <code>render</code> 传递；另一种是单独给某个节点设置，在该节点的 <code>render</code> 字段内设置；同时设置时，会优先使用当前节点的 Render 函数。</p>
                     <p></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
 
@@ -232,11 +232,11 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tree';
     import Anchor from '../../components/anchor.vue';
@@ -244,8 +244,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             studyRender

@@ -2,7 +2,7 @@
 
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Scroll 无限滚动</h1>
             <Anchor title="概述" h2></Anchor>
@@ -20,7 +20,7 @@
                     <p>当滚动至底部时，触发加载更多。</p>
                     <p>需返回 Promise。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.bottom }}</lk-code>
             </Demo>
             <Demo title="顶部触发">
                 <div slot="demo">
@@ -34,7 +34,7 @@
                     <p>当滚动至顶部时，触发加载更多。</p>
                     <p>需返回 Promise。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.top }}</lk-code>
             </Demo>
 
             <Demo title="边缘触发">
@@ -49,7 +49,7 @@
                     <p>当滚动至底部或顶部时，触发加载更多。</p>
                     <p>需返回 Promise。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.edge }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.edge }}</lk-code>
             </Demo>
 
             
@@ -107,19 +107,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/scroll';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -185,7 +185,7 @@ module.exports = {
         extensions: ['.js', '.vue'],
         alias: {
             'hljs': 'highlightjs/highlight.pack.js',
-            'iCode': '../../components/code.vue',
+            'lkCode': '../../components/code.vue',
             'vue': 'vue/dist/vue.esm.js',
             // 'vue': 'vue/dist/vue.runtime.js'
             '@': resolve('./src')

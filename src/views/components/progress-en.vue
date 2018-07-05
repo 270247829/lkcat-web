@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Progress</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>Progress in different status. When percent reaches 100, the status will be automatically set to success.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Vertical">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Set the property <code>vertical</code> will be displayed in the vertical direction.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="Use with External Component">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>You can realise a dynamic effect by combining data and controlling logic.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.percent }}</lk-code>
             </Demo>
             <Demo title="Custom Style">
                 <div slot="demo">
@@ -58,7 +58,7 @@
                 <div slot="desc">
                     <p>Change Progress's style by customize <code>slot</code> and <code>stroke-width</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
 
             
@@ -125,19 +125,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/progress';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

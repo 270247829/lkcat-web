@@ -5,7 +5,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>定制主题</h1>
             <p>LKCat 默认提供了一套 UI 主题，并且可以在一定程度上定制新主题，以满足业务和品牌上的多样化视觉需求。</p>
@@ -13,36 +13,36 @@
             <Anchor title="变量覆盖（推荐）" h2></Anchor>
             <p>如果你的项目使用了 webpack 工程，可以通过变量覆盖的方式来实现主题定制。</p>
             <p>首先在项目中先建一个目录，比如 <code>my-theme</code>，然后在 my-theme 下建立一个 less 文件 <code>index.less</code>，并写入下面内容：</p>
-            <i-code lang="auto" bg>{{ code.theme.less }}</i-code>
+            <lk-code lang="auto" bg>{{ code.theme.less }}</lk-code>
             <p>
                 完整的变量列表可以查看 <a href="https://github.com/lkcat/lkcat/blob/2.0/src/styles/custom.less" target="_blank">默认样式变量</a>。
             </p>
             <p>然后在入口文件 <code>main.js</code> 内导入这个 less 文件即可：</p>
-            <i-code lang="auto" bg>{{ code.theme.lessImport }}</i-code>
+            <lk-code lang="auto" bg>{{ code.theme.lessImport }}</lk-code>
             <Anchor title="通过安装工具修改" h2></Anchor>
             <p>如果没有使用 webpack，可以用我们提供的工具 <a href="https://github.com/lkcat/lkcat-theme" target="_blank">lkcat-theme</a> 来编译。</p>
             <p>首先需要安装<strong>主题生成工具</strong>，从 npm 全局或在项目中局部安装，以全局安装为例：</p>
-            <i-code lang="auto" bg>{{ code.theme.install }}</i-code>
+            <lk-code lang="auto" bg>{{ code.theme.install }}</lk-code>
             <p>然后在业务工程里新建一个目录，用来存放主题文件，使用下面的命令初始化主题，这时会从 LKCat 仓库拉取最新的样式文件：</p>
-            <i-code lang="auto" bg>{{ code.theme.init }}</i-code>
+            <lk-code lang="auto" bg>{{ code.theme.init }}</lk-code>
             <p>最后编辑 <code>my-theme/custom.less</code> 文件，用命令编译即可：</p>
-            <i-code lang="auto" bg>{{ code.theme.build }}</i-code>
+            <lk-code lang="auto" bg>{{ code.theme.build }}</lk-code>
             <p>最终会在指定的目录下编译为 <code>lkcat.css</code> 的文件，只需在入口处引用它就可以了，比如在 main.js 文件：</p>
-            <i-code lang="js" bg>{{ code.theme.import }}</i-code>
+            <lk-code lang="js" bg>{{ code.theme.import }}</lk-code>
             <Alert show-icon style="margin-top: 16px">注意：这种方法是从 GitHub 拉取最新的样式变量，并不是你当前的 LKCat 版本，另外在更新 LKCat 后，应该重新拉取。</Alert>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

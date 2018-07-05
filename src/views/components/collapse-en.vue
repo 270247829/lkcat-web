@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Collapse</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -25,7 +25,7 @@
                 <div slot="desc">
                     <p>You can spread multiple panels simultaneously by default. You can also set which one to be spread.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Accordion">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Enable accordion effect by setting <code>accordion</code> prop. In this mode, you can only spread one panel each time.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.accordion }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.accordion }}</lk-code>
             </Demo>
             <Demo title="Panel Nesting">
                 <div slot="demo">
@@ -81,7 +81,7 @@
                 <div slot="desc">
                     <p>Collapse can be nested.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.nest }}</lk-code>
             </Demo>
 
             
@@ -170,19 +170,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/collapse';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

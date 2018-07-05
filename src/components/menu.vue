@@ -81,18 +81,18 @@
                 <img :src="lkcatPath" class="lkcat">
             </a>
             <div class="wrapper-header-nav-search">
-                <!-- <i-select
+                <!-- <lk-select
                     ref="select"
                     v-model="search"
                     filterable
                     :placeholder="searchText"
                     :not-found-text="notFoundText"
                     @on-change="handleSearch">
-                    <i-option v-for="item in navigateList" :key="item.path" :value="item.path">
+                    <lk-option v-for="item in navigateList" :key="item.path" :value="item.path">
                         <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                         <template v-else>{{ item.title.split(' ')[0] }}</template>
-                    </i-option>
-                </i-select> -->
+                    </lk-option>
+                </lk-select> -->
                 <Icon type="ios-search" />
                 <Poptip width="300" v-model="visible" @on-popper-show="showReulst">
                     <Input @on-keyup="search" v-model="content" @on-focus="showReulst" placeholder="搜索组件">

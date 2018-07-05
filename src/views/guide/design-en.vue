@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Design Principle</h1>
             <blockquote>
@@ -15,17 +15,17 @@
             <Anchor title="Proximity" h2></Anchor>
             <p>Elements that are related to each other should be grouped together. Multiple elements would become a visual unit when there is proximity rather than isolation among them. This helps to organize infomation, reduce confusion and provide readers a clear structrue.</p>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

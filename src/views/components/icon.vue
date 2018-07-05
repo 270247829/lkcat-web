@@ -41,13 +41,13 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Icon 图标</h1>
             <p>语义化的矢量图形，图标使用开源项目<a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a></p>
             <Anchor title="如何使用" h2></Anchor>
             <p>使用<code>&lt;Icon /></code>组件，指定图标对应的<code>type</code>属性，示例代码如下：</p>
-            <i-code lang="html" bg>{{ code.demo }}</i-code>
+            <lk-code lang="html" bg>{{ code.demo }}</lk-code>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
                 <Anchor title="Icon props" h3></Anchor>
@@ -101,11 +101,11 @@
                 </div>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/icon';
     import Anchor from '../../components/anchor.vue';
@@ -116,8 +116,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

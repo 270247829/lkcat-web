@@ -20,7 +20,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <h1>Change Log</h1>
         <article class="doc-update">
             <Timeline pending>
@@ -477,11 +477,11 @@
                 </Timeline-item>
             </Timeline>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
     import issue from '../../components/issue.vue';
@@ -491,8 +491,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor,
             issue,
             mention

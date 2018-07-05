@@ -24,7 +24,7 @@
             <div class="example-desc">
                 <slot name="desc"></slot>
             </div>
-        <i-col class="example-demo" :span="vertical ? 24 : 12">
+        <Col class="example-demo" :span="vertical ? 24 : 12">
             <div class="example-case">
                 <slot name="demo"></slot>
             </div>
@@ -34,9 +34,9 @@
                 <Icon type="ios-minus-outline" v-show="showCode&&!show"></Icon>
             </span>
             </div>
-        </i-col>
+        </Col>
         <!-- <div class="example-split"></div> -->
-        <i-col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12" v-show="showCode">
+        <Col class="example-code" :style="codeHeight" :span="vertical ? 24 : 12" v-show="showCode">
             <div :style="style"><slot name="code"></slot></div>
             
             <div class="example-code-more" v-if="showMore" @click="showCode = !showCode" v-show="false">
@@ -44,18 +44,18 @@
 
                 <Icon type="ios-arrow-up" v-show="showCode&&!show"></Icon>
                  
-                <!-- <i-button type="text" v-show="hideCode && !showCode">
+                <!-- <Button type="text" v-show="hideCode && !showCode">
                     <transition name="slide-fade">
                         <span v-if="show">显示代码</span>
                     </transition>
-                </i-button>
-                <i-button type="text" v-show=" showCode">
+                </Button>
+                <Button type="text" v-show=" showCode">
                     <transition name="slide-fade">
                         <span v-if="show">隐藏代码</span>
                     </transition>
-                </i-button> -->
+                </Button> -->
             </div>
-        </i-col>
+        </Col>
     </Row>
 </template>
 <script>

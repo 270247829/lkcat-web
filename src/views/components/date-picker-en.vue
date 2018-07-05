@@ -5,7 +5,7 @@
 </style>
 <template>
     <div>
-        <i-article>
+        <lk-article>
             <article>
                 <h1>DatePicker</h1>
                 <Anchor title="Brief Introduction" h2></Anchor>
@@ -27,7 +27,7 @@
                         <p>Set <code>placement</code> prop to change the display direction of the DatePicker. Same as Poptip and Tooltip, <code>placement</code> supports 12 directions. Details on API doc below.</p>
                         <blockquote>Support from right to left choice after <code>2.10.0</code>.</blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
                 </Demo>
                 <Demo title="Shortcut">
                     <div slot="demo">
@@ -45,7 +45,7 @@
                         <p>Within it, <strong>value</strong> is a function that must return a date. If you use daterange, an array need to be returned.</p>
                         <p>value accept any correct date format, such as: 2016-12-24, 12/24/16.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.shortcuts }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.shortcuts }}</lk-code>
                 </Demo>
 
                 <Demo title="Split Panels">
@@ -56,7 +56,7 @@
                         <p>Open property <code>split-panels</code>, the left and right panels are not interconnected during the switching year and month.</p>
                         <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.split_panels }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.split_panels }}</lk-code>
                 </Demo>
 
                 <Demo title="Multiple">
@@ -67,7 +67,7 @@
                         <p>Open property <code>multiple</code>, you can select multiple.</p>
                         <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.multiple }}</lk-code>
                 </Demo>
 
                 <Demo title="Show Week Numbers">
@@ -85,7 +85,7 @@
                         <p>Open property <code>show-week-numbers</code>, can display the week numbers.</p>
                         <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.weeks }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.weeks }}</lk-code>
                 </Demo>
 
                 <Demo title="Start Date">
@@ -103,7 +103,7 @@
                         <p>Set property <code>start-date</code> to a custom date, you can change the default display date panel to the specified date.</p>
                         <blockquote>Support after <code>2.10.0</code></blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.start_date }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.start_date }}</lk-code>
                 </Demo>
 
                 <Demo title="Date Format">
@@ -121,7 +121,7 @@
                         <p>Set <code>format</code> prop to change the date format. Details in <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>.</p>
                         <p>Attention, format only changes the date format that displays not value.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.format }}</lk-code>
                 </Demo>
                 <Demo title="Date Time Picker">
                     <div slot="demo">
@@ -137,7 +137,7 @@
                         <p>Set <code>type</code> prop to <code>datetime</code> or <code>datetimerange</code> to pick time.</p>
                         <p>Set format and ignore second to reserve only hour and minute.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.datetime }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.datetime }}</lk-code>
                 </Demo>
                 <Demo title="Year and Month">
                     <div slot="demo">
@@ -153,7 +153,7 @@
                     <div slot="desc">
                         <p>Set <code>type</code> to <code>year</code> or <code>month</code> can select year and month.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
                 </Demo>
                 <Demo title="Disabled">
                     <div slot="demo">
@@ -170,7 +170,7 @@
                         <p>Set <code>disabledDate</code> in <code>options</code> object prop to set a date that can't be picked.</p>
                         <p>disabledDate is a function which accepts an argument: current date. A Boolean value needs to be returned to disable the date or not.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
                 </Demo>
                 <Demo title="Operation with Confirmation">
                     <div slot="demo">
@@ -187,7 +187,7 @@
                         <p> DatePicker won't close actively after picking if you set <code>confirm</code> prop. It requires a confirmation.</p>
                         <p>Ok button won't affect date picking operation.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
                 </Demo>
                 <Demo title="Manually Controlled Component">
                     <div slot="demo">
@@ -209,7 +209,7 @@
                     <div slot="desc">
                         <p>In some customized scenes, you can use slot with <code>open</code> prop and events to control the display status of the component. Details on API doc below.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
                 </Demo>
                 <Demo title="Size">
                     <div slot="demo">
@@ -228,7 +228,7 @@
                     <div slot="desc">
                         <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> to adjust the size of DatePicker to large or small. Default is medium.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
                 </Demo>
 
                 
@@ -470,13 +470,13 @@
                     </table>
                 </div>
             </article>
-        </i-article>
+        </lk-article>
         <Date-type v-model="showDateModal"></Date-type>
     </div>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/date-picker';
     import Anchor from '../../components/anchor.vue';
@@ -484,8 +484,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             DateType

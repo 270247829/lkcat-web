@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Alert 警告提示</h1>
             <p>警告提示，展现需要关注的信息。</p>
@@ -14,7 +14,7 @@
                 <div slot="desc">
                     <p>基本使用方法，有四种样式可以选择<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="含描述信息">
                 <div slot="demo">
@@ -42,7 +42,7 @@
                 <div slot="desc">
                     <p>自定义<code>&lt;slot name="desc"&gt;</code>描述内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.desc }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.desc }}</lk-code>
             </Demo>
             <Demo title="图标">
                 <div slot="demo">
@@ -79,7 +79,7 @@
                 <div slot="desc">
                     <p>根据 type 属性自动添加不同图标，或者自定义图标 slot 。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="可关闭">
                 <div slot="demo">
@@ -96,7 +96,7 @@
                 <div slot="desc">
                     <p>显示关闭按钮，点击可关闭提示，也可以自定义关闭 slot 。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.close }}</lk-code>
             </Demo>
             <Demo title="顶部公告">
                 <div slot="demo">
@@ -106,7 +106,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>banner</code> 可以应用顶部公告的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.banner }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.banner }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -188,19 +188,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/alert';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -15,7 +15,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tooltip</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -33,7 +33,7 @@
                     <p>The simplest usage.</p>
                     <p>Tip: Tooltip use <code>white-space: nowrap;</code> in text that is not automatically wrap. You can add style <code>white-space: normal;</code> in slot if you want to show a lot of content and automatically wrap.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Placement">
                 <div slot="demo">
@@ -87,7 +87,7 @@
                 <div slot="desc">
                     <p>The ToolTip has 12 placements choice. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.placement }}</lk-code>
             </Demo>
             <Demo title="Custom">
                 <div slot="demo">
@@ -102,7 +102,7 @@
                 <div slot="desc">
                     <p>Display multiple lines of text or more complex styles by customizing the slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.content }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.content }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -113,7 +113,7 @@
                 <div slot="desc">
                     <p>You can disable text prompts by setting the property <code>disabled</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Delay">
                 <div slot="demo">
@@ -124,7 +124,7 @@
                 <div slot="desc">
                     <p>By setting the property <code>delay</code>, you can delay the text prompt, in milliseconds.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.delay }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.delay }}</lk-code>
             </Demo>
 
             
@@ -183,7 +183,7 @@
                             <td>Customize popper.js configuration items. For details, see <a href="https://popper.js.org/popper-documentation.html" target="_blank">popper.js document</a>.</td>
                             <td>Object</td>
                             <td>
-                                <i-code lang="js">{{ code.options }}</i-code>
+                                <lk-code lang="js">{{ code.options }}</lk-code>
                             </td>
                         </tr>
                     </tbody>
@@ -231,19 +231,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tooltip';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

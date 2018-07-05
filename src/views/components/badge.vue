@@ -13,7 +13,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Badge 徽标数</h1>
             <p>图标右上角的圆形徽标数字。</p>
@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>最简单的使用方法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="小红点">
                 <div slot="demo">
@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p>强迫症患者慎用！</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.dot }}</lk-code>
             </Demo>
             <Demo title="封顶数字">
                 <div slot="demo">
@@ -72,7 +72,7 @@
                 <div slot="desc">
                     <p>通过设置<code>overflow-count</code>属性设置一个封顶值，当超过时，会显示<code>${overflowCount}+</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.overflow }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.overflow }}</lk-code>
             </Demo>
             <Demo title="独立使用及自定义样式">
                 <div slot="demo">
@@ -82,7 +82,7 @@
                 <div slot="desc">
                     <p>可以没有 slot 独立展示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alone }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.alone }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -126,19 +126,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/badge';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

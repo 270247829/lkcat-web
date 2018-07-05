@@ -8,7 +8,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>BackTop 返回顶部</h1>
             <p>返回页面顶部的操作按钮。</p>
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>默认位置距离页面右部和底部 30px，滚动至距顶端 400px 时显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="自定义样式">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>自定义了位置在页面底部 200px,滚动至距顶端 200px 时显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
 
             
@@ -95,19 +95,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/back-top';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

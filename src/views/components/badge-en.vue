@@ -13,7 +13,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Badge</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>The simplest usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Little Red Dot">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>Never use it if you have Qiang Po Zheng (Those who feel uncomfortable with any discordant things). </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.dot }}</lk-code>
             </Demo>
             <Demo title="Overflow Count">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>You can set a maximal count by setting <code>overflow-count</code>.  When message count exceed the number, <code>${overflowCount}+</code> will be shown.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.overflow }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.overflow }}</lk-code>
             </Demo>
             <Demo title="Standalone Usage and Customized Style">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>Display without slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alone }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.alone }}</lk-code>
             </Demo>
 
             
@@ -129,19 +129,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/badge';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

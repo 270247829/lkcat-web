@@ -33,7 +33,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Divider 分割线</h1>
             <p>区隔内容的分割线。</p>
@@ -51,7 +51,7 @@
                 <div slot="desc">
                     <p>使用 <code>type="vertical"</code> 设置为行内的垂直分割线。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="水平分割线">
                 <div slot="demo">
@@ -68,7 +68,7 @@
                 <div slot="desc">
                     <p>默认为水平分割线，可在中间加入文字。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="标题位置">
                 <div slot="demo">
@@ -82,7 +82,7 @@
                 <div slot="desc">
                     <p>修改分割线标题的位置。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.load }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.load }}</lk-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -119,19 +119,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/divider';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

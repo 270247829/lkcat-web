@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Progress 进度条</h1>
             <p>展示操作的当前进度。</p>
@@ -15,7 +15,7 @@
                 <div slot="desc">
                     <p>处在不同状态下的进度条，当 percent 为 100 时，自动将状态置为 success。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="垂直方向">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>vertical</code> 将以垂直方向显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
             </Demo>
             <Demo title="配合外部组件使用">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>通过数据的联动和逻辑控制，实现动态效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.percent }}</lk-code>
             </Demo>
             <Demo title="自定义更多样式">
                 <div slot="demo">
@@ -56,7 +56,7 @@
                 <div slot="desc">
                     <p>通过自定义<code>slot</code>和属性<code>stroke-width</code>改变进度条效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
 
 
@@ -122,19 +122,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/progress';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

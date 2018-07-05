@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Notice 通知提醒</h1>
             <p>全局展示通知提醒信息。</p>
@@ -13,7 +13,7 @@
                     <p>基本用法，默认在 4.5秒后关闭。如果 <code>desc</code> 参数为空或不填，则自动应用仅标题模式下的样式。</p>
                     <p>建议标题言简意赅，例如"删除成功"，更详细的内容可以放在描述信息里。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.open }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.open }}</lk-code>
             </Demo>
             <Demo title="提醒类型">
                 <div slot="demo">
@@ -31,7 +31,7 @@
                 <div slot="desc">
                     <p>带有状态图标的提醒。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="自定义时长">
                 <div slot="demo">
@@ -40,7 +40,7 @@
                 <div slot="desc">
                     <p>自定义时长，为 0 则不自动关闭。也可以在<code>Notice.config()</code>中全局配置，详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.time }}</lk-code>
             </Demo>
             <Demo title="Render 函数">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>你可以自定义 Render 函数来替代 desc</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
 
@@ -136,7 +136,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <lk-code bg>{{ code.config }}</lk-code>
                 <br>
                 <table>
                     <thead>
@@ -164,19 +164,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/notice';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

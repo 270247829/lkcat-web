@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Dropdown 下拉菜单</h1>
             <p>向下弹出的列表。</p>
@@ -38,7 +38,7 @@
                     <p>触发对象可以是链接、按钮等各种元素。</p>
                     <p>本例还展示了禁用项和分隔线。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="触发方式">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                     <p>通过设置属性 <code>trigger</code> 可以更改触发方式，可选项为 click 、 hover(默认) 或 custom(自定义)。</p>
                     <p>触发方式设置为 custom 自定义时，需手动设置 visible 属性来控制下拉框的显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.trigger }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.trigger }}</lk-code>
             </Demo>
             <Demo title="对齐方向">
                 <div slot="demo">
@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>placement</code> 可以更改下拉菜单出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.placement }}</lk-code>
             </Demo>
             <Demo title="嵌套用法">
                 <div slot="demo">
@@ -162,7 +162,7 @@
                 <div slot="desc">
                     <p>下拉菜单可以进行嵌套实现级联的效果，嵌套时注意设置子集的展开方向。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.nest }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -289,19 +289,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/dropdown';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

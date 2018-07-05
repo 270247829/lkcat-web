@@ -10,7 +10,7 @@
 </style>
 
 <template>
-    <i-article>
+    <lk-article>
         <article class="pic-plus">
             <h1>LK Cat of Vue</h1>
             <p>这里是 LK Cat 的 Vue 实现，结合了 Ant Design 和 iView ，开发和服务于企业级后台产品。</p>
@@ -33,11 +33,11 @@
                 <li>现代浏览器和 IE11 及以上</li>
             </ul>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Code from '../../code/guide';
     import Anchor from '../../components/anchor.vue';
     import antd from '../../images/antd.svg';
@@ -47,8 +47,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Anchor
         },
         data () {

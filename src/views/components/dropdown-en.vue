@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Dropdown</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -39,7 +39,7 @@
                     <p>Trig object can be link, button or other elements.</p>
                     <p>The demo also uses disabled item and split line.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Trig Mode">
                 <div slot="demo">
@@ -86,7 +86,7 @@
                     <p>Change the trigger by setting <code>trigger</code> prop. Optional: click, hover(default) or custom.</p>
                     <p>When trigger is set to custom, you need to set visible property manually to control the display of Dropdown.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.trigger }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.trigger }}</lk-code>
             </Demo>
             <Demo title="Align Orientation">
                 <div slot="demo">
@@ -133,7 +133,7 @@
                 <div slot="desc">
                     <p>Change the direction that Dropdown displays by setting <code>placement</code> prop. Same as Tooltip Conf, Poptip supports 12 directions. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.placement }}</lk-code>
             </Demo>
             <Demo title="Nested Usage">
                 <div slot="demo">
@@ -163,7 +163,7 @@
                 <div slot="desc">
                     <p>Dropdown can realise Cascade-like style by nesting. Remind to set subset's expanding direction when nesting.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.nest }}</lk-code>
             </Demo>
 
             
@@ -292,19 +292,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/dropdown';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

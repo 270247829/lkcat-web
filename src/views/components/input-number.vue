@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>InputNumber 数字输入框</h1>
             <p>使用鼠标或键盘输入一定范围的标准数值。</p>   
@@ -11,7 +11,7 @@
                 <div slot="desc">
                     <p>可以通过输入、鼠标点击或键盘的上下键来改变数值大小。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="小数">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>通过设置<code>step</code>属性控制每次改变的精度。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.step }}</lk-code>
             </Demo>
             <Demo title="格式化展示">
                 <div slot="demo">
@@ -38,7 +38,7 @@
                 <div slot="desc">
                     <p>通过 <code>formatter</code> 格式化数字，以展示具有具体含义的数据，往往需要配合 <code>parser</code> 一起使用。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.formatter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.formatter }}</lk-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>通过设置<code>size</code>属性为<code>large</code>和<code>small</code>将输入框设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>通过设置<code>disabled</code>属性禁用输入框，点击按钮切换状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="只读">
                 <div slot="demo">
@@ -68,7 +68,7 @@
                 <div slot="desc">
                     <p>通过设置<code>readonly</code>属性开启只读。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.readonly }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.readonly }}</lk-code>
             </Demo>
             <Demo title="不可编辑">
                 <div slot="demo">
@@ -77,7 +77,7 @@
                 <div slot="desc">
                     <p>通过设置<code>editable</code>属性控制是否能编辑。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.editable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.editable }}</lk-code>
             </Demo>
 
 
@@ -197,19 +197,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/input-number';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

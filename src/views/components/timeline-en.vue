@@ -9,7 +9,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Timeline</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>Basic timeline.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Circle Colors">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                 <div slot="desc">
                     <p>Use various colors to indicate different situations. You can use <code>green</code>, <code>red</code>, <code>blue</code> or custom defined colors. Default color is blue.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.color }}</lk-code>
             </Demo>
             <Demo title="Last Item">
                 <div slot="demo">
@@ -71,7 +71,7 @@
                 <div slot="desc">
                     <p>Passing a <code>pending</code> property marks the last item as a ghost node, indicating incompleteness.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.pending }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.pending }}</lk-code>
             </Demo>
             <Demo title="Custom Timeline Items">
                 <div slot="demo">
@@ -88,7 +88,7 @@
                 <div slot="desc">
                     <p>Accepts a slot to customize the timeline item's content, such as the icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.dot }}</lk-code>
             </Demo>
 
             
@@ -154,19 +154,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/timeline';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

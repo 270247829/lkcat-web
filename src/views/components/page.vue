@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Page 分页</h1>
             <p>采用分页的形式分隔长列表，每次只加载一个页面。</p>
@@ -11,7 +11,7 @@
                 <div slot="desc">
                     <p>基本的分页，页数过多时会自动折叠。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="每页数量">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>可以切换每页显示的数量。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.sizer }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.sizer }}</lk-code>
             </Demo>
             <Demo title="电梯">
                 <div slot="demo">
@@ -29,7 +29,7 @@
                 <div slot="desc">
                     <p>快速跳转到某一页。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.elevator }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.elevator }}</lk-code>
             </Demo>
             <Demo title="总数">
                 <div slot="demo">
@@ -38,7 +38,7 @@
                 <div slot="desc">
                     <p>显示总共多少条数据，接受 slot 来自定义内容，默认显示<code v-pre>共{{ total }}条</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.total }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.total }}</lk-code>
             </Demo>
             <Demo title="迷你型">
                 <div slot="demo">
@@ -51,7 +51,7 @@
                 <div slot="desc">
                     <p>设置<code>size</code>为<code>small</code>使用迷你型，迷你型拥有普通的所有功能。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.mini }}</lk-code>
             </Demo>
             <Demo title="简洁">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>设置<code>simple</code>属性即可使用简洁版的分页，通过输入页码回车切换，或使用鼠标点击切换页码，或使用键盘的上下键来切换。简洁分页不能使用总数、电梯和切换数量。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.simple }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -201,19 +201,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/page';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

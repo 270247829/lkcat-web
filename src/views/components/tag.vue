@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Tag 标签</h1>
             <p>进行标记和分类的小标签。</p>
@@ -14,7 +14,7 @@
                     <p>简单的展示，添加属性<code>closable</code>可以关闭标签。</p>
                     <p>点击关闭标签时，会触发 on-close 事件，需自己实现关闭逻辑。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="样式类型">
                 <div slot="demo">
@@ -26,7 +26,7 @@
                 <div slot="desc">
                     <p>通过设置 <code>type</code> 属性为 <code>border</code> 或 <code>dot</code> 来选择不同的样式类型。建议有关闭的某些场景下使用 border，图例的场景下使用 dot。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="各种颜色">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>四种预设颜色，可自定义颜色</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.color }}</lk-code>
             </Demo>
             <Demo title="可选择">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>checkable</code>，可以对标签进行选择，属性 <code>checked</code> 控制当前选择状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.checkable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.checkable }}</lk-code>
             </Demo>
             <Demo title="动态添加和删除">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>用数组生成一组标签，可以动态添加和删除。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.add }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.add }}</lk-code>
             </Demo>
 
 
@@ -149,19 +149,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/tag';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

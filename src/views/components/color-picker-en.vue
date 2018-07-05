@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>ColorPicker</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Basic usage. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Alpha">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Add the property <code>alpha</code> to select a color with alpha channel.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alpha }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.alpha }}</lk-code>
             </Demo>
             <Demo title="Hue">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                 <div slot="desc">
                     <p>Set property <code>hue</code> to false, can hide hue slider.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.hue }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.hue }}</lk-code>
             </Demo>
             <Demo title="Color Presets">
                 <div slot="demo">
@@ -55,7 +55,7 @@
                 <div slot="desc">
                     <p>Add the property <code>recommend</code> to display the recommended color presets, or set <code>colors</code> to customize the default colors.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.colors }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.colors }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -74,7 +74,7 @@
                 <div slot="desc">
                     <p>There are three size of ColorPicker: large, medium(default), small.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
 
             
@@ -160,19 +160,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/color-picker';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

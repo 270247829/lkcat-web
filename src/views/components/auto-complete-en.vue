@@ -27,7 +27,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>AutoComplete</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>Basic Usage, set datasource of AutoComplete with <code>data</code> property.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Customized">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>You could pass <code>Option</code> as slot of <code>AutoComplete</code>, instead of using data. This allows you to customize the display</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.slot }}</lk-code>
             </Demo>
             <Demo title="Non-case-sensitive AutoComplete">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>A non-case-sensitive AutoComplete and how to use filter method.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.filter }}</lk-code>
             </Demo>
             <Demo title="Lookup-Patterns">
                 <div slot="demo">
@@ -100,7 +100,7 @@
                 <div slot="desc">
                     <p>Fully customizable Option to display a complex layout.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.search }}</lk-code>
             </Demo>
 
             
@@ -215,19 +215,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/auto-complete';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

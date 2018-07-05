@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Steps 步骤条</h1>
             <p>引导用户按照流程完成任务的导航条。</p>
@@ -16,7 +16,7 @@
                 <div slot="desc">
                     <p>基本用法，组件会根据<code>current</code>自动判断各步骤状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="迷你版" vertical>
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>设置属性<code>size</code>为<code>small</code>启用迷你版。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="带图标的步骤条" vertical>
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>通过设置<code>Step</code>的<code>icon</code>属性可以自定义图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.icon }}</lk-code>
             </Demo>
             <Demo title="切换步骤" vertical>
                 <div slot="demo">
@@ -61,7 +61,7 @@
                 <div slot="desc">
                     <p>点击下一步按钮可以切换当前进度状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.change }}</lk-code>
             </Demo>
             <Demo title="垂直方向">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>设置属性<code>direction</code>为<code>vertical</code>在垂直方向展示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.direction }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.direction }}</lk-code>
             </Demo>
             <Demo title="步骤运行错误" vertical>
                 <div slot="demo">
@@ -89,7 +89,7 @@
                 <div slot="desc">
                     <p>设置<code>Steps</code>的属性<code>status</code>为<code>error</code>指定当前步骤状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.error }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.error }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -170,19 +170,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/steps';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

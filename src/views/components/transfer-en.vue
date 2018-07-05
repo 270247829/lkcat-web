@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Transfer</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -20,7 +20,7 @@
                     <code>@on-change</code>: Emitted when clicking transfer button. Transfer won't transfer data itself. You should handle it by yourself.
                 </li>
                 <p>Demo:</p>
-                <i-code bg>{{ code.demo }}</i-code>
+                <lk-code bg>{{ code.demo }}</lk-code>
             </ul>
             <Anchor title="Examples" h2></Anchor>
             <Demo title="Basic Usage">
@@ -34,7 +34,7 @@
                 <div slot="desc">
                     <p>Basic usage. It shows the usage of <code>data</code>, <code>target-keys</code>, render function for each row - <code>render-format</code> and callback function for <code>on-change</code> event.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Search">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Set <code>filterable</code> prop to enable filter. You can customize filter function.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.search }}</lk-code>
             </Demo>
             <Demo title="Advanced Usage" vertical>
                 <div slot="demo">
@@ -67,7 +67,7 @@
                 <div slot="desc">
                     <p>Advanced usage of Transfer. You can customize the width and the height of the column, change transfer button's text, or add custom operations at the bottom. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.high }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.high }}</lk-code>
             </Demo>
             <Demo title="Custom Row Data Rendering">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>You can render complex data by setting <code>render-format</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             
@@ -205,19 +205,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/transfer';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

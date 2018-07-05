@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Button 按钮</h1>
             <p>按钮用于开始一个即时操作。</p>
@@ -43,7 +43,7 @@
                             <p><span class="info">按钮尺寸</span>：通过设置<code>size</code>为<code>large</code>和<code>small</code>将按钮设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                             <p><span class="info">按钮状态</span>：通过添加<code>disabled</code>属性可将按钮设置为不可用状态。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
                     </Demo>
                     <Demo title="加载中状态">
                         <div slot="demo">
@@ -60,7 +60,7 @@
                         <div slot="desc">
                             <p>通过添加<code>loading</code>属性可以让按钮处于加载中状态，后两个按钮在点击时进入加载状态。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.loading }}</lk-code>
                     </Demo>
                     <Demo title="按钮组合">
                         <div slot="demo">
@@ -161,7 +161,7 @@
                             <p>通过设置<code>ButtonGroup</code>的属性<code>size</code>为<code>large</code>和<code>small</code>，可将按钮组尺寸设置为大和小，不设置<code>size</code>，则为默认（中）尺寸。</p>
                             <p>通过设置<code>ButtonGroup</code>的属性<code>shape</code>为<code>circle</code>，可将按钮组形状设置为圆角。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.group }}</lk-code>
                     </Demo>
                     <Demo title="按钮组纵向排列">
                         <div slot="demo">
@@ -175,7 +175,7 @@
                         <div slot="desc">
                             <p>通过设置<code>ButtonGroup</code>的属性<code>vertical</code>，可以使按钮组纵向排列。</p>
                         </div>
-                        <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                        <lk-code lang="html" slot="code">{{ code.vertical }}</lk-code>
                     </Demo>
                 <!-- </Col> -->
             <!-- </Row> -->
@@ -275,19 +275,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/button';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

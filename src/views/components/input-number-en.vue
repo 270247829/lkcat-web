@@ -1,5 +1,5 @@
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>InputNumber</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Change the number by inputing, clicking or tapping up / down button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Decimal">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Set <code>step</code> prop to control the step length of each change.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.step }}</lk-code>
             </Demo>
             <Demo title="Formatter">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                 <div slot="desc">
                     <p>Display value within it's situation with <code>formatter</code>, and we usually use <code>parser</code> at the same time.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.formatter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.formatter }}</lk-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>Change the size of the input block to large or small by setting <code>size</code> prop to <code>large</code> or <code>small</code>. Default is medium size.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.size }}</lk-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>Set <code>disabled</code> prop to disable InputNumber. Click the button to change disable status.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.disabled }}</lk-code>
             </Demo>
             <Demo title="Readonly">
                 <div slot="demo">
@@ -69,7 +69,7 @@
                 <div slot="desc">
                     <p>Set <code>readonly</code> prop, it will be ready-only.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.readonly }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.readonly }}</lk-code>
             </Demo>
             <Demo title="Editable">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                 <div slot="desc">
                     <p>Set <code>editable</code>prop to control whether it can be entered.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.editable }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.editable }}</lk-code>
             </Demo>
 
             
@@ -199,19 +199,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/input-number';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

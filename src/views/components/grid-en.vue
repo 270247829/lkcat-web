@@ -39,7 +39,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Grid</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -100,7 +100,7 @@
                     <p>Horizontal arrangement of the layout.</p>
                     <p><code>col</code> must be placed inside <code>row</code>. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
 
             <Demo title="Grid Gutter">
@@ -123,7 +123,7 @@
                 <div slot="desc">
                     <p>Adding <code>gutter</code> property to a <code>row</code> will add spacing to subordinate <code>col</code>s. A gutter of <code>(16+8n)px</code> is recommended for grid spacing.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.gutter }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.gutter }}</lk-code>
             </Demo>
 
             <Demo title="Flex Order">
@@ -138,7 +138,7 @@
                 <div slot="desc">
                     <p>Use Flex's <code>order</code> to change the layout order.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.order }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.order }}</lk-code>
             </Demo>
 
             <Demo title="Grid Sort">
@@ -151,7 +151,7 @@
                 <div slot="desc">
                     <p>Using <code>push</code> and <code>pull</code> will change the column's order.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.push }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.push }}</lk-code>
             </Demo>
 
             <Demo title="Column Offset">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>Using the <code>offset</code> property will set the column's left or right offset.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.offset }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.offset }}</lk-code>
             </Demo>
 
             <Demo title="Flex Layout">
@@ -217,7 +217,7 @@
                 <div slot="desc">
                     <p>Passing <code>justify</code> property to <code>row</code> will set the child element's arrangement. Effective when using <code>flex</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.justify }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.justify }}</lk-code>
             </Demo>
 
             <Demo title="Flex Alignment">
@@ -247,7 +247,7 @@
                 <div slot="desc">
                     <p>Passing <code>align</code> to <code>row</code> will align child elements vertically. Effective when using <code>flex</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.align }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.align }}</lk-code>
             </Demo>
 
             <Demo title="Responsive Layout">
@@ -262,7 +262,7 @@
                     <p>Refer to Bootstrap's <a href="http://getbootstrap.com/css/#grid-media-queries" target="_blank">responsive design</a> using 4 preset definitions: <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code>. See also API section</p>
                     <p>Adjust your browser's dimensions to see the effect.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.reponsive }}</lk-code>
             </Demo>
 
             <Demo title="Other Responsive Properties">
@@ -277,7 +277,7 @@
                     <p><code>span</code> <code>pull</code> <code>push</code> <code>offset</code> <code>order</code> properties can be used with <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code>.</p>
                     <p><code>:xs="6"</code> would equal to <code>:xs="{ span: 6 }"</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive2 }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.reponsive2 }}</lk-code>
             </Demo>
 
             
@@ -402,19 +402,19 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/grid';
     import Anchor from '../../components/anchor.vue';
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },

@@ -10,7 +10,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Modal</h1>
             <Anchor title="Brief Introduction" h2></Anchor>
@@ -36,7 +36,7 @@
                     <p>Use v-model to enable two-way binding.</p>
                     <p>Tap <code>ESC</code> button can close it too.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="Custom Style">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                     <p>Modal component provieds a set of custom style API and Slots which are very flexible. You can control any part of the Modal like header, footer and close button.</p>
                     <p>You can realise complex functions by interact with other components. It satisfies most business scenarios.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.custom }}</lk-code>
             </Demo>
             <Demo title="Asynchronous Close">
                 <div slot="demo">
@@ -99,7 +99,7 @@
                 <div slot="desc">
                     <p>After Setting <code>loading</code> prop to <code>Modal</code>, Modal will not disappear automatically and will show loading status. It needs to be closed manually. This is often used on form submission.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.async }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.async }}</lk-code>
             </Demo>
             <Demo title="Disable Close">
                 <div slot="demo">
@@ -125,7 +125,7 @@
                 <div slot="desc">
                     <p>You can disable closing or mask-closing.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.close }}</lk-code>
             </Demo>
             <Demo title="Custom Position">
                 <div slot="demo">
@@ -151,7 +151,7 @@
                 <div slot="desc">
                     <p>You can customize Modal's style and its Wrap's class name to realise many custom styles like vertical center.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.position }}</lk-code>
             </Demo>
             <Anchor title="Instantiation Usage" h3></Anchor>
             <p>Besides normal component usages mentioned above, LKCat has encapsulated some instance methods elaborately to create one-off light Modal.</p>
@@ -166,7 +166,7 @@
                 <div slot="desc">
                     <p>Four basic Modals which only provides a confirm button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.baseInstance }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.baseInstance }}</lk-code>
             </Demo>
             <Demo title="Confirm Modal">
                 <div slot="demo">
@@ -177,7 +177,7 @@
                 <div slot="desc">
                     <p>Popup the confirm Modal rapidly. You can customize the text on the button or close the Modal asynchronously.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.confirm }}</lk-code>
             </Demo>
             <Demo title="Custom Content">
                 <div slot="demo">
@@ -192,7 +192,7 @@
                     <p>You can use Vue's Render function to customize content by using <code>render</code> field.</p>
                     <p>No more type limitation after using render, and content will be invalid.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.render }}</lk-code>
             </Demo>
 
             
@@ -450,11 +450,11 @@
                 </ul>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/modal';
     import Anchor from '../../components/anchor.vue';
@@ -462,8 +462,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor,
             studyRender

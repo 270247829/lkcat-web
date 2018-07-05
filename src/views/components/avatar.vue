@@ -8,7 +8,7 @@
     }
 </style>
 <template>
-    <i-article>
+    <lk-article>
         <article>
             <h1>Avatar 头像</h1>
             <p>用来代表用户或事物，支持图片、图标或字符展示。</p>
@@ -29,7 +29,7 @@
                 <div slot="desc">
                     <p>头像有三种尺寸，两种形状可选。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.base }}</lk-code>
             </Demo>
             <Demo title="类型">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.type }}</lk-code>
             </Demo>
             <Demo title="带徽标的头像">
                 <div slot="demo">
@@ -61,7 +61,7 @@
                 <div slot="desc">
                     <p>通常用于消息提示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.badge }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.badge }}</lk-code>
             </Demo>
             <Demo title="自动调整字符大小">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>对于字符型的头像，当字符串较长时，字体大小可以根据头像宽度自动调整。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.string }}</i-code>
+                <lk-code lang="html" slot="code">{{ code.string }}</lk-code>
             </Demo>
 
 
@@ -118,11 +118,11 @@
                 </table>
             </div>
         </article>
-    </i-article>
+    </lk-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
+    import lkArticle from '../../components/article.vue';
+    import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
     import Code from '../../code/avatar';
     import Anchor from '../../components/anchor.vue';
@@ -132,8 +132,8 @@
 
     export default {
         components: {
-            iArticle,
-            iCode,
+            lkArticle,
+            lkCode,
             Demo,
             Anchor
         },
