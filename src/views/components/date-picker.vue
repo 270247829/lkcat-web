@@ -374,7 +374,10 @@
                         </tr>
                         <tr>
                             <td>time-picker-options</td>
-                            <td>可以在 type 为 datetime 和 datetimerange 下，配置 TimePicker 的属性，比如时间间隔 steps：<code>:time-picker-options="{steps: [1, 10, 10]}"</code></td>
+                            <td>可以在 type 为 datetime 和 datetimerange 下，配置 TimePicker 的属性，比如
+                                时间间隔 steps：<code>:time-picker-options="{steps: [1, 10, 10]}"</code>
+                                默认时间 value：<code>:time-picker-options="{value: [23, 59, 59]}"</code>
+                            </td>
                             <td>Object</td>
                             <td>{}</td>
                         </tr>
