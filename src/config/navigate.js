@@ -13,6 +13,11 @@ const list = {
             path: '/guide/lkcat-pro'
         },
         {
+            title: '更新日志',
+            titleEn: 'Update Log',
+            path: '/guide/update-log'
+        },
+        {
             title: '参与贡献',
             titleEn: 'Contributing Guide',
             path: '/guide/join-us'

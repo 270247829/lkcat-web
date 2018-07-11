@@ -44,7 +44,10 @@
     <lk-article>
         <article>
             <h1>Icon 图标</h1>
-            <p>语义化的矢量图形，图标使用开源项目<a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a></p>
+            <p>语义化的矢量图形，图标使用开源项目
+                <a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a>，
+                也可以选择阿里巴巴矢量库的字体，设置<code>custom</code>属性为<code>iconfont</code>
+            </p>
             <Anchor title="如何使用" h2></Anchor>
             <p>使用<code>&lt;Icon /></code>组件，指定图标对应的<code>type</code>属性，示例代码如下：</p>
             <lk-code lang="html" bg>{{ code.demo }}</lk-code>
@@ -61,6 +64,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>custom</td>
+                            <td>字体选择（<code>iconfont</code>为阿里巴巴矢量字体）</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
                         <tr>
                             <td>type</td>
                             <td>图标的名称</td>

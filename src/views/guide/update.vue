@@ -25,12 +25,12 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
-                    <Anchor title="0.0.1" h2></Anchor>
+                    <Anchor title="0.2.6" h2></Anchor>
                     <p>
-                        <code>2018-02-01</code>
+                        <code>2018-07-11</code>
                     </p>
                     <ul>
-                        <li>初始化</li>
+                        <li><code>Icon</code> 组件新增 <code>custom</code> 属性，可选择阿里巴巴字体库。</li>
                     </ul>
                 </Timeline-item>
             </Timeline>

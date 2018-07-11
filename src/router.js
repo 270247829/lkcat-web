@@ -147,20 +147,6 @@ const routers = [
         component: (resolve) => require(['./views/guide/start-en.vue'], resolve)
     },
     {
-        path: '/docs/guide/i18n',
-        meta: {
-            title: '国际化'
-        },
-        component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
-    },
-    {
-        path: '/docs/guide/i18n-en',
-        meta: {
-            title: 'Internationalization'
-        },
-        component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
-    },
-    {
         path: '/docs/guide/theme',
         meta: {
             title: '定制主题'
@@ -182,25 +168,11 @@ const routers = [
         component: (resolve) => require(['./views/guide/lkcat-loader.vue'], resolve)
     },
     {
-        path: '/docs/guide/lkcat-loader-en',
-        meta: {
-            title: 'LKCat Loader'
-        },
-        component: (resolve) => require(['./views/guide/lkcat-loader-en.vue'], resolve)
-    },
-    {
-        path: '/docs/guide/update',
+        path: '/guide/update-log',
         meta: {
             title: '更新日志'
         },
         component: (resolve) => require(['./views/guide/update.vue'], resolve)
-    },
-    {
-        path: '/docs/guide/update-en',
-        meta: {
-            title: 'Changelog'
-        },
-        component: (resolve) => require(['./views/guide/update-en.vue'], resolve)
     },
     {
         path: '/components/grid',
