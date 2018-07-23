@@ -343,6 +343,12 @@ const list = {
                     icon: 'alert'
                 },
                 {
+                    title: 'Drawer 抽屉',
+                    path: '/components/drawer',
+                    img: 'drawer.png',
+                    icon: 'ios-chatbubble-outline'
+                },
+                {
                     title: 'Modal 对话框',
                     path: '/components/modal',
                     img: 'modal.png',

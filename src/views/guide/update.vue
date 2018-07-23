@@ -25,6 +25,24 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="0.2.8" h2></Anchor>
+                    <p>
+                        <code>2018-07-23</code>
+                    </p>
+                    <ul>
+                        <li>新增 抽屉 <code>Drawer</code> 组件 </li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
+                    <Anchor title="0.2.7" h2></Anchor>
+                    <p>
+                        <code>2018-07-15</code>
+                    </p>
+                    <ul>
+                        <li><code>Icon</code> 组件 字体未打包的BUG修复</li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="0.2.6" h2></Anchor>
                     <p>
                         <code>2018-07-11</code>
