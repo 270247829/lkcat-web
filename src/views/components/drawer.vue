@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>显示页脚操作按钮</p>
                 </div>
-                <lk-code lang="html" slot="code">{{ code.position }}</lk-code>
+                <lk-code lang="html" slot="code">{{ code.button }}</lk-code>
             </Demo>
 
             <div class="api">
@@ -219,7 +219,7 @@
     import lkArticle from '../../components/article.vue';
     import lkCode from 'lkCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/modal';
+    import Code from '../../code/drawer';
     import Anchor from '../../components/anchor.vue';
 
     export default {

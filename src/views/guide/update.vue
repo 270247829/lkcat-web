@@ -25,12 +25,21 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="0.2.9" h2></Anchor>
+                    <p>
+                        <code>2018-08-02</code>
+                    </p>
+                    <ul>
+                        <li>新增 相对时间 <a href="/#/components/time" target="_blank" ><code>Time</code></a> 组件 </li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="0.2.8" h2></Anchor>
                     <p>
                         <code>2018-07-23</code>
                     </p>
                     <ul>
-                        <li>新增 抽屉 <code>Drawer</code> 组件 </li>
+                        <li>新增 抽屉 <a href="/#/components/drawer" target="_blank" ><code>Drawer</code></a> 组件 </li>
                     </ul>
                 </Timeline-item>
                 <Timeline-item>

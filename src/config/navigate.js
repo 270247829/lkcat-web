@@ -319,6 +319,12 @@ const list = {
                     icon: 'ios-pricetags-outline'
                 },
                 {
+                    title: 'Time 相对时间',
+                    path: '/components/time',
+                    img: 'time.png',
+                    icon: 'android-more-vertical'
+                },
+                {
                     title: 'Timeline 时间轴',
                     path: '/components/timeline',
                     img: 'timeline.png',

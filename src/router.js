@@ -580,13 +580,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/collapse.vue'], resolve)
     },
-    // {
-    //     path: '/components/collapse-en',
-    //     meta: {
-    //         title: 'Collapse'
-    //     },
-    //     component: (resolve) => require(['./views/components/collapse-en.vue'], resolve)
-    // },
+    {
+        path: '/components/time',
+        meta: {
+            title: 'Time 相对时间'
+        },
+        component: (resolve) => require(['./views/components/time.vue'], resolve)
+    },
     {
         path: '/components/timeline',
         meta: {

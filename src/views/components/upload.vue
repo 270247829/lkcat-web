@@ -103,7 +103,7 @@
                         <template v-if="item.status === 'finished'">
                             <img :src="item.url" style="vertical-align:top">
                             <div class="demo-upload-list-cover">
-                                <Icon type="ios-eye-outline" @click.native="handleView(item.name)"></Icon>
+                                <Icon type="ios-eye-outline" @click.native="handleView(item.url)"></Icon>
                                 <Icon type="ios-trash-outline" @click.native="handleRemove(item)"></Icon>
                             </div>
                         </template>
@@ -130,7 +130,7 @@
                         </div>
                     </Upload>
                     <Modal title="View Image" v-model="visible">
-                        <img :src="'https://o5wwk8baw.qnssl.com/' + imgName + '/large'" v-if="visible" style="width: 100%">
+                        <img :src="imgName" v-if="visible" style="width: 100%">
                     </Modal>
                 </div>
                 <div slot="desc">
