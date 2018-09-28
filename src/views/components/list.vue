@@ -145,7 +145,12 @@
                             <td>Object</td>
                             <td>无</td>
                         </tr>
-  
+                        <tr>
+                            <td>pagination</td>
+                            <td>前端分页,格式 <code>{ current:1, total:1, pageSize:8 }</code></td>
+                            <td>Object</td>
+                            <td>无</td>
+                        </tr>
                         </tbody>
                     </table>
                     <Anchor title="List slot" h3></Anchor>
@@ -199,10 +204,10 @@
             return {
                 code:Code,
                 list: [
-                    {cover:"http://60.10.113.44:10111/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.113.44:10111/download/WinSCP-5.13.2-Setup.zip"},
-                    {cover:"http://60.10.113.44:10111/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.113.44:10111/download/TeamViewer13_wm.zip"},
-                    {cover:"http://60.10.113.44:10111/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.113.44:10111/download/VSCodeSetup-x64-1.19.1.zip"},
-                    {cover:"http://60.10.113.44:10111/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.113.44:10111/download/mongobooster-3.5.6.zip"},
+                    {cover:"http://60.10.22.235:12002/download/pic/winscp.png",name:"Winscp",version:"5.13.2",url:"http://60.10.22.235:12002/download/WinSCP-5.13.2-Setup.zip"},
+                    {cover:"http://60.10.22.235:12002/download/pic/teamviewer.png",name:"TeamViewer13",version:"13",url:"http://60.10.22.235:12002/download/TeamViewer13_wm.zip"},
+                    {cover:"http://60.10.22.235:12002/download/pic/vscode.png",name:"VSCode",version:"1.19.1-x64",url:"http://60.10.22.235:12002/download/VSCodeSetup-x64-1.19.1.zip"},
+                    {cover:"http://60.10.22.235:12002/download/pic/mongobooster.png",name:"mongobooster",version:"3.5.6",url:"http://60.10.22.235:12002/download/mongobooster-3.5.6.zip"},
                 ],
                 grid:{
                     column:3,gutter:16
@@ -210,7 +215,7 @@
             }
         },
         computed: {
-            
+
         },
         methods: {
             clickFunction(){
