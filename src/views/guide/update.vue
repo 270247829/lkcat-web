@@ -25,6 +25,16 @@
         <article class="doc-update">
             <Timeline pending>
                 <Timeline-item>
+                    <Anchor title="0.3.0" h2></Anchor>
+                    <p>
+                        <code>2018-09-12</code>
+                    </p>
+                    <ul>
+                        <li>修复 日期选择器 <a href="/#/components/date-picker" target="_blank" ><code>DatePicker</code></a> 无法选择月份的BUG </li>
+                        <li>修复 一些其他BUG </li>
+                    </ul>
+                </Timeline-item>
+                <Timeline-item>
                     <Anchor title="0.2.9" h2></Anchor>
                     <p>
                         <code>2018-08-02</code>
